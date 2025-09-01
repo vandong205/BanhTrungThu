@@ -1,0 +1,80 @@
+[
+  {
+    "ID": 0,
+    "Name": "Thanh long trà xanh",
+    "Ingredients": [ 4, 2, 14 ],
+    "Price": 24000
+  },
+  {
+    "ID": 1,
+    "Name": "Bánh h?ng",
+    "Ingredients": [ 14 ],
+    "Price": 3000
+  },
+  {
+    "ID": 2,
+    "Name": "Ð?u xanh m?t ong",
+    "Ingredients": [ 6, 12, 14 ],
+    "Price": 30000
+  },
+  {
+    "ID": 3,
+    "Name": "Trà xanh v?ng ðen",
+    "Ingredients": [ 2, 13, 14 ],
+    "Price": 17000
+  },
+  {
+    "ID": 4,
+    "Name": "M?t ong v?ng ðen",
+    "Ingredients": [ 6, 13, 14 ],
+    "Price": 29000
+  },
+  {
+    "ID": 5,
+    "Name": "H?t sen ð?u ð?",
+    "Ingredients": [ 8, 0, 14 ],
+    "Price": 33000
+  },
+  {
+    "ID": 6,
+    "Name": "Trà xanh ð?u xanh",
+    "Ingredients": [ 2, 12, 14 ],
+    "Price": 18000
+  },
+  {
+    "ID": 7,
+    "Name": "Tr?ng mu?i h?t sen",
+    "Ingredients": [ 1, 8, 14 ],
+    "Price": 34000
+  },
+  {
+    "ID": 8,
+    "Name": "Khoai môn ð?u ð?",
+    "Ingredients": [ 3, 0, 14 ],
+    "Price": 20000
+  },
+  {
+    "ID": 9,
+    "Name": "H?t sen m?t ong",
+    "Ingredients": [ 8, 6, 14 ],
+    "Price": 43000
+  },
+  {
+    "ID": 10,
+    "Name": "Trà xanh ð?u ph?ng",
+    "Ingredients": [ 2, 7, 14 ],
+    "Price": 20000
+  },
+  {
+    "ID": 11,
+    "Name": "Khoai môn d?a",
+    "Ingredients": [ 3, 11, 14 ],
+    "Price": 20000
+  },
+  {
+    "ID": 12,
+    "Name": "S?u riêng tr?ng mu?i",
+    "Ingredients": [ 5, 1, 14 ],
+    "Price": 38000
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "ID": 0,
+    "Name": "daudo",
+    "Price": 6000
+  },
+  {
+    "ID": 1,
+    "Name": "trungmuoi",
+    "Price": 8000
+  },
+  {
+    "ID": 2,
+    "Name": "traxanh",
+    "Price": 5000
+  },
+  {
+    "ID": 3,
+    "Name": "khoaimon",
+    "Price": 7000
+  },
+  {
+    "ID": 4,
+    "Name": "thanhlong",
+    "Price": 12000
+  },
+  {
+    "ID": 5,
+    "Name": "saurieng",
+    "Price": 20000
+  },
+  {
+    "ID": 6,
+    "Name": "matong",
+    "Price": 15000
+  },
+  {
+    "ID": 7,
+    "Name": "lac",
+    "Price": 8000
+  },
+  {
+    "ID": 8,
+    "Name": "hatsen",
+    "Price": 18000
+  },
+  {
+    "ID": 9,
+    "Name": "hatmix",
+    "Price": 15000
+  },
+  {
+    "ID": 10,
+    "Name": "duong",
+    "Price": 2000
+  },
+  {
+    "ID": 11,
+    "Name": "dua",
+    "Price": 6000
+  },
+  {
+    "ID": 12,
+    "Name": "dauxanh",
+    "Price": 7000
+  },
+  {
+    "ID": 13,
+    "Name": "vungden",
+    "Price": 6000
+  },
+  {
+    "ID": 14,
+    "Name": "phoibanh",
+    "Price": 3000
+  }
+
+]
