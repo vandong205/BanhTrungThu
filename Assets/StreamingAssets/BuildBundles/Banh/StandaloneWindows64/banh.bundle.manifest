@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.1.9f1
+CRC: 492536681
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c3d065c0456d711bbfc48e87b0170b9e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc9f87c7e64ff656997db0f2b2a91703
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 08b5c3b31b9fe46cb4fb066c285cb001
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SourceAsserBundles/Banh/banh/traxanh-dauxanh.png
+- Assets/SourceAsserBundles/Banh/banh/saurieng-trungmuoi.png
+- Assets/SourceAsserBundles/Banh/banh/thanhlong-traxanh.png
+- Assets/SourceAsserBundles/Banh/banh/traxanh-vung.png
+- Assets/SourceAsserBundles/Banh/banh/dauxanh-matong.png
+- Assets/SourceAsserBundles/Banh/banh/trungmuoi-hatsen.png
+- Assets/SourceAsserBundles/Banh/banh/vung-matdong.png
+- Assets/SourceAsserBundles/Banh/banh/khoaimon-daudo.png
+- Assets/SourceAsserBundles/Banh/banh/banhhong.png
+- Assets/SourceAsserBundles/Banh/banh/traxanh-lac.png
+- Assets/SourceAsserBundles/Banh/banh/hatsen-matong.png
+- Assets/SourceAsserBundles/Banh/banh/hatsen-daudo.png
+- Assets/SourceAsserBundles/Banh/banh/khoaimon-thanhlong.png
+Dependencies: []

@@ -1,0 +1,36 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.1.9f1
+CRC: 259737120
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 561851e95c6400b2e113d0124c04c699
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc9f87c7e64ff656997db0f2b2a91703
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6713e617342d951641fb4b536f773c8f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/duong.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/saurieng.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/traxanh.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/thanhlong.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/dauxanh.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/hatmix.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/trungmoi.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/matong.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/hatsen.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/lac.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/khoaimon.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/vung.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/daudo.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/dua.png
+Dependencies: []
