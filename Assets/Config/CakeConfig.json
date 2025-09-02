@@ -1,80 +1,80 @@
-[
-  {
+{
+  "0": {
     "ID": 0,
-    "Name": "Thanh long tr� xanh",
+    "Name": "Thanh long trà xanh",
     "Ingredients": [ 4, 2, 14 ],
     "Price": 24000
   },
-  {
+  "1": {
     "ID": 1,
-    "Name": "B�nh h?ng",
+    "Name": "Bánh hỏng",
     "Ingredients": [ 14 ],
     "Price": 3000
   },
-  {
+  "2": {
     "ID": 2,
-    "Name": "�?u xanh m?t ong",
+    "Name": "Đậu xanh mật ong",
     "Ingredients": [ 6, 12, 14 ],
     "Price": 30000
   },
-  {
+  "3": {
     "ID": 3,
-    "Name": "Tr� xanh v?ng �en",
+    "Name": "Trà xanh vừng đen",
     "Ingredients": [ 2, 13, 14 ],
     "Price": 17000
   },
-  {
+  "4": {
     "ID": 4,
-    "Name": "M?t ong v?ng �en",
+    "Name": "Mật ong vừng đen",
     "Ingredients": [ 6, 13, 14 ],
     "Price": 29000
   },
-  {
+  "5": {
     "ID": 5,
-    "Name": "H?t sen �?u �?",
+    "Name": "Hạt sen dâu đỏ",
     "Ingredients": [ 8, 0, 14 ],
     "Price": 33000
   },
-  {
+  "6": {
     "ID": 6,
-    "Name": "Tr� xanh �?u xanh",
+    "Name": "Trà xanh đậu xanh",
     "Ingredients": [ 2, 12, 14 ],
     "Price": 18000
   },
-  {
+  "7": {
     "ID": 7,
-    "Name": "Tr?ng mu?i h?t sen",
+    "Name": "Trứng muối hạt sen",
     "Ingredients": [ 1, 8, 14 ],
     "Price": 34000
   },
-  {
+  "8": {
     "ID": 8,
-    "Name": "Khoai m�n �?u �?",
+    "Name": "Khoai môn dâu đỏ",
     "Ingredients": [ 3, 0, 14 ],
     "Price": 20000
   },
-  {
+  "9": {
     "ID": 9,
-    "Name": "H?t sen m?t ong",
+    "Name": "Hạt sen mật ong",
     "Ingredients": [ 8, 6, 14 ],
     "Price": 43000
   },
-  {
+  "10": {
     "ID": 10,
-    "Name": "Tr� xanh �?u ph?ng",
+    "Name": "Trà xanh đậu phộng",
     "Ingredients": [ 2, 7, 14 ],
     "Price": 20000
   },
-  {
+  "11": {
     "ID": 11,
-    "Name": "Khoai m�n d?a",
+    "Name": "Khoai môn dừa",
     "Ingredients": [ 3, 11, 14 ],
     "Price": 20000
   },
-  {
+  "12": {
     "ID": 12,
-    "Name": "S?u ri�ng tr?ng mu?i",
+    "Name": "Sầu riêng trứng muối",
     "Ingredients": [ 5, 1, 14 ],
     "Price": 38000
   }
-]
+}
