@@ -1,38 +1,49 @@
+﻿using System;
 using System.Collections;
 using UnityEngine;
 
-public class MainGame:MonoBehaviour
+public class MainGame : MonoBehaviour
 {
-    private static MainGame instance;
     public static MainGame Instance;
+
+    private int LaunchingGameStep = 3;
+    private int CurrentLaunchingStep = 0;
+
+    public event Action<float> OnLoadingProcess; // cho UI đăng ký lắng nghe
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject );
+            Destroy(gameObject);
             return;
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
     private void Start()
     {
         StartCoroutine(LoadGame());
     }
-    IEnumerator  LoadGame()
+
+    IEnumerator LoadGame()
     {
-        Debug.Log("Dang tai Config");
+        Debug.Log("Đang tải Config");
         yield return LoadConfig();
     }
- IEnumerator LoadConfig()
+
+    IEnumerator LoadConfig()
     {
-        Debug.Log("Dang tai config nguyen lieu");
+        Debug.Log("Đang tải config nguyên liệu");
         yield return Loader.LoadJsonConfigIntoDict(Consts.IngredientConfigKey, ResourceManager.Instance.IngredientDict);
+        UpdateLaunchingProcess();
 
-        Debug.Log("Dang tai config banh");
+        Debug.Log("Đang tải config bánh");
         yield return Loader.LoadJsonConfigIntoDict(Consts.CakeConfigKey, ResourceManager.Instance.CakeDict);
+        UpdateLaunchingProcess();
 
-        Debug.Log("Dang tai config nguoi choi");
+        Debug.Log("Đang tải config người chơi");
         yield return Loader.ParseJson<Player>(Consts.PlayerDefaultConfigKey, player =>
         {
             if (player != null)
@@ -41,11 +52,16 @@ public class MainGame:MonoBehaviour
             }
             else
             {
-                Debug.LogError("khong tai duoc config player");
+                Debug.LogError("Không tải được config player");
             }
         });
+        UpdateLaunchingProcess();
     }
 
-
-
+    private void UpdateLaunchingProcess()
+    {
+        CurrentLaunchingStep++;
+        float percent = (CurrentLaunchingStep / (float)LaunchingGameStep) * 100f;
+        OnLoadingProcess?.Invoke(percent); // safe invoke
+    }
 }
