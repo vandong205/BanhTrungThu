@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainGame : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class MainGame : MonoBehaviour
     {
         Debug.Log("Đang tải Config");
         yield return LoadConfig();
+        OnLaunchingGameDone();
     }
 
     IEnumerator LoadConfig()
@@ -63,5 +65,9 @@ public class MainGame : MonoBehaviour
         CurrentLaunchingStep++;
         float percent = (CurrentLaunchingStep / (float)LaunchingGameStep) * 100f;
         OnLoadingProcess?.Invoke(percent); // safe invoke
+    }
+    private void OnLaunchingGameDone()
+    {
+        SceneManager.LoadScene("GamePlay");
     }
 }
