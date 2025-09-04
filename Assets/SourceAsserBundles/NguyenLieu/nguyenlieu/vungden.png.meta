@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5f04ed8644d538d4b89ec77903f8b0a3
+guid: 9b3a1184c4dc9e549aca91a93a4953d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7246846476058390200
-    second: meden-matdong_0
+      213: 6588289861160411678
+    second: vung_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: meden-matdong_0
+      name: vungden
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 30
-        height: 26
+        x: 2
+        y: 0
+        width: 28
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8be604b7978f19460800000000000000
-      internalID: 7246846476058390200
+      spriteID: e1226c3f8be4e6b50800000000000000
+      internalID: 6588289861160411678
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5fd98501e185370419ab49f145c5bb37
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      meden-matdong_0: 7246846476058390200
+      vungden: 6588289861160411678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

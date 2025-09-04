@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9b3a1184c4dc9e549aca91a93a4953d2
+guid: b5b5e02863dbeeb41beeb3c30af846ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6588289861160411678
-    second: vung_0
+      213: -6504018422107613514
+    second: khoaimon-dua_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vung
+      name: khoaimon-dua
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 28
-        height: 19
+        x: 5
+        y: 1
+        width: 27
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1226c3f8be4e6b50800000000000000
-      internalID: 6588289861160411678
+      spriteID: 6b6dda174b51db5a0800000000000000
+      internalID: -6504018422107613514
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5fd98501e185370419ab49f145c5bb37
+    spriteID: 65ce1d7e951c403479a7e08fc8b07375
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vung: 6588289861160411678
+      khoaimon-dua: -6504018422107613514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

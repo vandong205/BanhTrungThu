@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dauxanhmatong_0
+      name: dauxanhmatong
       rect:
         serializedVersion: 2
         x: 2
@@ -134,7 +134,7 @@ TextureImporter:
         width: 28
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 49dd32c4a8596d6438a00ebded1722e3
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dauxanhmatong_0: 5002495807152478823
+      dauxanhmatong: 5002495807152478823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

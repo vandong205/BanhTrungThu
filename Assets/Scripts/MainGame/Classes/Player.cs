@@ -3,7 +3,7 @@ public class Player
 {
     public string PlayerName { get; set; }
     public int TrustPoint { get; set; } 
-    public int Capital { get; set; }    
+    public long Capital { get; set; }    
     public List<int> UnlockedCakes { get; set; } 
     public List<PlayerHoldIngredient> Ingredients { get; set; }
 

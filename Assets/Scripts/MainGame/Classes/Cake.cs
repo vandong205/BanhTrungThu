@@ -4,6 +4,7 @@ public class Cake
 {
     public int ID { get; set; }
     public string Name { get; set; }
+    public string RoleName {  get; set; }
     public int Price { get; set; }               
     public List<int> Ingredients { get; set; }  
 

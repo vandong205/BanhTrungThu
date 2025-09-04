@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5b5e02863dbeeb41beeb3c30af846ba
+guid: 9057a1d9e8f619a42bcb7f8578e2eb16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6504018422107613514
-    second: khoaimon-dua_0
+      213: -8612300205169440637
+    second: traxanh-meden_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: khoaimon-dua_0
+      name: traxanh-vungden
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1
-        width: 27
-        height: 23
+        x: 2
+        y: 2
+        width: 28
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b6dda174b51db5a0800000000000000
-      internalID: -6504018422107613514
+      spriteID: 3880ad3e796fa7880800000000000000
+      internalID: -8612300205169440637
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 675721f00f00b214bad3903613bb76c6
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      khoaimon-dua_0: -6504018422107613514
+      traxanh-vungden: -8612300205169440637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
