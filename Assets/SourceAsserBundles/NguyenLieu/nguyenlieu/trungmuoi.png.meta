@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 736ec0d5ad8a59d41873cb4d75e54b82
+guid: bfd488ee63dadae4db0c9379e6214b19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8956119698706538800
-    second: "ta\u1EA3ro_0"
+      213: -5485867729367137739
+    second: trungmoi_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,11 +126,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: khoaimon
+      name: trungmuoi
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
+        x: 9
+        y: 1
         width: 22
         height: 20
       alignment: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 03128471a678a4c70800000000000000
-      internalID: 8956119698706538800
+      spriteID: 5320b429d584ed3b0800000000000000
+      internalID: -5485867729367137739
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91785da921a66ae4ca26cbbd0ac989fe
+    spriteID: 4c2cefbdff3f32d4faffdbb5a435a46f
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      khoaimon: 8956119698706538800
+      trungmuoi: -5485867729367137739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

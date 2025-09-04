@@ -1,5 +1,5 @@
 {
-  "PlayerName": "Vãn Ð?ng",
+  "PlayerName": "Vï¿½n ï¿½?ng",
   "TrustPoint": 75,
   "Capital": 150000,
   "UnlockedCakes": [
@@ -10,27 +10,22 @@
   "Ingredients": [
     {
       "ID": 0,
-      "Name": "daudo",
       "Quantity": 10
     },
     {
       "ID": 1,
-      "Name": "trungmuoi",
       "Quantity": 5
     },
     {
       "ID": 2,
-      "Name": "traxanh",
       "Quantity": 8
     },
     {
       "ID": 6,
-      "Name": "matong",
       "Quantity": 3
     },
     {
       "ID": 14,
-      "Name": "phoibanh",
       "Quantity": 12
     }
   ]

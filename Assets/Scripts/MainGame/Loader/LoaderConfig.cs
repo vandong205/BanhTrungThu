@@ -126,7 +126,14 @@ public partial class Loader
         T obj = default;
         if (handle.Status == AsyncOperationStatus.Succeeded && handle.Result != null)
         {
-            obj = JsonUtility.FromJson<T>(handle.Result.text);
+            try
+            {
+                obj = JsonConvert.DeserializeObject<T>(handle.Result.text);
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogError($"Lỗi parse JSON: {ex.Message}");
+            }
         }
         else
         {
@@ -134,12 +141,9 @@ public partial class Loader
         }
 
         setter?.Invoke(obj);
-        yield return obj;
 
-        // Nếu muốn giữ asset trong bộ nhớ thì không Release
-        // Nếu chỉ load để parse 1 lần thì nên Release
+        // Nếu không cần giữ asset
         Addressables.Release(handle);
     }
-
 
 }

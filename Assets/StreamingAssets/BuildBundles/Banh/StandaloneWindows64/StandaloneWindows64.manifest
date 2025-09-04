@@ -1,9 +1,0 @@
-ManifestFileVersion: 0
-UnityVersion: 6000.1.9f1
-CRC: 3171231593
-HashAppended: 0
-AssetBundleManifest:
-  AssetBundleInfos:
-    Info_0:
-      Name: banh.bundle
-      Dependencies: {}

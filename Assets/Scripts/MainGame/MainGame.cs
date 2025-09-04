@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,7 @@ public class MainGame : MonoBehaviour
 {
     public static MainGame Instance;
 
-    private int LaunchingGameStep = 3;
+    private int LaunchingGameStep = 5;
     private int CurrentLaunchingStep = 0;
 
     public event Action<float> OnLoadingProcess; // cho UI đăng ký lắng nghe
@@ -32,6 +33,7 @@ public class MainGame : MonoBehaviour
     {
         Debug.Log("Đang tải Config");
         yield return LoadConfig();
+        yield return LoadData();
         OnLaunchingGameDone();
     }
 
@@ -50,7 +52,10 @@ public class MainGame : MonoBehaviour
         {
             if (player != null)
             {
+                Debug.Log(player.PlayerName);
+                Debug.Log(player.Ingredients.Count);
                 ResourceManager.Instance.player = player;
+
             }
             else
             {
@@ -58,8 +63,18 @@ public class MainGame : MonoBehaviour
             }
         });
         UpdateLaunchingProcess();
+        Debug.Log("Dang tai config AssetBundle");
+        yield return Loader.LoadJsonConfigIntoDict<string, BuildInBundle>(Consts.AssetBundleConfigKey, ResourceManager.Instance.AssetBundleDict);
+        UpdateLaunchingProcess();
     }
-
+    IEnumerator LoadData()
+    {
+        foreach (KeyValuePair<string, BuildInBundle> bundleconfig in ResourceManager.Instance.AssetBundleDict) {
+            Debug.Log($"Đang tải Asset Bundle {bundleconfig.Key}");
+            yield return Loader.LoadAssetBundle(bundleconfig.Value.Path, bundleconfig.Value.Name);
+        }
+        UpdateLaunchingProcess();
+    }
     private void UpdateLaunchingProcess()
     {
         CurrentLaunchingStep++;
@@ -69,5 +84,6 @@ public class MainGame : MonoBehaviour
     private void OnLaunchingGameDone()
     {
         SceneManager.LoadScene("GamePlay");
+
     }
 }

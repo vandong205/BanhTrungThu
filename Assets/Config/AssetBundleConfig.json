@@ -1,0 +1,10 @@
+{
+  "banh": {
+    "Name": "banh",
+    "Path": "BuildBundles/Banh/StandaloneWindows64/banh.bundle"
+  },
+  "nguyenlieu": {
+    "Name": "nguyenlieu",
+    "Path": "BuildBundles/NguyenLieu/StandaloneWindows64/nguyenlieu.bundle"
+  }
+}

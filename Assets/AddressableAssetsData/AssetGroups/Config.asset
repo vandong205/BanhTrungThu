@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6435b1109f6b61c4e941978ae4850b55
+    m_Address: AssetBundleConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e20f1bfd5ab092e4d825682f115a64ed
     m_Address: IngredientConfig.json
     m_ReadOnly: 0

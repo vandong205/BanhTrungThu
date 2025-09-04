@@ -1,77 +1,92 @@
 {
   "0": {
     "ID": 0,
-    "Name": "daudo",
+    "Name": "đậu đỏ",
+    "RoleName": "daudo",
     "Price": 6000
   },
   "1": {
     "ID": 1,
-    "Name": "trungmuoi",
+    "Name": "trứng muối",
+    "RoleName": "trungmuoi",
     "Price": 8000
   },
   "2": {
     "ID": 2,
-    "Name": "traxanh",
+    "Name": "trà xanh",
+    "RoleName": "traxanh",
     "Price": 5000
   },
   "3": {
     "ID": 3,
-    "Name": "khoaimon",
+    "Name": "khoai môn",
+    "RoleName": "khoaimon",
     "Price": 7000
   },
   "4": {
     "ID": 4,
-    "Name": "thanhlong",
+    "Name": "thanh long",
+    "RoleName": "thanhlong",
     "Price": 12000
   },
   "5": {
     "ID": 5,
-    "Name": "saurieng",
+    "Name": "sầu riêng",
+    "RoleName": "saurieng",
     "Price": 20000
   },
   "6": {
     "ID": 6,
-    "Name": "matong",
+    "Name": "mật ong",
+    "RoleName": "matong",
     "Price": 15000
   },
   "7": {
     "ID": 7,
-    "Name": "lac",
+    "Name": "lạc",
+    "RoleName": "lac",
     "Price": 8000
   },
   "8": {
     "ID": 8,
-    "Name": "hatsen",
+    "Name": "hạt sen",
+    "RoleName": "hatsen",
     "Price": 18000
   },
   "9": {
     "ID": 9,
-    "Name": "hatmix",
+    "Name": "hạt mix",
+    "RoleName": "hatmix",
     "Price": 15000
   },
   "10": {
     "ID": 10,
-    "Name": "duong",
+    "Name": "đường",
+    "RoleName": "duong",
     "Price": 2000
   },
   "11": {
     "ID": 11,
-    "Name": "dua",
+    "Name": "dừa",
+    "RoleName": "dua",
     "Price": 6000
   },
   "12": {
     "ID": 12,
-    "Name": "dauxanh",
+    "Name": "đậu xanh",
+    "RoleName": "dauxanh",
     "Price": 7000
   },
   "13": {
     "ID": 13,
-    "Name": "vungden",
+    "Name": "vừng đen",
+    "RoleName": "vungden",
     "Price": 6000
   },
   "14": {
     "ID": 14,
-    "Name": "phoibanh",
+    "Name": "phôi bánh",
+    "RoleName": "phoibanh",
     "Price": 3000
   }
 }

@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.1.9f1
-CRC: 259737120
+CRC: 3842867710
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 561851e95c6400b2e113d0124c04c699
+    Hash: 146bcc309794dccd005074fa7754cfa0
   TypeTreeHash:
     serializedVersion: 2
     Hash: bc9f87c7e64ff656997db0f2b2a91703
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 6713e617342d951641fb4b536f773c8f
+    Hash: 80dd9391c7a77490273db23216d09a7b
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -25,7 +25,7 @@ Assets:
 - Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/thanhlong.png
 - Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/dauxanh.png
 - Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/hatmix.png
-- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/trungmoi.png
+- Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/trungmuoi.png
 - Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/matong.png
 - Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/hatsen.png
 - Assets/SourceAsserBundles/NguyenLieu/nguyenlieu/lac.png
