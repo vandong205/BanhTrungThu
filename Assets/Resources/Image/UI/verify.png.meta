@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 230ddb1f62c370d4a933d4f07d41c033
+guid: 3326b6cff29138a478d7b83a455b781d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5520563393005747319
-    second: 20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_0
-  - first:
-      213: 451039207104116335
-    second: 20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_1
-  - first:
-      213: 5931926497409887689
-    second: 20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_2
+      213: 8343770140504857065
+    second: verify_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -132,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_0
+      name: verify_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 25
+        y: 25
+        width: 462
+        height: 462
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,52 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77cf120282bfc9c40800000000000000
-      internalID: 5520563393005747319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_1
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 1016
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f66f637e4c9624600800000000000000
-      internalID: 451039207104116335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_2
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 984
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cde7df78bf625250800000000000000
-      internalID: 5931926497409887689
+      spriteID: 9e99d405cb60bc370800000000000000
+      internalID: 8343770140504857065
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_0: 5520563393005747319
-      20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_1: 451039207104116335
-      20250904_0014_Cozy Kitchen Scene_remix_01k4890wpefkh8r0wfeagcecbx_2: 5931926497409887689
+      verify_0: 8343770140504857065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

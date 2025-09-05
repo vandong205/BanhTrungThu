@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec6f6cb4ad00c584aaa30aba2dafddee
+guid: ffc1fd4ae17b89846ac18a67df84c397
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8230488904728474184
-    second: plus_0
+      213: -5646921325505597468
+    second: 20250905_1742_Mid-Autumn Kitchen Delight_simple_compose_01k4cqeafcfw1v78t5p98dwfz8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plus_0
+      name: 20250905_1742_Mid-Autumn Kitchen Delight_simple_compose_01k4cqeafcfw1v78t5p98dwfz8_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84272264d02983270800000000000000
-      internalID: 8230488904728474184
+      spriteID: 4ef29ae19fa12a1b0800000000000000
+      internalID: -5646921325505597468
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plus_0: 8230488904728474184
+      20250905_1742_Mid-Autumn Kitchen Delight_simple_compose_01k4cqeafcfw1v78t5p98dwfz8_0: -5646921325505597468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
