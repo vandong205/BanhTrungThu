@@ -6,10 +6,11 @@ public class Player
     public long Capital { get; set; }    
     public List<int> UnlockedCakes { get; set; } 
     public List<PlayerHoldIngredient> Ingredients { get; set; }
-
+    public List<Order> Orders;
     public Player()
     {
         UnlockedCakes = new List<int>();
         Ingredients = new List<PlayerHoldIngredient>();
+        Orders = new List<Order>();
     }
 }

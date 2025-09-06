@@ -13,7 +13,12 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject ShopPanel;
     [SerializeField] Transform ShopContent;
     [SerializeField] TextMeshProUGUI MoneyAmount;
+    [SerializeField] GameObject SettingPanel;
+    [SerializeField] GameObject NotifiPanel;
+    [SerializeField] Transform NotifiPanelContent;
+
     bool OpenAtap = false;
+    bool notifiOpen = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -34,6 +39,30 @@ public class UIGamePlayManager : MonoBehaviour
         RecipePanel.SetActive(true);
         OpenAtap = true;
     }
+    public void OnNotifiPanelToggle()
+    {
+        if (notifiOpen)
+        {
+            NotifiPanel.SetActive(false);
+            OpenAtap = false;
+            notifiOpen = false;
+
+        }
+        else
+        {
+            NotifiPanel.SetActive(true);
+            OpenAtap = true;
+            notifiOpen = true;
+
+        }
+    }
+
+    public void OnSettingPanelOpen()
+    {
+        if (OpenAtap) return;
+        SettingPanel.SetActive(true);
+        OpenAtap = true;
+    }
     public void OnStockPanelOpen()
     {
         if (OpenAtap) return;
@@ -51,11 +80,60 @@ public class UIGamePlayManager : MonoBehaviour
         if (RecipePanel.activeSelf) RecipePanel.SetActive(false);
         if (StockPanel.activeSelf) StockPanel.SetActive(false);
         if(ShopPanel.activeSelf) ShopPanel.SetActive(false);
+        if(SettingPanel.activeSelf) SettingPanel.SetActive( false);
         OpenAtap = false;
     }
     public void LoadingPlayerStat()
     {
         LoadStock();
+        LoadOrders();
+    }
+    public void LoadOrders()
+    {
+        GameObject OrderPrefab = Resources.Load<GameObject>("Prefabs/Order");
+        GameObject MoneyPrefab = Resources.Load<GameObject>("Prefabs/Money");
+        GameObject TrustPointPrefab = Resources.Load<GameObject>("Prefabs/TrustPoint");
+        GameObject TokenPrefab = Resources.Load<GameObject>("Prefabs/Token");
+
+        NotifiPanel.GetComponent<NotifiPanelUIController>().SetNumberOfOrder(ResourceManager.Instance.player.Orders.Count.ToString());
+        foreach (Order order in ResourceManager.Instance.player.Orders)
+        {
+
+            GameObject neworder = Instantiate(OrderPrefab, NotifiPanelContent);
+            OrderUIController orderUIController = neworder.GetComponent<OrderUIController>();
+            if (orderUIController != null)
+            {
+                if(ResourceManager.Instance.CakeDict.TryGetValue(order.CakeID,out Cake cake)){
+                    if (AssetBundleManager.Instance.GetAssetBundle("banh",out AssetBundle cakebundle))
+                    {
+                        Sprite cakeicon  = cakebundle.LoadAsset<Sprite>(cake.RoleName);
+                        orderUIController.SetProp(cakeicon, order.Number.ToString());
+                    }
+                }
+                foreach(Receive receive in order.Receives)
+                {
+                    switch (receive.Receivetype)
+                    {
+                        case Receivetype.Money:
+                            GameObject newmoney = Instantiate(MoneyPrefab);
+                            newmoney.GetComponent<MoneyUIController>().SetMoney(receive.Amount);
+                            orderUIController.AddReceiveItem(newmoney);
+                            break;
+                        case Receivetype.TrustPoint:
+                            GameObject newtrustpoint = Instantiate(TrustPointPrefab);
+                            newtrustpoint.GetComponent<TrustPointUIController>().SetTrustPointAmount(receive.Amount.ToString());
+
+                            orderUIController.AddReceiveItem(newtrustpoint);
+                            break;
+                        case Receivetype.Token:
+                            GameObject newtoken = Instantiate(TokenPrefab);
+                            newtoken.GetComponent<TokenUIController>().SetTokenAmount(receive.Amount.ToString());
+                            orderUIController.AddReceiveItem(newtoken);
+                            break;
+                    }
+                }
+            }
+        }
     }
     private void LoadStock()
     {

@@ -68,5 +68,21 @@
       "ID": 14,
       "Quantity": 12
     }
+  ],
+  "Orders": [
+    {
+      "CakeID": 0,
+      "Number": 2,
+      "Receives": [
+        {
+          "Receivetype": 0,
+          "Amount": 10000
+        },
+        {
+          "Receivetype": 1,
+          "Amount": 10
+        }
+      ]
+    }
   ]
 }
