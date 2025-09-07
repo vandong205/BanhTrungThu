@@ -12,17 +12,18 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] Transform StockContent;
     [SerializeField] GameObject ShopPanel;
     [SerializeField] Transform ShopContent;
-    [SerializeField] TextMeshProUGUI MoneyAmount;
+    [SerializeField] GameObject StatPanel;
     [SerializeField] GameObject SettingPanel;
     [SerializeField] GameObject NotifiPanel;
     [SerializeField] Transform NotifiPanelContent;
-
+    public Player player ;
     bool OpenAtap = false;
     bool notifiOpen = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SetMoneyAmount(ResourceManager.Instance.player.Capital);
+        player = ResourceManager.Instance.player;
+        SetPlayerStat(player.Capital,player.TrustPoint,player.Token);
         LoadingPlayerStat();
         LoadCakeRecipe();
         LoadShop();
@@ -44,14 +45,11 @@ public class UIGamePlayManager : MonoBehaviour
         if (notifiOpen)
         {
             NotifiPanel.SetActive(false);
-            OpenAtap = false;
             notifiOpen = false;
-
         }
         else
         {
             NotifiPanel.SetActive(true);
-            OpenAtap = true;
             notifiOpen = true;
 
         }
@@ -90,55 +88,15 @@ public class UIGamePlayManager : MonoBehaviour
     }
     public void LoadOrders()
     {
-        GameObject OrderPrefab = Resources.Load<GameObject>("Prefabs/Order");
-        GameObject MoneyPrefab = Resources.Load<GameObject>("Prefabs/Money");
-        GameObject TrustPointPrefab = Resources.Load<GameObject>("Prefabs/TrustPoint");
-        GameObject TokenPrefab = Resources.Load<GameObject>("Prefabs/Token");
-
-        NotifiPanel.GetComponent<NotifiPanelUIController>().SetNumberOfOrder(ResourceManager.Instance.player.Orders.Count.ToString());
         foreach (Order order in ResourceManager.Instance.player.Orders)
         {
-
-            GameObject neworder = Instantiate(OrderPrefab, NotifiPanelContent);
-            OrderUIController orderUIController = neworder.GetComponent<OrderUIController>();
-            if (orderUIController != null)
-            {
-                if(ResourceManager.Instance.CakeDict.TryGetValue(order.CakeID,out Cake cake)){
-                    if (AssetBundleManager.Instance.GetAssetBundle("banh",out AssetBundle cakebundle))
-                    {
-                        Sprite cakeicon  = cakebundle.LoadAsset<Sprite>(cake.RoleName);
-                        orderUIController.SetProp(cakeicon, order.Number.ToString());
-                    }
-                }
-                foreach(Receive receive in order.Receives)
-                {
-                    switch (receive.Receivetype)
-                    {
-                        case Receivetype.Money:
-                            GameObject newmoney = Instantiate(MoneyPrefab);
-                            newmoney.GetComponent<MoneyUIController>().SetMoney(receive.Amount);
-                            orderUIController.AddReceiveItem(newmoney);
-                            break;
-                        case Receivetype.TrustPoint:
-                            GameObject newtrustpoint = Instantiate(TrustPointPrefab);
-                            newtrustpoint.GetComponent<TrustPointUIController>().SetTrustPointAmount(receive.Amount.ToString());
-
-                            orderUIController.AddReceiveItem(newtrustpoint);
-                            break;
-                        case Receivetype.Token:
-                            GameObject newtoken = Instantiate(TokenPrefab);
-                            newtoken.GetComponent<TokenUIController>().SetTokenAmount(receive.Amount.ToString());
-                            orderUIController.AddReceiveItem(newtoken);
-                            break;
-                    }
-                }
-            }
+            AddOrderToUI(order);
         }
     }
     private void LoadStock()
     {
         Debug.Log("Da goi load Stock");
-        foreach (PlayerHoldIngredient indre in ResourceManager.Instance.player.Ingredients)
+        foreach (PlayerHoldIngredient indre in player.Ingredients)
         {
             string name = "";
             var stockprefab = Resources.Load<GameObject>("Prefabs/indreInStock");
@@ -168,7 +126,7 @@ public class UIGamePlayManager : MonoBehaviour
     {
         Debug.Log("Đã gọi Load CakeRecipe");
 
-        foreach (int cakeid in ResourceManager.Instance.player.UnlockedCakes)
+        foreach (int cakeid in player.UnlockedCakes)
         {
             if (ResourceManager.Instance.CakeDict.TryGetValue(cakeid, out Cake cake))
             {
@@ -242,7 +200,7 @@ public class UIGamePlayManager : MonoBehaviour
     public void LoadShop()
     {
         Debug.Log("Da goi load Shop");
-        foreach (PlayerHoldIngredient indre in ResourceManager.Instance.player.Ingredients)
+        foreach (PlayerHoldIngredient indre in player.Ingredients)
         {
             string name = "";
             var shopitem = Resources.Load<GameObject>("Prefabs/ShopItem");
@@ -269,9 +227,67 @@ public class UIGamePlayManager : MonoBehaviour
             }
         }
     }
-    public void SetMoneyAmount(long amount)
+    public void SetPlayerStat(long money, int trustpoint,int token)
     {
-        MoneyAmount.text = amount.ToString();
+        PlayerStatUIController statcontrol = StatPanel.GetComponent<PlayerStatUIController>();  
+        statcontrol.SetMoney(money);
+        statcontrol.SetTrustPoint(trustpoint);
+        statcontrol.SetToken(token);
     }
+    public void AddOrderToUI(Order order)
+    {
+        GameObject OrderPrefab = Resources.Load<GameObject>("Prefabs/Order");
+        GameObject MoneyPrefab = Resources.Load<GameObject>("Prefabs/Money");
+        GameObject TrustPointPrefab = Resources.Load<GameObject>("Prefabs/TrustPoint");
+        GameObject TokenPrefab = Resources.Load<GameObject>("Prefabs/Token");
+
+        // Tạo UI Order mới
+        GameObject neworder = Instantiate(OrderPrefab, NotifiPanelContent);
+        OrderUIController orderUIController = neworder.GetComponent<OrderUIController>();
+
+        if (orderUIController != null)
+        {
+            // Set icon bánh + số lượng
+            if (ResourceManager.Instance.CakeDict.TryGetValue(order.CakeID, out Cake cake))
+            {
+                if (AssetBundleManager.Instance.GetAssetBundle("banh", out AssetBundle cakebundle))
+                {
+                    Sprite cakeicon = cakebundle.LoadAsset<Sprite>(cake.RoleName);
+                    orderUIController.SetProp(cakeicon, order.Number.ToString());
+                }
+            }
+
+            // Add các reward (Receives)
+            foreach (Receive receive in order.Receives)
+            {
+                switch (receive.Receivetype)
+                {
+                    case Receivetype.Money:
+                        GameObject newmoney = Instantiate(MoneyPrefab);
+                        newmoney.GetComponent<MoneyUIController>().SetMoney(receive.Amount);
+                        orderUIController.AddReceiveItem(newmoney);
+                        break;
+
+                    case Receivetype.TrustPoint:
+                        GameObject newtrustpoint = Instantiate(TrustPointPrefab);
+                        newtrustpoint.GetComponent<TrustPointUIController>()
+                                     .SetTrustPointAmount(receive.Amount.ToString());
+                        orderUIController.AddReceiveItem(newtrustpoint);
+                        break;
+
+                    case Receivetype.Token:
+                        GameObject newtoken = Instantiate(TokenPrefab);
+                        newtoken.GetComponent<TokenUIController>()
+                                .SetTokenAmount(receive.Amount.ToString());
+                        orderUIController.AddReceiveItem(newtoken);
+                        break;
+                }
+            }
+        }
+
+        NotifiPanel.GetComponent<NotifiPanelUIController>()
+                   .SetNumberOfOrder(ResourceManager.Instance.player.Orders.Count.ToString());
+    }
+
 }
 
