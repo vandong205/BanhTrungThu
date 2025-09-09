@@ -64,10 +64,6 @@
     {
       "ID": 13,
       "Quantity": 3
-    },
-    {
-      "ID": 14,
-      "Quantity": 12
     }
   ],
   "Orders": [
@@ -78,6 +74,20 @@
         {
           "Receivetype": 0,
           "Amount": 10000
+        },
+        {
+          "Receivetype": 1,
+          "Amount": 10
+        }
+      ]
+    },
+    {
+      "CakeID": 1,
+      "Number": 10,
+      "Receives": [
+        {
+          "Receivetype": 0,
+          "Amount": 30000
         },
         {
           "Receivetype": 1,

@@ -16,23 +16,34 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject SettingPanel;
     [SerializeField] GameObject NotifiPanel;
     [SerializeField] Transform NotifiPanelContent;
+
+    private UIGamePlayManager _instance;
+    public static UIGamePlayManager Instance;
     public Player player ;
     bool OpenAtap = false;
     bool notifiOpen = false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
     void Start()
     {
+       
+            GameUISetUp();
         player = ResourceManager.Instance.player;
         SetPlayerStat(player.Capital,player.TrustPoint,player.Token);
         LoadingPlayerStat();
         LoadCakeRecipe();
         LoadShop();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        AddMessageBox("Xin chao!");
     }
     public void OnRecipePanelOpen()
     {
@@ -287,6 +298,21 @@ public class UIGamePlayManager : MonoBehaviour
 
         NotifiPanel.GetComponent<NotifiPanelUIController>()
                    .SetNumberOfOrder(ResourceManager.Instance.player.Orders.Count.ToString());
+    }
+    private void GameUISetUp()
+    {
+        RecipePanel.SetActive(false);
+        StockPanel.SetActive(false);
+        ShopPanel.SetActive(false);
+        NotifiPanel.SetActive(false);
+        SettingPanel.SetActive(false);
+    }
+    private void AddMessageBox(string text)
+    {
+        GameObject MessageBoxPrefabs = Resources.Load<GameObject>("Prefabs/UIMessageBox");
+        UIMessageBoxController MessageController = MessageBoxPrefabs.GetComponent<UIMessageBoxController>();
+        MessageController.SetText(text);
+        Instantiate(MessageBoxPrefabs, gameObject.transform);
     }
 
 }
