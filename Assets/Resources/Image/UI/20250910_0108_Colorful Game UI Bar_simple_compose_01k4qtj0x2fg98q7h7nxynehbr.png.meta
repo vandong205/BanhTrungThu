@@ -1,0 +1,781 @@
+fileFormatVersion: 2
+guid: 2ec22cf5411fa8545ab17e9a2e2483f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8774001049036278169
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_0
+  - first:
+      213: -3770492267689891051
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_1
+  - first:
+      213: 6386568952655850980
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_2
+  - first:
+      213: -2808496120370289859
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_3
+  - first:
+      213: -2970855196071362936
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_4
+  - first:
+      213: 485010355793201426
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_5
+  - first:
+      213: -1406508136515752914
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_6
+  - first:
+      213: 8518951524329002532
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_7
+  - first:
+      213: -4379367464339518951
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_8
+  - first:
+      213: 7925522094772899353
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_9
+  - first:
+      213: -4278974194176872683
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_10
+  - first:
+      213: 6208472270258684954
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_11
+  - first:
+      213: -1176352885680998398
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_12
+  - first:
+      213: -371307896722525693
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_13
+  - first:
+      213: 1696951368427851858
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_14
+  - first:
+      213: 2885380953232016739
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_15
+  - first:
+      213: -2821443304264769225
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_16
+  - first:
+      213: -4140030394012644940
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_17
+  - first:
+      213: -7057076042034644419
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_18
+  - first:
+      213: -7390586762193629437
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_19
+  - first:
+      213: -7665076380316766600
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_20
+  - first:
+      213: -7136861837147382688
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_21
+  - first:
+      213: 1099310253827069282
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_22
+  - first:
+      213: -2248805644120331246
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_23
+  - first:
+      213: -7499162063812903243
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_24
+  - first:
+      213: 9072971425894356115
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_25
+  - first:
+      213: 2882705297722225993
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_26
+  - first:
+      213: 6728856278876026535
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_27
+  - first:
+      213: 3917000841442945258
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_28
+  - first:
+      213: 9017633859254294458
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_29
+  - first:
+      213: -3361797148303579
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_30
+  - first:
+      213: -2517701198501538095
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_31
+  - first:
+      213: 4218656405030028064
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_32
+  - first:
+      213: 457730222056135307
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_33
+  - first:
+      213: -2228481924212785414
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_34
+  - first:
+      213: -8739687899125334866
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_35
+  - first:
+      213: 2506978960877907226
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_36
+  - first:
+      213: 2106025994580892962
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_37
+  - first:
+      213: -7846678682015075849
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_38
+  - first:
+      213: 8912941075318434006
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_39
+  - first:
+      213: 7750799235299122589
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_40
+  - first:
+      213: 2462191526394790087
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_41
+  - first:
+      213: -6296051165774003266
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_42
+  - first:
+      213: 7281644588719752219
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_43
+  - first:
+      213: -4806987629240735756
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_44
+  - first:
+      213: -3080216611138190930
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_45
+  - first:
+      213: 8206291612998288155
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_46
+  - first:
+      213: 7312974718406978067
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_47
+  - first:
+      213: -8729482799149793346
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_48
+  - first:
+      213: -1000159694733375804
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_49
+  - first:
+      213: 6665591075645321170
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_50
+  - first:
+      213: 2858517106115338254
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_51
+  - first:
+      213: -6804576854940863271
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_52
+  - first:
+      213: 8818986475462762759
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_53
+  - first:
+      213: -7232671886673467021
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_54
+  - first:
+      213: -4942243532011581409
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_55
+  - first:
+      213: -5740578087935913062
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_56
+  - first:
+      213: -1344168761792775713
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_57
+  - first:
+      213: 6356630061185313722
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_58
+  - first:
+      213: 4074462444396043164
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_59
+  - first:
+      213: -4529062683308975492
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_60
+  - first:
+      213: -1727389419900455367
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_61
+  - first:
+      213: -6860208013189851066
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_62
+  - first:
+      213: 6417524188737747800
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_63
+  - first:
+      213: -2449859919804785730
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_64
+  - first:
+      213: 5276960503083875888
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_65
+  - first:
+      213: -6739680703548417122
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_66
+  - first:
+      213: -3038446669880895070
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_67
+  - first:
+      213: 1581120628800891771
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_68
+  - first:
+      213: 3139867500921713790
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_69
+  - first:
+      213: 9029954142865700513
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_70
+  - first:
+      213: -1696579142945617887
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_71
+  - first:
+      213: -647325571912710027
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_72
+  - first:
+      213: 8115413583021579839
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_73
+  - first:
+      213: -7644378723612580205
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_74
+  - first:
+      213: 8748413400312573667
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_75
+  - first:
+      213: 2332374034514634123
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_76
+  - first:
+      213: 8822510246510141995
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_77
+  - first:
+      213: 3431969795579371395
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_78
+  - first:
+      213: 3032191320150843422
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_79
+  - first:
+      213: 1023852828390340193
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_80
+  - first:
+      213: -2801101996838213367
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_81
+  - first:
+      213: 207886694169278786
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_82
+  - first:
+      213: 1521493925165207726
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_83
+  - first:
+      213: 86229962865922902
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_84
+  - first:
+      213: -2857879095873157909
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_85
+  - first:
+      213: 4390978956474134680
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_86
+  - first:
+      213: -6834095318380266228
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_87
+  - first:
+      213: 2633153062748583934
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_88
+  - first:
+      213: 7997823216155677582
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_89
+  - first:
+      213: -3853573459637900927
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_90
+  - first:
+      213: 1060767549430859627
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_91
+  - first:
+      213: 6910747298519313406
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_92
+  - first:
+      213: -7948881408502071963
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_93
+  - first:
+      213: -6479709503421344132
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_94
+  - first:
+      213: 5894901373788448023
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_95
+  - first:
+      213: -109890274240516003
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_96
+  - first:
+      213: -8081787364829887095
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_97
+  - first:
+      213: -2143773013404552773
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_98
+  - first:
+      213: -7478777849285670835
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_99
+  - first:
+      213: -1168737099387604220
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_100
+  - first:
+      213: -6200974253821878499
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_101
+  - first:
+      213: -3591756929960219874
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_102
+  - first:
+      213: 2792732220160485078
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_103
+  - first:
+      213: -7003208586917653767
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_104
+  - first:
+      213: 1716634298693439850
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_105
+  - first:
+      213: -4703538744686947925
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_106
+  - first:
+      213: -8895848540766840335
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_107
+  - first:
+      213: -4203267228111493740
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_108
+  - first:
+      213: 8117561530179357816
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_109
+  - first:
+      213: -1508520921948584278
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_110
+  - first:
+      213: -5542395696085780346
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_111
+  - first:
+      213: 2241936799488323693
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_112
+  - first:
+      213: -8362637213679511464
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_113
+  - first:
+      213: 1790766297330546642
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_114
+  - first:
+      213: 3898614147816447719
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_115
+  - first:
+      213: -3925916660631380725
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_116
+  - first:
+      213: -5112986233928782567
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_117
+  - first:
+      213: -3833707041399987632
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_118
+  - first:
+      213: -4642492665946654076
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_119
+  - first:
+      213: -2276591922767318846
+    second: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_120
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_48
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 470
+        width: 139
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf3bcb15a5aad680800000000000000
+      internalID: -8729482799149793346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_49
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 472
+        width: 135
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c601c48e08be12f0800000000000000
+      internalID: -1000159694733375804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_50
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 472
+        width: 134
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df6ad974cfe08c50800000000000000
+      internalID: 6665591075645321170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_51
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 471
+        width: 139
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00e166b92e7ba720800000000000000
+      internalID: 2858517106115338254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_0
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 402
+        width: 74
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be983cedaea4e94693624b90517ace3
+      internalID: 8774001049036278169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_1
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 352
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dcd378eb6a5264c81f3c6f888a4a4c
+      internalID: -3770492267689891051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 496
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ab76566d7644f458921d77131d4ef0
+      internalID: 6386568952655850980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 22437c24d1854e1458c242f316f22198
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_0: 8774001049036278169
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_1: -3770492267689891051
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_10: -4278974194176872683
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_100: -1168737099387604220
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_101: -6200974253821878499
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_102: -3591756929960219874
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_103: 2792732220160485078
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_104: -7003208586917653767
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_105: 1716634298693439850
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_106: -4703538744686947925
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_107: -8895848540766840335
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_108: -4203267228111493740
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_109: 8117561530179357816
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_11: 6208472270258684954
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_110: -1508520921948584278
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_111: -5542395696085780346
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_112: 2241936799488323693
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_113: -8362637213679511464
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_114: 1790766297330546642
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_115: 3898614147816447719
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_116: -3925916660631380725
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_117: -5112986233928782567
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_118: -3833707041399987632
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_119: -4642492665946654076
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_12: -1176352885680998398
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_120: -2276591922767318846
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_13: -371307896722525693
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_14: 1696951368427851858
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_15: 2885380953232016739
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_16: -2821443304264769225
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_17: -4140030394012644940
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_18: -7057076042034644419
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_19: -7390586762193629437
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_2: 6386568952655850980
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_20: -7665076380316766600
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_21: -7136861837147382688
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_22: 1099310253827069282
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_23: -2248805644120331246
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_24: -7499162063812903243
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_25: 9072971425894356115
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_26: 2882705297722225993
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_27: 6728856278876026535
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_28: 3917000841442945258
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_29: 9017633859254294458
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_3: -2808496120370289859
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_30: -3361797148303579
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_31: -2517701198501538095
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_32: 4218656405030028064
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_33: 457730222056135307
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_34: -2228481924212785414
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_35: -8739687899125334866
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_36: 2506978960877907226
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_37: 2106025994580892962
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_38: -7846678682015075849
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_39: 8912941075318434006
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_4: -2970855196071362936
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_40: 7750799235299122589
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_41: 2462191526394790087
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_42: -6296051165774003266
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_43: 7281644588719752219
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_44: -4806987629240735756
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_45: -3080216611138190930
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_46: 8206291612998288155
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_47: 7312974718406978067
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_48: -8729482799149793346
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_49: -1000159694733375804
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_5: 485010355793201426
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_50: 6665591075645321170
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_51: 2858517106115338254
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_52: -6804576854940863271
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_53: 8818986475462762759
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_54: -7232671886673467021
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_55: -4942243532011581409
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_56: -5740578087935913062
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_57: -1344168761792775713
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_58: 6356630061185313722
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_59: 4074462444396043164
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_6: -1406508136515752914
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_60: -4529062683308975492
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_61: -1727389419900455367
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_62: -6860208013189851066
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_63: 6417524188737747800
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_64: -2449859919804785730
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_65: 5276960503083875888
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_66: -6739680703548417122
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_67: -3038446669880895070
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_68: 1581120628800891771
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_69: 3139867500921713790
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_7: 8518951524329002532
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_70: 9029954142865700513
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_71: -1696579142945617887
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_72: -647325571912710027
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_73: 8115413583021579839
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_74: -7644378723612580205
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_75: 8748413400312573667
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_76: 2332374034514634123
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_77: 8822510246510141995
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_78: 3431969795579371395
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_79: 3032191320150843422
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_8: -4379367464339518951
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_80: 1023852828390340193
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_81: -2801101996838213367
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_82: 207886694169278786
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_83: 1521493925165207726
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_84: 86229962865922902
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_85: -2857879095873157909
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_86: 4390978956474134680
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_87: -6834095318380266228
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_88: 2633153062748583934
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_89: 7997823216155677582
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_9: 7925522094772899353
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_90: -3853573459637900927
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_91: 1060767549430859627
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_92: 6910747298519313406
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_93: -7948881408502071963
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_94: -6479709503421344132
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_95: 5894901373788448023
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_96: -109890274240516003
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_97: -8081787364829887095
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_98: -2143773013404552773
+      20250910_0108_Colorful Game UI Bar_simple_compose_01k4qtj0x2fg98q7h7nxynehbr_99: -7478777849285670835
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 public class Player
 {
     public string PlayerName { get; set; }
+    public bool IsFirstTimeOpenGame { get; set; }
     public int TrustPoint { get; set; } 
     public long Capital { get; set; }
     public int Token { get; set; }

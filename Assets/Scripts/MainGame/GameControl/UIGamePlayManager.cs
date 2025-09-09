@@ -16,9 +16,14 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject SettingPanel;
     [SerializeField] GameObject NotifiPanel;
     [SerializeField] Transform NotifiPanelContent;
+    [SerializeField] GameObject MainUI;
+    [SerializeField] GameObject HighUI;
 
     private UIGamePlayManager _instance;
     public static UIGamePlayManager Instance;
+    public GameObject MessageBox;
+    public GameObject BakerPortrait;
+
     public Player player ;
     bool OpenAtap = false;
     bool notifiOpen = false;
@@ -37,13 +42,12 @@ public class UIGamePlayManager : MonoBehaviour
     void Start()
     {
        
-            GameUISetUp();
+        GameUISetUp();
         player = ResourceManager.Instance.player;
         SetPlayerStat(player.Capital,player.TrustPoint,player.Token);
         LoadingPlayerStat();
         LoadCakeRecipe();
         LoadShop();
-        AddMessageBox("Xin chao!");
     }
     public void OnRecipePanelOpen()
     {
@@ -306,13 +310,29 @@ public class UIGamePlayManager : MonoBehaviour
         ShopPanel.SetActive(false);
         NotifiPanel.SetActive(false);
         SettingPanel.SetActive(false);
+        HighUI.SetActive(false);
+
     }
-    private void AddMessageBox(string text)
+    private void DisplayMessageBox(string text)
     {
-        GameObject MessageBoxPrefabs = Resources.Load<GameObject>("Prefabs/UIMessageBox");
-        UIMessageBoxController MessageController = MessageBoxPrefabs.GetComponent<UIMessageBoxController>();
-        MessageController.SetText(text);
-        Instantiate(MessageBoxPrefabs, gameObject.transform);
+        if (MessageBox == null)
+        {
+            GameObject prefab = Resources.Load<GameObject>("Prefabs/UIMessageBox");
+            MessageBox = Instantiate(prefab, gameObject.transform);
+        }
+        MessageBox.SetActive(true);
+        UIMessageBoxController controller = MessageBox.GetComponent<UIMessageBoxController>();
+        if (controller != null)
+        {
+            controller.SetText(text);
+        }
+    }
+    private void HideMessageBox()
+    {
+        if (MessageBox != null)
+        {
+            MessageBox.SetActive(false);
+        }
     }
 
 }
