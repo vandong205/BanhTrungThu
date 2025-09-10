@@ -17,7 +17,9 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject NotifiPanel;
     [SerializeField] Transform NotifiPanelContent;
     [SerializeField] GameObject MainUI;
+    [SerializeField] GameObject HighUIBackground;
     [SerializeField] GameObject HighUI;
+
 
     private UIGamePlayManager _instance;
     public static UIGamePlayManager Instance;
@@ -48,6 +50,7 @@ public class UIGamePlayManager : MonoBehaviour
         LoadingPlayerStat();
         LoadCakeRecipe();
         LoadShop();
+        GamePlayController.Instance.OnLoadingUIDone?.Invoke();
     }
     public void OnRecipePanelOpen()
     {
@@ -313,27 +316,48 @@ public class UIGamePlayManager : MonoBehaviour
         HighUI.SetActive(false);
 
     }
-    private void DisplayMessageBox(string text)
+    public void SetActiveMessageBox(string text,bool active = true)
     {
+        if (active) {
+            SetActiveHighUI(true);
+        }
         if (MessageBox == null)
         {
             GameObject prefab = Resources.Load<GameObject>("Prefabs/UIMessageBox");
             MessageBox = Instantiate(prefab, gameObject.transform);
         }
-        MessageBox.SetActive(true);
+        MessageBox.SetActive(active);
         UIMessageBoxController controller = MessageBox.GetComponent<UIMessageBoxController>();
         if (controller != null)
         {
             controller.SetText(text);
         }
     }
-    private void HideMessageBox()
+    public void SetActiveCharacterTutor(bool active)
     {
-        if (MessageBox != null)
+        if (active)
         {
-            MessageBox.SetActive(false);
+            SetActiveHighUI(true);
         }
+        if (BakerPortrait == null)
+        {
+            GameObject prefab = Resources.Load<GameObject>("Prefabs/TutorCharacter");
+            BakerPortrait = Instantiate(prefab, gameObject.transform);
+        }
+        BakerPortrait.SetActive(active);
     }
-
+    public void SetActiveHighUiBg(bool active)
+    {
+        if (active)
+        {
+            SetActiveHighUI(true);
+        }
+        HighUIBackground.SetActive(active);
+    }
+    public void SetActiveHighUI(bool active)
+    {
+        HighUI.SetActive(active);
+    }
+    
 }
 

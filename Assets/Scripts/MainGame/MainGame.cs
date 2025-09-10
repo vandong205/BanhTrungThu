@@ -1,17 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class MainGame : MonoBehaviour
 {
     public static MainGame Instance;
 
-    private int LaunchingGameStep = 5;
+    private int LaunchingGameStep = 6;
     private int CurrentLaunchingStep = 0;
 
-    public event Action<float> OnLoadingProcess; // cho UI đăng ký lắng nghe
+    public event Action<float> OnLoadingProcess; 
 
     private void Awake()
     {
@@ -48,24 +50,16 @@ public class MainGame : MonoBehaviour
         UpdateLaunchingProcess();
 
         Debug.Log("Đang tải config người chơi");
-        yield return Loader.ParseJson<Player>(Consts.PlayerDefaultConfigKey, player =>
-        {
-            if (player != null)
-            {
-                Debug.Log(player.PlayerName);
-                Debug.Log(player.Ingredients.Count);
-                ResourceManager.Instance.player = player;
-
-            }
-            else
-            {
-                Debug.LogError("Không tải được config player");
-            }
-        });
+        yield return LoadPlayer();
+        
         UpdateLaunchingProcess();
         Debug.Log("Dang tai config AssetBundle");
         yield return Loader.LoadJsonConfigIntoDict<string, BuildInBundle>(Consts.AssetBundleConfigKey, ResourceManager.Instance.AssetBundleDict);
         UpdateLaunchingProcess();
+        Debug.Log("Dang tai config Intro");
+        yield return Loader.LoadJsonConfigIntoList<IntroDialog>(Consts.IntroConfigKey, ResourceManager.Instance.introDialogList);
+        UpdateLaunchingProcess();
+
     }
     IEnumerator LoadData()
     {
@@ -83,7 +77,59 @@ public class MainGame : MonoBehaviour
     }
     private void OnLaunchingGameDone()
     {
+        Debug.Log($"Da tai thong tin cua player:{ResourceManager.Instance.player.PlayerName}");
+        Debug.Log($"Lan dau mo game?:{ResourceManager.Instance.player.IsFirstTimeOpenGame}");
         SceneManager.LoadScene("GamePlay");
 
     }
+    public IEnumerator LoadPlayer(System.Action done = null)
+    {
+        if (File.Exists(Consts.playerSavePath))
+        {
+            // Load file save ngoài
+            string json = File.ReadAllText(Consts.playerSavePath);
+            ResourceManager.Instance.player = JsonConvert.DeserializeObject<Player>(json);
+            Debug.Log("Loaded player from save file");
+        }
+        else
+        {
+            // Lấy config mặc định từ Addressables
+            yield return Loader.ParseJson<Player>(Consts.PlayerDefaultConfigKey, p =>
+            {
+                ResourceManager.Instance.player = p;
+            });
+
+            SavePlayer(); 
+            Debug.Log("Loaded default player and created save file");
+        }
+
+        done?.Invoke();
+    }
+    public void SavePlayer()
+    {
+        try
+        {
+            // Serialize player thành JSON
+            string json = JsonConvert.SerializeObject(ResourceManager.Instance.player, Formatting.Indented);
+
+            // Lấy thư mục cha của file
+            string dir = Path.GetDirectoryName(Consts.playerSavePath);
+
+            // Nếu thư mục chưa có thì tạo
+            if (!Directory.Exists(dir))
+            {
+                Directory.CreateDirectory(dir);
+                Debug.Log("Created directory: " + dir);
+            }
+
+            // Ghi file
+            File.WriteAllText(Consts.playerSavePath, json);
+            Debug.Log("Saved player to: " + Consts.playerSavePath);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Failed to save player: " + ex.Message);
+        }
+    }
+
 }

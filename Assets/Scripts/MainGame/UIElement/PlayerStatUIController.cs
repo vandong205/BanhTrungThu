@@ -8,7 +8,8 @@ public class PlayerStatUIController : MonoBehaviour
     [SerializeField] TextMeshProUGUI Token;
     public void SetMoney(long money)
     {
-        Money.text = money.ToString();
+        string result = MoneyFormatConvert.FormatCurrency(money,ResourceManager.Instance.player.FormatCurrency);
+        Money.text = result;
     }
     public void SetTrustPoint(int trustpoint)
     {

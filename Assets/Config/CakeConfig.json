@@ -1,92 +1,91 @@
 {
   "0": {
     "ID": 0,
-    "Name": "Thanh long trà xanh",
+    "Name": "Bánh Thu Vàng",
     "RoleName": "thanhlong-traxanh",
     "Ingredients": [ 4, 2, 14 ],
     "Price": 24000
   },
   "1": {
     "ID": 1,
-    "Name": "Bánh hỏng",
+    "Name": "Bánh Trăng Non",
     "RoleName": "banhhong",
     "Ingredients": [ 14 ],
     "Price": 3000
   },
   "2": {
     "ID": 2,
-    "Name": "Đậu xanh mật ong",
+    "Name": "Bánh Ngọc Sen",
     "RoleName": "dauxanh-matong",
     "Ingredients": [ 6, 12, 14 ],
     "Price": 30000
   },
   "3": {
     "ID": 3,
-    "Name": "Trà xanh vừng đen",
+    "Name": "Bánh Vừng Vàng",
     "RoleName": "traxanh-vungden",
     "Ingredients": [ 2, 13, 14 ],
     "Price": 17000
   },
   "4": {
     "ID": 4,
-    "Name": "Mật ong vừng đen",
+    "Name": "Bánh Mật Ngọt",
     "RoleName": "vungden-matong",
-
     "Ingredients": [ 6, 13, 14 ],
     "Price": 29000
   },
   "5": {
     "ID": 5,
-    "Name": "Hạt sen dâu đỏ",
+    "Name": "Bánh Đào Hồng",
     "RoleName": "hatsen-daudo",
     "Ingredients": [ 8, 0, 14 ],
     "Price": 33000
   },
   "6": {
     "ID": 6,
-    "Name": "Trà xanh đậu xanh",
+    "Name": "Bánh Hương Trà",
     "RoleName": "traxanh-dauxanh",
     "Ingredients": [ 2, 12, 14 ],
     "Price": 18000
   },
   "7": {
     "ID": 7,
-    "Name": "Trứng muối hạt sen",
+    "Name": "Bánh Kim Sen",
     "RoleName": "trungmuoi-hatsen",
     "Ingredients": [ 1, 8, 14 ],
     "Price": 34000
   },
   "8": {
     "ID": 8,
-    "Name": "Khoai môn dâu đỏ",
+    "Name": "Bánh Tím Mơ",
     "RoleName": "khoaimon-daudo",
     "Ingredients": [ 3, 0, 14 ],
     "Price": 20000
   },
   "9": {
     "ID": 9,
-    "Name": "Hạt sen mật ong",
+    "Name": "Bánh Sen Ngọt",
     "RoleName": "hatsen-matong",
     "Ingredients": [ 8, 6, 14 ],
     "Price": 43000
   },
   "10": {
     "ID": 10,
-    "Name": "Trà xanh đậu phộng",
+    "Name": "Bánh Lục Ngọc",
     "RoleName": "traxanh-dauphong",
     "Ingredients": [ 2, 7, 14 ],
     "Price": 20000
   },
   "11": {
     "ID": 11,
-    "Name": "Khoai môn dừa",
+    "Name": "Bánh Dừa Trăng",
     "RoleName": "khoaimon-dua",
     "Ingredients": [ 3, 11, 14 ],
     "Price": 20000
   },
   "12": {
     "ID": 12,
-    "Name": "Sầu riêng trứng muối",
+    "Name": "Bánh Rằm Vàng",
     "RoleName": "saurieng-trungmuoi",
     "Ingredients": [ 5, 1, 14 ],
     "Price": 38000
