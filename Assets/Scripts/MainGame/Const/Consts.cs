@@ -9,6 +9,7 @@ public class Consts
     public static readonly string AssetBundleConfigKey = "AssetBundleConfig.json";
 
     public static readonly string IntroConfigKey = "StartIntroConfig.json";
+    public static readonly string CookingToolConfigKey = "CookingToolConfig.json";
     public static readonly string playerSavePath = Path.Combine(Application.persistentDataPath, "PlayerSave.json");
 
 

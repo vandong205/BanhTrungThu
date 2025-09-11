@@ -59,6 +59,9 @@ public class MainGame : MonoBehaviour
         Debug.Log("Dang tai config Intro");
         yield return Loader.LoadJsonConfigIntoList<IntroDialog>(Consts.IntroConfigKey, ResourceManager.Instance.introDialogList);
         UpdateLaunchingProcess();
+        Debug.Log("Dang tai config vật dụng làm bánh");
+        yield return Loader.LoadJsonConfigIntoDict<string, KitchenItem>(Consts.CookingToolConfigKey, ResourceManager.Instance.KitchenItemDict);
+        UpdateLaunchingProcess();
 
     }
     IEnumerator LoadData()

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ffc1fd4ae17b89846ac18a67df84c397
+guid: 727a2c83e1df8fe41ae0e66584f5ebb0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5646921325505597468
-    second: 20250905_1742_Mid-Autumn Kitchen Delight_simple_compose_01k4cqeafcfw1v78t5p98dwfz8_0
+      213: -2604153863960444747
+    second: 20250911_1551_Cartoon Kitchen Game Scene_simple_compose_01k4vzep30fskrbsw008jrzmmf_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 20250905_1742_Mid-Autumn Kitchen Delight_simple_compose_01k4cqeafcfw1v78t5p98dwfz8_0
+      name: 20250911_1551_Cartoon Kitchen Game Scene_simple_compose_01k4vzep30fskrbsw008jrzmmf_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ef29ae19fa12a1b0800000000000000
-      internalID: -5646921325505597468
+      spriteID: 5b04d2eabdf2cdbd0800000000000000
+      internalID: -2604153863960444747
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      20250905_1742_Mid-Autumn Kitchen Delight_simple_compose_01k4cqeafcfw1v78t5p98dwfz8_0: -5646921325505597468
+      20250911_1551_Cartoon Kitchen Game Scene_simple_compose_01k4vzep30fskrbsw008jrzmmf_0: -2604153863960444747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

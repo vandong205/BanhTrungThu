@@ -7,6 +7,7 @@ public class ResourceManager : MonoBehaviour
     public Dictionary<int, Cake> CakeDict = new Dictionary<int, Cake>();
     public Dictionary<string, BuildInBundle> AssetBundleDict = new Dictionary<string, BuildInBundle>();
     public List<IntroDialog> introDialogList = new List<IntroDialog>();
+    public Dictionary<string, KitchenItem> KitchenItemDict = new Dictionary<string, KitchenItem>();
     public Player player;
 
     public static ResourceManager Instance { get; private set; }

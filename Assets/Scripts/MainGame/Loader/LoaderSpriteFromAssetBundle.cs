@@ -2,19 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
-
-namespace InPlay.KiemSonMobile.Utilities.UnityUI
-{
-    /// <summary>
-    /// Tải ảnh từ AssetBundle trong StreamingAssets, đặt vào đối tượng UnityEngine.UI.Image hoặc UnityEngine.SpriteRenderer
-    /// </summary>
     [ExecuteAlways]
     public class SpriteFromAssetBundle : MonoBehaviour
     {
         #region Defines
-        [SerializeField] private string _BundleDir;     // Tên file bundle (trong StreamingAssets)
-        [SerializeField] private string _AtlasName;     // Tên Atlas chứa Sprite
-        [SerializeField] private string _SpriteName;    // Tên Sprite
+        [SerializeField] private string _BundleDir;
+        [SerializeField] private string _AtlasName;
+        [SerializeField] private string _SpriteName;
         [SerializeField] private bool _PixelPerfect;
         [SerializeField] private bool _PixelPerfectOnPlay;
 #if UNITY_EDITOR
@@ -22,7 +16,6 @@ namespace InPlay.KiemSonMobile.Utilities.UnityUI
 #endif
         [SerializeField] private float _Scale = 1f;
 
-        private string lastBundleDir = "";
         private AssetBundle currentBundle;
         #endregion
 
@@ -40,26 +33,25 @@ namespace InPlay.KiemSonMobile.Utilities.UnityUI
             if (string.IsNullOrEmpty(_BundleDir) || string.IsNullOrEmpty(_AtlasName) || string.IsNullOrEmpty(_SpriteName))
                 return;
 
-            // Unload bundle cũ nếu có
-            if (!string.IsNullOrEmpty(lastBundleDir) && currentBundle != null)
+            // Kiểm tra trong cache
+            if (AssetBundleManager.Instance.GetAssetBundle(_BundleDir, out AssetBundle cached))
             {
-                currentBundle.Unload(false);
-                currentBundle = null;
+                currentBundle = cached;
+            }
+            else
+            {
+                string bundlePath = System.IO.Path.Combine(Application.streamingAssetsPath, _BundleDir);
+                currentBundle = AssetBundle.LoadFromFile(bundlePath);
+                if (currentBundle == null)
+                {
+                    Debug.LogError("Không thể load AssetBundle tại -> " + bundlePath);
+                    return;
+                }
+
+                AssetBundleManager.Instance.AddAssetBundle(_BundleDir, currentBundle);
             }
 
-            // Đường dẫn bundle mới
-            string bundlePath = System.IO.Path.Combine(Application.streamingAssetsPath, _BundleDir);
-
-            currentBundle = AssetBundle.LoadFromFile(bundlePath);
-            if (currentBundle == null)
-            {
-                Debug.LogError("Không thể load AssetBundle tại -> " + bundlePath);
-                return;
-            }
-
-            lastBundleDir = _BundleDir;
-
-            // Lấy sprite từ Atlas
+            // Lấy sprite
             Sprite[] sprites = currentBundle.LoadAssetWithSubAssets<Sprite>(_AtlasName);
             Sprite targetSprite = null;
             foreach (Sprite s in sprites)
@@ -113,12 +105,8 @@ namespace InPlay.KiemSonMobile.Utilities.UnityUI
         #region Core MonoBehaviour
         private void OnDisable()
         {
-            if (!string.IsNullOrEmpty(lastBundleDir) && currentBundle != null)
-            {
-                currentBundle.Unload(false);
-                currentBundle = null;
-                lastBundleDir = null;
-            }
+            // KHÔNG Unload trực tiếp bundle nữa
+            currentBundle = null;
         }
 
         private void OnEnable()
@@ -230,4 +218,3 @@ namespace InPlay.KiemSonMobile.Utilities.UnityUI
         }
 #endif
     }
-}

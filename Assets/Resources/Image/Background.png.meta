@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7398a1e41aff17643b46e6a83c1faea3
+guid: 5fe46559046774f4c8fab990d3654cca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3129020423915305082
-    second: ChatGPT Image Sep 4, 2025, 12_10_23 AM_0
+      213: -7222031261460607740
+    second: 20250910_2347_Streamlined Kitchen Scene_remix_01k4t8800xfj1vf2skd862we39_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image Sep 4, 2025, 12_10_23 AM_0
+      name: 20250910_2347_Streamlined Kitchen Scene_remix_01k4t8800xfj1vf2skd862we39_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6870691b08c7394d0800000000000000
-      internalID: -3129020423915305082
+      spriteID: 40dcfd7e4d036cb90800000000000000
+      internalID: -7222031261460607740
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChatGPT Image Sep 4, 2025, 12_10_23 AM_0: -3129020423915305082
+      20250910_2347_Streamlined Kitchen Scene_remix_01k4t8800xfj1vf2skd862we39_0: -7222031261460607740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

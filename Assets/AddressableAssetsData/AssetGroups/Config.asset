@@ -25,6 +25,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6abd28d9e1b2ac84082ee3cb547cd435
+    m_Address: CookingToolConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7011cc027b4c7c142aeaaf37a72c46c1
     m_Address: StartIntroConfig.json
     m_ReadOnly: 0

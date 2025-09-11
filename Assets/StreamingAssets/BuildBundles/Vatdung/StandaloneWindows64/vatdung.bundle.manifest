@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.1.9f1
+CRC: 2168688287
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 73dd95271f6087a251cbb493bd9c4462
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc9f87c7e64ff656997db0f2b2a91703
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5feeeb3beac15a212ff56c9fe4f123b4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SourceAsserBundles/Vatdung/vatdung/vatdung.png
+Dependencies: []
