@@ -25,6 +25,7 @@ public class UIGamePlayManager : MonoBehaviour
     public static UIGamePlayManager Instance;
     public GameObject MessageBox;
     public GameObject BakerPortrait;
+    public string ActiveTool;
 
     public Player player ;
     public  bool OpenAtap = false;
@@ -362,6 +363,11 @@ public class UIGamePlayManager : MonoBehaviour
     public void FanOnClick()
     {
         OpenAtap = true;
+        ActiveTool = "chao";
+        if (ResourceManager.Instance.KitchenItemDict.TryGetValue("chao",out KitchenItem result))
+        {
+            CookingProcessUIManager.SetCookingToolText(result.Name, result.Use);
+        }
         CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
         CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.cookingtool);
     }

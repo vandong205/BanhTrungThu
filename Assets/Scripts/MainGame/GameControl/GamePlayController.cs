@@ -58,4 +58,28 @@ public class GamePlayController : MonoBehaviour
         ResourceManager.Instance.player.IsFirstTimeOpenGame = false;    
         UIGamePlayManager.Instance.SetActiveHighUI(false);
     }
+    //Giai doan dung cong cu nha bep
+    public void OnCookingProcessBtnClick()
+    {
+        string toolused = UIGamePlayManager.Instance.ActiveTool;
+        switch (toolused)
+        {
+            case "chao":
+                break;
+            case "khuongo":
+                break;
+            case "todungvobanh":
+                break;
+            case "todungnhanbanh":
+                break;
+            case "lonuong":
+                break;
+            case "gangtay":
+                break;
+        }
+    }
+    //public bool CheckLigitRecipe()
+    //{
+
+    //}
 }

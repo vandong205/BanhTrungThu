@@ -2,31 +2,37 @@
   "khuongo": {
     "Name": "Khuôn gỗ",
     "Rolename": "khuongo",
-    "Use": "Tạo hình bánh bằng cách ép vỏ và nhân vào khuôn"
+    "Use": "Tạo hình bánh",
+    "UseTime": 2.0
   },
   "todungvobanh": {
     "Name": "Tô đựng vỏ bánh",
     "Rolename": "todungvobanh",
-    "Use": "Dùng để chứa phần vỏ bánh sau khi nhào nặn"
+    "Use": "Làm vỏ bánh",
+    "UseTime": 3.0
   },
   "todungnhanbanh": {
     "Name": "Tô đựng nhân bánh",
     "Rolename": "todungnhanbanh",
-    "Use": "Dùng để chứa phần nhâan bánh đã chuẩn bị"
+    "Use": "Làm nhân bánh",
+    "UseTime": 3.0
   },
   "lonuong": {
     "Name": "Lò nướng",
     "Rolename": "lonuong",
-    "Use": "Nướng chín bánh sau khi đã tạo hình"
+    "Use": "Nướng bánh",
+    "UseTime": 5.0
   },
   "gangtay": {
     "Name": "Găng tay",
     "Rolename": "gangtay",
-    "Use": "Bảo vệ tay khi lấy bánh nóng từ lò nướng"
+    "Use": "Lấy bánh",
+    "UseTime": 1.0
   },
   "chao": {
     "Name": "Chảo",
     "Rolename": "chao",
-    "Use": "Nấu chín nhân bánh trước khi cho vào vỏ"
+    "Use": "Nấu nhân bánh",
+    "UseTime": 4.0
   }
 }

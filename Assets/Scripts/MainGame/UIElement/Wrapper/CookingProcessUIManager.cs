@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 public class CookingProcessUIManager : MonoBehaviour
@@ -6,7 +7,8 @@ public class CookingProcessUIManager : MonoBehaviour
     [SerializeField] GameObject IndreHolder;
     [SerializeField] GameObject CookingToolHolder;
     [SerializeField] IndreHolder IndreHolderControl;
-   
+    [SerializeField] CookingToolPanelUIHandler CookingToolPanelUIHandler;
+    public string ActiveToolRoleName;
     public void TurnOnPanel(CookingProcessPanel panel)
     {
         switch (panel)
@@ -51,6 +53,7 @@ public class CookingProcessUIManager : MonoBehaviour
                         GameObject newingre = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
                         Image image = newingre.GetComponentInChildren<Image>();
                         newingre.AddComponent<DraggableObject>();
+                        newingre.AddComponent<ObjectInfo>().SetProp(ObjectType.ingre, ingre.ID,ingre.Name,ingre.RoleName);
                         IndreHolderControl.AddItem(slot);
                         var script = newingre.GetComponent<IndrePrefabs>();
                         pool.Add(script);
@@ -71,5 +74,8 @@ public class CookingProcessUIManager : MonoBehaviour
             pool[j].gameObject.SetActive(false);
         }
     }
-
+    public void SetCookingToolText(string toolname,string tooluse)
+    {
+        CookingToolPanelUIHandler.SetProp(toolname, tooluse);
+    }
 }
