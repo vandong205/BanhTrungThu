@@ -25,5 +25,7 @@ public class FanBehaviour : MonoBehaviour, IInteracable
     public void OnClick()
     {
         Debug.Log($"{name} -> OnClick");
+        UIGamePlayManager.Instance.FanOnClick();
+    
     }
 }

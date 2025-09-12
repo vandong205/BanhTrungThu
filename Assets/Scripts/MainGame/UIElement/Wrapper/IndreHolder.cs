@@ -7,4 +7,11 @@ public class IndreHolder : MonoBehaviour
     {
         go.transform.SetParent(Content.transform, false);
     }
+    public void ClearItem()
+    {
+        while (transform.childCount > 0)
+        {
+            GameObject.Destroy(transform.GetChild(0).gameObject);
+        }
+    }
 }

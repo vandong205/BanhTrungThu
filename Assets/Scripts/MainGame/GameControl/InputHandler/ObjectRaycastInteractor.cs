@@ -13,10 +13,9 @@ public class ObjectRaycastInteractor : MonoBehaviour
 
     void Update()
     {
-        // Tạo ray từ chuột
+        if (UIGamePlayManager.Instance.OpenAtap) { return; }
         Ray ray = cam.ScreenPointToRay(Mouse.current.position.ReadValue());
         RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
-
         IInteracable newTarget = null;
         if (hit.collider != null)
         {

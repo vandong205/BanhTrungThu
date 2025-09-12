@@ -19,7 +19,7 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject MainUI;
     [SerializeField] GameObject HighUIBackground;
     [SerializeField] GameObject HighUI;
-
+    [SerializeField] CookingProcessUIManager CookingProcessUIManager;
 
     private UIGamePlayManager _instance;
     public static UIGamePlayManager Instance;
@@ -27,7 +27,7 @@ public class UIGamePlayManager : MonoBehaviour
     public GameObject BakerPortrait;
 
     public Player player ;
-    bool OpenAtap = false;
+    public  bool OpenAtap = false;
     bool notifiOpen = false;
     private void Awake()
     {
@@ -51,6 +51,7 @@ public class UIGamePlayManager : MonoBehaviour
         LoadCakeRecipe();
         LoadShop();
         GamePlayController.Instance.OnLoadingUIDone?.Invoke();
+        CookingProcessUIManager.RefreshIngrePanel();
     }
     public void OnRecipePanelOpen()
     {
@@ -358,6 +359,11 @@ public class UIGamePlayManager : MonoBehaviour
     {
         HighUI.SetActive(active);
     }
-    
+    public void FanOnClick()
+    {
+        OpenAtap = true;
+        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
+        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.cookingtool);
+    }
 }
 
