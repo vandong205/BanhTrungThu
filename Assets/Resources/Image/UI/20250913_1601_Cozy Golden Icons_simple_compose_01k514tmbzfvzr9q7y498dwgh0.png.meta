@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 1c0c0ec92bee3a54c89cf73754c2dfed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1402640303944989010
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_0
+  - first:
+      213: -5821616723057963002
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_1
+  - first:
+      213: 368792783304349821
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_2
+  - first:
+      213: 3528134077591141133
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_3
+  - first:
+      213: -5975984665405633055
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_4
+  - first:
+      213: 8581234516941940554
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_5
+  - first:
+      213: 2359609959561215441
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_6
+  - first:
+      213: -2616883820934616447
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_7
+  - first:
+      213: 3071658081038595805
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_8
+  - first:
+      213: 4412759517550660482
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_9
+  - first:
+      213: 8107233259099483941
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_10
+  - first:
+      213: 375217633501616954
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_11
+  - first:
+      213: 6212646137819249486
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_12
+  - first:
+      213: 7278257728126500236
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_13
+  - first:
+      213: 4391728912559787248
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_14
+  - first:
+      213: 8486875053873181556
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_15
+  - first:
+      213: 9102317904139101302
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_16
+  - first:
+      213: 613882124361960471
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_17
+  - first:
+      213: -2702170599677079218
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_18
+  - first:
+      213: 4415346336305358824
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_19
+  - first:
+      213: 1369292249456227588
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_20
+  - first:
+      213: 722764619796735609
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_21
+  - first:
+      213: -1204265672894184584
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_22
+  - first:
+      213: 2825278394654366210
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_23
+  - first:
+      213: 7476879904980228737
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_24
+  - first:
+      213: -3260472018732068739
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_25
+  - first:
+      213: 2640576332180121594
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_26
+  - first:
+      213: 6125186348525807729
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_27
+  - first:
+      213: 4140073174848104446
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_28
+  - first:
+      213: -7567451454643832493
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_29
+  - first:
+      213: -3422670836383229953
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_30
+  - first:
+      213: -3211636947521900420
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_31
+  - first:
+      213: 6076692495170445591
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_32
+  - first:
+      213: 2120286595165844932
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_33
+  - first:
+      213: 4956114815735192638
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_34
+  - first:
+      213: 8845368532787658202
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_35
+  - first:
+      213: 5722129915393252613
+    second: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_0
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 368
+        width: 272
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea686b73312d88ce0800000000000000
+      internalID: -1402640303944989010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_1
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 117
+        width: 189
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60018a34f66753fa0800000000000000
+      internalID: -5821616723057963002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 632
+        width: 295
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78559c15173e1500800000000000000
+      internalID: 368792783304349821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1a79a223a6b927f4796e30e333bc4eef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_0: -1402640303944989010
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_1: -5821616723057963002
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_10: 8107233259099483941
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_11: 375217633501616954
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_12: 6212646137819249486
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_13: 7278257728126500236
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_14: 4391728912559787248
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_15: 8486875053873181556
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_16: 9102317904139101302
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_17: 613882124361960471
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_18: -2702170599677079218
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_19: 4415346336305358824
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_2: 368792783304349821
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_20: 1369292249456227588
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_21: 722764619796735609
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_22: -1204265672894184584
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_23: 2825278394654366210
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_24: 7476879904980228737
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_25: -3260472018732068739
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_26: 2640576332180121594
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_27: 6125186348525807729
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_28: 4140073174848104446
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_29: -7567451454643832493
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_3: 3528134077591141133
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_30: -3422670836383229953
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_31: -3211636947521900420
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_32: 6076692495170445591
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_33: 2120286595165844932
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_34: 4956114815735192638
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_35: 8845368532787658202
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_36: 5722129915393252613
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_4: -5975984665405633055
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_5: 8581234516941940554
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_6: 2359609959561215441
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_7: -2616883820934616447
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_8: 3071658081038595805
+      20250913_1601_Cozy Golden Icons_simple_compose_01k514tmbzfvzr9q7y498dwgh0_9: 4412759517550660482
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

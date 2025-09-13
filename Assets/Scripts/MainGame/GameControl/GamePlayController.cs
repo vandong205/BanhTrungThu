@@ -7,6 +7,7 @@ public class GamePlayController : MonoBehaviour
     public Action GotoNextIntroStep;
     private GamePlayController _instance;
     public static GamePlayController Instance;
+    [SerializeField] CookingProcessController cookcontroller;
 
     public int TotalIntroStep;
     public int IntroStep = 0;
@@ -65,6 +66,8 @@ public class GamePlayController : MonoBehaviour
         switch (toolused)
         {
             case "chao":
+                Debug.Log("Dang dung chao");
+                cookcontroller.ShowProcessOutput();
                 break;
             case "khuongo":
                 break;

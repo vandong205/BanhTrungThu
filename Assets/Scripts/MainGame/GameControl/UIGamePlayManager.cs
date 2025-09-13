@@ -20,6 +20,7 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject HighUIBackground;
     [SerializeField] GameObject HighUI;
     [SerializeField] CookingProcessUIManager CookingProcessUIManager;
+    [SerializeField] GameObject CookingPrecessObj;
 
     private UIGamePlayManager _instance;
     public static UIGamePlayManager Instance;
@@ -151,7 +152,7 @@ public class UIGamePlayManager : MonoBehaviour
             if (ResourceManager.Instance.CakeDict.TryGetValue(cakeid, out Cake cake))
             {
                 if (cake == null) continue;
-
+                Debug.Log("Load Thanh cong banh: " + cake.Name);
                 // Load prefab recipe
                 var recipePrefab = Resources.Load<GameObject>("Prefabs/RecipePrefab");
                 if (recipePrefab == null)
@@ -362,14 +363,34 @@ public class UIGamePlayManager : MonoBehaviour
     }
     public void FanOnClick()
     {
+        CookingPrecessObj.SetActive(true);
         OpenAtap = true;
         ActiveTool = "chao";
-        if (ResourceManager.Instance.KitchenItemDict.TryGetValue("chao",out KitchenItem result))
+        if (ResourceManager.Instance.KitchenItemDict.TryGetValue(ActiveTool, out KitchenItem result))
         {
             CookingProcessUIManager.SetCookingToolText(result.Name, result.Use);
         }
         CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
         CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.cookingtool);
+    }
+    public void EOvenClick()
+    {
+        CookingPrecessObj.SetActive(true);
+        OpenAtap = true;
+        ActiveTool = "lonuong";
+        if (ResourceManager.Instance.KitchenItemDict.TryGetValue(ActiveTool, out KitchenItem result))
+        {
+            CookingProcessUIManager.SetCookingToolText(result.Name, result.Use);
+        }
+        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
+        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.cookingtool);
+    }
+    public void CookingToolProcessOnClose()
+    {
+        if (CookingPrecessObj.activeSelf) {
+            CookingPrecessObj.SetActive(false);
+        }
+        OpenAtap = false;
     }
 }
 

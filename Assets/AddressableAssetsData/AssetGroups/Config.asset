@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Config
   m_GUID: 24255684085173945a91dbbc312d638c
   m_SerializeEntries:
+  - m_GUID: 4788b1df67895a142a68b9497b01e7a5
+    m_Address: CakeFillingConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5cfb95f141c6de444bf5b6e2bcc957a7
     m_Address: PlayerConfig.json
     m_ReadOnly: 0
@@ -32,6 +37,21 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7011cc027b4c7c142aeaaf37a72c46c1
     m_Address: StartIntroConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 853991e8fcc17cf43bd3615cadb35b25
+    m_Address: RecipeConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9183e3bf1e6048d42b60931d7c807b0b
+    m_Address: CakeCrustConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc5b46d0f3fa74f49a909a2284fd20bf
+    m_Address: ShapedCakeConfig.json
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

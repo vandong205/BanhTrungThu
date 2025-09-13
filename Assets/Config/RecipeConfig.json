@@ -1,0 +1,54 @@
+[
+  {
+    "InputIds": [ 4, 2, 10 ],
+    "OutputId": 300
+  },
+  {
+    "InputIds": [ 10 ],
+    "OutputId": 301
+  },
+  {
+    "InputIds": [ 6, 12, 10 ],
+    "OutputId": 302
+  },
+  {
+    "InputIds": [ 2, 13, 10 ],
+    "OutputId": 303
+  },
+  {
+    "InputIds": [ 6, 13, 10 ],
+    "OutputId": 304
+  },
+  {
+    "InputIds": [ 8, 0, 10 ],
+    "OutputId": 305
+  },
+  {
+    "InputIds": [ 2, 12, 10 ],
+    "OutputId": 306
+  },
+  {
+    "InputIds": [ 1, 8, 10 ],
+    "OutputId": 307
+  },
+  {
+    "InputIds": [ 3, 0, 10 ],
+    "OutputId": 308
+  },
+  {
+    "InputIds": [ 8, 6, 10 ],
+    "OutputId": 309
+  },
+  {
+    "InputIds": [ 2, 7, 10 ],
+    "OutputId": 310
+  },
+  {
+    "InputIds": [ 3, 11, 10 ],
+    "OutputId": 311
+  },
+  {
+    "InputIds": [ 5, 1, 10 ],
+    "OutputId": 312
+  }
+]

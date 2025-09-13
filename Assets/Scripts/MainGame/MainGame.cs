@@ -10,7 +10,7 @@ public class MainGame : MonoBehaviour
 {
     public static MainGame Instance;
 
-    private int LaunchingGameStep = 6;
+    private int LaunchingGameStep = 10;
     private int CurrentLaunchingStep = 0;
 
     public event Action<float> OnLoadingProcess; 
@@ -61,6 +61,19 @@ public class MainGame : MonoBehaviour
         UpdateLaunchingProcess();
         Debug.Log("Dang tai config vật dụng làm bánh");
         yield return Loader.LoadJsonConfigIntoDict<string, KitchenItem>(Consts.CookingToolConfigKey, ResourceManager.Instance.KitchenItemDict);
+        UpdateLaunchingProcess();
+        Debug.Log("Dang tai config nhân bánh");
+        yield return Loader.LoadJsonConfigIntoDict<int, ProcessedItem>(Consts.CakeFillingConfigKey, ResourceManager.Instance.CakeFillingDict);
+        UpdateLaunchingProcess();
+        Debug.Log("Dang tai config vỏ bánh");
+        yield return Loader.LoadJsonConfigIntoDict<int, ProcessedItem>(Consts.CakeCrustConfigKey, ResourceManager.Instance.CakeCrust);
+        UpdateLaunchingProcess();
+        Debug.Log("Dang tai config bánh đã tạo hình");
+        yield return Loader.LoadJsonConfigIntoDict<int, ProcessedItem>(Consts.ShapedCakeConfigKey, ResourceManager.Instance.ShapedCake);
+        UpdateLaunchingProcess();
+        Debug.Log("Dang tai config công thức");
+        yield return Loader.LoadJsonConfigIntoList<Recipe>(Consts.RecipeConfigKey, ResourceManager.Instance.RecipeList);
+        ResourceManager.Instance.recipeBook =  new RecipeBook(ResourceManager.Instance.RecipeList);
         UpdateLaunchingProcess();
 
     }
