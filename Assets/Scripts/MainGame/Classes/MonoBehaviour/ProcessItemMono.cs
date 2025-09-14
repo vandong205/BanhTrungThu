@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ProcessedItem
+public class ProcessedItemMono : MonoBehaviour
 {
     public int ID;
     public string Name;

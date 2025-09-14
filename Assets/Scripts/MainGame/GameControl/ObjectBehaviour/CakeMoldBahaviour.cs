@@ -24,6 +24,7 @@ public class CakeMoldBehaviour : MonoBehaviour, IInteracable
 
     public void OnClick()
     {
+        UIGamePlayManager.Instance.KhuongoClick();
         Debug.Log($"{name} -> OnClick");
     }
 }

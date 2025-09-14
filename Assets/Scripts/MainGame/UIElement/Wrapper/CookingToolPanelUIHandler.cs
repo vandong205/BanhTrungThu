@@ -1,27 +1,40 @@
-using TMPro;
+﻿using System;
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.UI;
+using TMPro;
+using System.Collections;
+
 public class CookingToolPanelUIHandler : MonoBehaviour
 {
     [SerializeField] GameObject Content;
     [SerializeField] TextMeshProUGUI ToolName;
     [SerializeField] TextMeshProUGUI ToolUse;
     [SerializeField] Transform output;
+    [SerializeField] Slider progress;
 
-    public void SetProp(string toolname,string tooluse)
+    Coroutine progressRoutine;
+
+    public void SetProp(string toolname, string tooluse)
     {
         ToolName.text = toolname;
-        ToolUse.text = tooluse; 
+        ToolUse.text = tooluse;
     }
+
     public void ClearItem()
     {
-        foreach (Transform child in Content.transform) {
-            foreach(Transform item in child)
+        foreach (Transform child in Content.transform)
+        {
+            foreach (Transform item in child)
             {
                 Destroy(item.gameObject);
             }
         }
+        foreach (Transform item in output)
+        {
+            Destroy(item.gameObject);
+        }
     }
+
     public int[] GetInput()
     {
         int[] result = new int[3];
@@ -31,7 +44,8 @@ public class CookingToolPanelUIHandler : MonoBehaviour
             foreach (Transform item in child)
             {
                 ObjectInfo iteminfo = item.GetComponent<ObjectInfo>();
-                if (iteminfo != null) {
+                if (iteminfo != null)
+                {
                     result[count] = iteminfo.ID;
                     count++;
                 }
@@ -39,8 +53,41 @@ public class CookingToolPanelUIHandler : MonoBehaviour
         }
         return result;
     }
+
     public void SetOutput(GameObject obj)
     {
-        obj.transform.SetParent(output,false);
+        obj.transform.SetParent(output, false);
+    }
+    public void RunProgress(float duration, Action onComplete)
+    {
+        // Dừng coroutine cũ nếu đang chạy
+        if (progressRoutine != null)
+        {
+            StopCoroutine(progressRoutine);
+        }
+        progressRoutine = StartCoroutine(ProgressCoroutine(duration, onComplete));
+    }
+
+    private IEnumerator ProgressCoroutine(float duration, Action onComplete)
+    {
+        progress.value = 0f;
+        float time = 0f;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            progress.value = Mathf.Clamp01(time / duration);
+            yield return null;
+        }
+
+        progress.value = 1f;
+
+        onComplete?.Invoke();
+
+        progressRoutine = null;
+    }
+    public void SliderToglle(bool on)
+    {
+        progress.gameObject.SetActive(on);
     }
 }

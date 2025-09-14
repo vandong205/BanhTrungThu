@@ -25,5 +25,6 @@ public class FillingBowBehaviour : MonoBehaviour, IInteracable
     public void OnClick()
     {
         Debug.Log($"{name} -> OnClick");
+        UIGamePlayManager.Instance.TodungnhanbanhClick();
     }
 }

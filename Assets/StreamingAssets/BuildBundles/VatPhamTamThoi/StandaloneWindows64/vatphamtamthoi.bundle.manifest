@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.1.9f1
+CRC: 4259531574
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3c903aef8416a779729f9e08fd7249a7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc9f87c7e64ff656997db0f2b2a91703
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 40f9b95d3fbc646e6ffd5f0f11170d08
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SourceAsserBundles/VatPhamTamthoi/vatphamtamthoi/phoibanh.png
+- Assets/SourceAsserBundles/VatPhamTamthoi/vatphamtamthoi/nhanbanh.png
+- Assets/SourceAsserBundles/VatPhamTamthoi/vatphamtamthoi/vobanh.png
+Dependencies: []

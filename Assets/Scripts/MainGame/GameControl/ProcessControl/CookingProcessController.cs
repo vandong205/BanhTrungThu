@@ -1,22 +1,27 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class CookingProcessController:MonoBehaviour
 {
     [SerializeField] CookingToolPanelUIHandler cookingToolPanelUIHandler;
-    private int? GetProcesOutput()
+    private ProcessedItem result = null;
+    private List<ProcessedItem> tempitem  =new List<ProcessedItem>();
+    bool outputstateok = true;
+    private int? GetProcesOutputID()
     {
         int[] ouput = cookingToolPanelUIHandler.GetInput();
-        Debug.Log(ouput.Length);
         return ResourceManager.Instance.recipeBook.FindOutput(ouput);
     }
-    public void ShowProcessOutput()
+    public void ProcessOutput()
     {
         Debug.Log($"Đã goi show Output");
-        int? outputIdNullable = GetProcesOutput();
-        if (!outputIdNullable.HasValue) return; 
-
+        int? outputIdNullable = GetProcesOutputID();
+        if (!outputIdNullable.HasValue)
+        {
+            outputstateok = false;
+            return;
+        }
         int outputId = outputIdNullable.Value;
-        object result = null;
 
        if (outputId >= 300 && outputId < 400)
         {
@@ -34,7 +39,7 @@ public class CookingProcessController:MonoBehaviour
         }
         else if (outputId >= 500 && outputId < 600)
         {
-            if (ResourceManager.Instance.ShapedCake.TryGetValue(outputId, out ProcessedItem item))
+            if (ResourceManager.Instance.CakeCrust.TryGetValue(outputId, out ProcessedItem item))
             {
                 result = item;
             }
@@ -42,12 +47,31 @@ public class CookingProcessController:MonoBehaviour
 
         if (result != null)
         {
-            Debug.Log($"Đã tìm thấy output: {((ProcessedItem)result).Name}");
+            Debug.Log($"Đã tìm thấy output: {result.Name}");
+            tempitem.Add(result);
         }
         else
         {
             Debug.LogWarning($"Không tìm thấy output cho ID {outputId}");
+            outputstateok = false;
+
         }
+
     }
+    public List<ProcessedItem> GetTempItem()
+    {
+        return tempitem;
+    }
+    public ProcessedItem GetOutputInfo()
+    {
+        return result;
+    }
+    public bool GetOuputState()
+    {
+        return outputstateok;
+
+    }
+
+
 
 }

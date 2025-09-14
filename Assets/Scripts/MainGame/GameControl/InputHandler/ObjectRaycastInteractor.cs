@@ -9,18 +9,38 @@ public class ObjectRaycastInteractor : MonoBehaviour
     void Awake()
     {
         cam = Camera.main;
+        if (cam == null)
+        {
+            Debug.LogError("[ObjectRaycastInteractor] Không tìm thấy Camera với tag MainCamera!");
+        }
     }
 
     void Update()
     {
-        if (UIGamePlayManager.Instance.OpenAtap) { return; }
-        Ray ray = cam.ScreenPointToRay(Mouse.current.position.ReadValue());
-        RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
+        // Nếu đang mở UI thì bỏ qua raycast
+        if (UIGamePlayManager.Instance != null && UIGamePlayManager.Instance.OpenAtap)
+        {
+            return;
+        }
+
+        if (cam == null) return;
+
+        // Lấy vị trí chuột trong thế giới
+        Vector2 mouseWorldPos = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
+        // Bắn raycast ngay tại vị trí chuột
+        RaycastHit2D hit = Physics2D.Raycast(mouseWorldPos, Vector2.zero);
         IInteracable newTarget = null;
         if (hit.collider != null)
         {
             newTarget = hit.collider.GetComponent<IInteracable>();
+            if (newTarget == null)
+            {
+                Debug.LogWarning("[Raycast] Collider " + hit.collider.name + " không có IInteracable!");
+            }
         }
+
+        // Quản lý hover
         if (newTarget != currentTarget)
         {
             if (currentTarget != null)
@@ -32,7 +52,7 @@ public class ObjectRaycastInteractor : MonoBehaviour
             currentTarget = newTarget;
         }
 
-        // Click
+        // Click chuột trái
         if (currentTarget != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             currentTarget.OnClick();

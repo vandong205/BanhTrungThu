@@ -26,7 +26,8 @@ public class UIGamePlayManager : MonoBehaviour
     public static UIGamePlayManager Instance;
     public GameObject MessageBox;
     public GameObject BakerPortrait;
-    public string ActiveTool;
+    public KitchenItem ActiveTool;
+    public string PreTool;
 
     public Player player ;
     public  bool OpenAtap = false;
@@ -52,6 +53,7 @@ public class UIGamePlayManager : MonoBehaviour
         LoadingPlayerStat();
         LoadCakeRecipe();
         LoadShop();
+        PreTool = "default";
         GamePlayController.Instance.OnLoadingUIDone?.Invoke();
         CookingProcessUIManager.RefreshIngrePanel();
     }
@@ -363,33 +365,69 @@ public class UIGamePlayManager : MonoBehaviour
     }
     public void FanOnClick()
     {
-        CookingPrecessObj.SetActive(true);
-        OpenAtap = true;
-        ActiveTool = "chao";
-        if (ResourceManager.Instance.KitchenItemDict.TryGetValue(ActiveTool, out KitchenItem result))
-        {
-            CookingProcessUIManager.SetCookingToolText(result.Name, result.Use);
-        }
-        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
-        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.cookingtool);
+        HandleToolClick("chao", true); // chảo -> panel indre
     }
+
     public void EOvenClick()
     {
+        HandleToolClick("lonuong"); // lò nướng -> panel tempitem
+    }
+
+    // Các tool khác cũng gọi như này:
+    public void KhuongoClick()
+    {
+        HandleToolClick("khuongo");
+    }
+
+    public void TodungvobanhClick()
+    {
+        HandleToolClick("todungvobanh");
+    }
+
+    public void TodungnhanbanhClick()
+    {
+        HandleToolClick("todungnhanbanh");
+    }
+
+    public void GangtayClick()
+    {
+        HandleToolClick("gangtay");
+    }
+
+    private void HandleToolClick(string toolRoleName, bool isIndreTool = false)
+    {
         CookingPrecessObj.SetActive(true);
         OpenAtap = true;
-        ActiveTool = "lonuong";
-        if (ResourceManager.Instance.KitchenItemDict.TryGetValue(ActiveTool, out KitchenItem result))
+
+        if (toolRoleName != PreTool)
+        {
+            CookingProcessUIManager.ClearItemInTool();
+        }
+
+        PreTool = toolRoleName;
+
+        if (ResourceManager.Instance.KitchenItemDict.TryGetValue(toolRoleName, out KitchenItem result))
         {
             CookingProcessUIManager.SetCookingToolText(result.Name, result.Use);
+            ActiveTool = result;
         }
-        CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
+
+        // Chọn panel theo loại tool
+        if (isIndreTool)
+        {
+            CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.indre);
+        }
+        else
+        {
+            CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.tempitem);
+        }
+
         CookingProcessUIManager.TurnOnPanel(CookingProcessPanel.cookingtool);
     }
+
     public void CookingToolProcessOnClose()
     {
-        if (CookingPrecessObj.activeSelf) {
-            CookingPrecessObj.SetActive(false);
-        }
+        CookingProcessUIManager.TurnOffPanel(CookingProcessPanel.all);
         OpenAtap = false;
     }
 }

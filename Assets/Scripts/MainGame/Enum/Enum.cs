@@ -7,7 +7,9 @@ public enum Receivetype
 public enum CookingProcessPanel
 {
     indre,
-    cookingtool
+    cookingtool,
+    tempitem,
+    all
 }
 public enum ObjectType
 {

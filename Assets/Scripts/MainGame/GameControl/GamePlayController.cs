@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class GamePlayController : MonoBehaviour
@@ -8,22 +8,23 @@ public class GamePlayController : MonoBehaviour
     private GamePlayController _instance;
     public static GamePlayController Instance;
     [SerializeField] CookingProcessController cookcontroller;
-
+    [SerializeField] CookingProcessUIManager cookuimanager;
     public int TotalIntroStep;
     public int IntroStep = 0;
+    public bool onProgress;
+    public bool GotOutput = false;
     private void Awake()
     {
-        
-    }
-    private void Start()
-    {
-        if(Instance != null)
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
-        Instance = this;    
+        Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+    private void Start()
+    { 
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
@@ -62,25 +63,41 @@ public class GamePlayController : MonoBehaviour
     //Giai doan dung cong cu nha bep
     public void OnCookingProcessBtnClick()
     {
-        string toolused = UIGamePlayManager.Instance.ActiveTool;
-        switch (toolused)
+        // Nếu đang chạy process thì bỏ qua
+        if (onProgress) return;
+
+        KitchenItem toolused = UIGamePlayManager.Instance.ActiveTool;
+
+        // Nếu đã có output thì clear và reset tool để có thể sử dụng lại
+        if (GotOutput)
         {
-            case "chao":
-                Debug.Log("Dang dung chao");
-                cookcontroller.ShowProcessOutput();
-                break;
-            case "khuongo":
-                break;
-            case "todungvobanh":
-                break;
-            case "todungnhanbanh":
-                break;
-            case "lonuong":
-                break;
-            case "gangtay":
-                break;
+            cookuimanager.ClearItemInTool();
+            cookuimanager.SetCookingToolText(toolused.Name, toolused.Use);
+
+            GotOutput = false;  // reset để có thể chế biến tiếp
+            return;
         }
+
+        // Nếu chưa có output thì bắt đầu chế biến
+        cookcontroller.ProcessOutput();
+        if (!cookcontroller.GetOuputState()) return;
+
+        float time = ResourceManager.Instance.KitchenItemDict[toolused.Rolename].UseTime;
+
+        onProgress = true;
+
+        cookuimanager.RunProgress(time, () =>
+        {
+            cookuimanager.ShowOutputInTool(cookcontroller.GetOutputInfo());
+            cookuimanager.RefreshTempItem();
+
+            onProgress = false;
+            GotOutput = true;  // đánh dấu tool đang chứa output
+        });
     }
+
+
+
     //public bool CheckLigitRecipe()
     //{
 

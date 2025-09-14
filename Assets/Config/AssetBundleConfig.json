@@ -6,5 +6,9 @@
   "nguyenlieu": {
     "Name": "nguyenlieu",
     "Path": "BuildBundles/NguyenLieu/StandaloneWindows64/nguyenlieu.bundle"
+  },
+  "vatphamtamthoi": {
+    "Name": "vatphamtamthoi",
+    "Path": "BuildBundles/VatPhamTamThoi/StandaloneWindows64/vatphamtamthoi.bundle"
   }
 }

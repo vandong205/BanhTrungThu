@@ -25,5 +25,7 @@ public class CrustBowBehaviour : MonoBehaviour, IInteracable
     public void OnClick()
     {
         Debug.Log($"{name} -> OnClick");
+        UIGamePlayManager.Instance.TodungvobanhClick();
+
     }
 }

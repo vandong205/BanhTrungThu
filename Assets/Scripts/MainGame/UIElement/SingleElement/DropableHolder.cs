@@ -19,4 +19,8 @@ public class DropableHolder : MonoBehaviour, IDropHandler
             }
         }
     }
+    public void IsNotStack(bool isStack) { 
+        NotStack = isStack; 
+    }
+
 }
