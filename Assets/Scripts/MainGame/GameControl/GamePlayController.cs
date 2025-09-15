@@ -71,18 +71,21 @@ public class GamePlayController : MonoBehaviour
         // Nếu đã có output thì clear và reset tool để có thể sử dụng lại
         if (GotOutput)
         {
-            cookuimanager.ClearItemInTool();
+            cookuimanager.ReturnItemToPool();
             cookuimanager.SetCookingToolText(toolused.Name, toolused.Use);
 
-            GotOutput = false;  // reset để có thể chế biến tiếp
+            GotOutput = false;  
             return;
         }
 
         // Nếu chưa có output thì bắt đầu chế biến
         cookcontroller.ProcessOutput();
-        if (!cookcontroller.GetOuputState()) return;
-
-        float time = ResourceManager.Instance.KitchenItemDict[toolused.Rolename].UseTime;
+        if (!cookcontroller.GetOuputState())
+        {
+            Debug.Log("Da huy do khong tim thay cong thuc");
+            return;
+        }
+            float time = ResourceManager.Instance.KitchenItemDict[toolused.Rolename].UseTime;
 
         onProgress = true;
 

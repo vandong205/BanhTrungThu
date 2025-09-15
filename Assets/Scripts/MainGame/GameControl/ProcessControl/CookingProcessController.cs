@@ -6,7 +6,7 @@ public class CookingProcessController:MonoBehaviour
     [SerializeField] CookingToolPanelUIHandler cookingToolPanelUIHandler;
     private ProcessedItem result = null;
     private List<ProcessedItem> tempitem  =new List<ProcessedItem>();
-    bool outputstateok = true;
+    bool outputstateok ;
     private int? GetProcesOutputID()
     {
         int[] ouput = cookingToolPanelUIHandler.GetInput();
@@ -14,7 +14,7 @@ public class CookingProcessController:MonoBehaviour
     }
     public void ProcessOutput()
     {
-        Debug.Log($"Đã goi show Output");
+        outputstateok = true;
         int? outputIdNullable = GetProcesOutputID();
         if (!outputIdNullable.HasValue)
         {

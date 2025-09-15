@@ -1,24 +1,29 @@
-﻿using System.Collections.Generic;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class CookingProcessUIManager : MonoBehaviour
 {
-    [SerializeField] GameObject IndreHolder;
-    [SerializeField] GameObject CookingToolHolder;
-    [SerializeField] GameObject TempItemHolder;
-    [SerializeField] IndreHolder IndreHolderControl;
-    [SerializeField]  tempItemHolder TempItemHolderControl;
+    [SerializeField] private IndreHolder IndreHolderControl;
+    [SerializeField] private TempItemHolder TempItemHolderControl;
+    [SerializeField] private GameObject CookingToolHolder;
+    [SerializeField] private GameObject TempItemHolder;
+    [SerializeField] private CookingToolPanelUIHandler CookingToolPanelUIHandler;
+    [SerializeField] private GameObject CloseBtn;
+    [SerializeField] private CookingProcessController CookingProcessController;
 
-    [SerializeField] CookingToolPanelUIHandler CookingToolPanelUIHandler;
-    [SerializeField] GameObject CloseBtn;
-    [SerializeField] CookingProcessController CookingProcessController;
+    private void Start()
+    {
+        IndreHolderControl.InitPool(20);
+        TempItemHolderControl.InitPool(10);
+    }
+
     public void TurnOnPanel(CookingProcessPanel panel)
     {
         switch (panel)
         {
             case CookingProcessPanel.indre:
-                IndreHolder.SetActive(true);
+                IndreHolderControl.gameObject.SetActive(true);
                 break;
             case CookingProcessPanel.cookingtool:
                 CookingToolHolder.SetActive(true);
@@ -26,16 +31,16 @@ public class CookingProcessUIManager : MonoBehaviour
             case CookingProcessPanel.tempitem:
                 TempItemHolder.SetActive(true);
                 break;
-           
         }
         CloseBtn.SetActive(true);
     }
+
     public void TurnOffPanel(CookingProcessPanel panel)
     {
         switch (panel)
         {
             case CookingProcessPanel.indre:
-                IndreHolder.SetActive(false);
+                IndreHolderControl.gameObject.SetActive(false);
                 break;
             case CookingProcessPanel.cookingtool:
                 CookingToolHolder.SetActive(false);
@@ -44,18 +49,25 @@ public class CookingProcessUIManager : MonoBehaviour
                 TempItemHolder.SetActive(false);
                 break;
             case CookingProcessPanel.all:
-                TempItemHolder.SetActive(false);
+                IndreHolderControl.gameObject.SetActive(false);
                 CookingToolHolder.SetActive(false);
-                IndreHolder.SetActive(false);
+                TempItemHolder.SetActive(false);
                 break;
         }
         CloseBtn.SetActive(false);
-
     }
-    private List<IndrePrefabs> pool = new List<IndrePrefabs>();
 
+    // Refresh nguyên liệu
     public void RefreshIngrePanel()
     {
+        if (IndreHolderControl == null)
+        {
+            Debug.LogError("[RefreshIngrePanel] IndreHolderControl chưa được gán!");
+            return;
+        }
+
+        IndreHolderControl.ClearAll();
+
         int i = 0;
         foreach (var playeringre in ResourceManager.Instance.player.Ingredients)
         {
@@ -64,89 +76,75 @@ public class CookingProcessUIManager : MonoBehaviour
                 if (AssetBundleManager.Instance.GetAssetBundle("nguyenlieu", out AssetBundle bundle))
                 {
                     Sprite ico = bundle.LoadAsset<Sprite>(ingre.RoleName);
-
-                    // Nếu chưa có prefab trong pool thì tạo thêm
-                    if (i >= pool.Count)
+                    GameObject slot = IndreHolderControl.GetSlotFromPool();
+                    if (slot != null)
                     {
-                        GameObject slot = Instantiate(Resources.Load<GameObject>("Prefabs/InventorySlot"));
-                        GameObject newingre = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
-                        newingre.AddComponent<DraggableObject>();
-                        slot.AddComponent<DropableHolder>();
-                        DropableHolder dropable = slot.GetComponent<DropableHolder>();
-                        dropable.IsNotStack(true);
-                        newingre.AddComponent<ObjectInfo>().SetProp(ObjectType.ingre, ingre.ID,ingre.Name,ingre.RoleName);
-                        IndreHolderControl.AddItem(slot);
-                        var script = newingre.GetComponent<IndrePrefabs>();
-                        pool.Add(script);
+                        // Spawn prefab mới trong slot
+                        GameObject newObj = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
+
+                        if (newObj.GetComponent<DraggableObject>() == null) newObj.AddComponent<DraggableObject>();
+                        if (newObj.GetComponent<ObjectInfo>() == null) newObj.AddComponent<ObjectInfo>();
+
+                        var prefab = newObj.GetComponent<IndrePrefabs>();
+                        prefab.SetIcon(ico);
+                        prefab.GetComponent<ObjectInfo>().SetProp(ObjectType.ingre, ingre.ID, ingre.Name, ingre.RoleName);
                     }
-
-                    // Update lại icon + data cho prefab trong pool
-                    pool[i].SetIcon(ico);
-                    pool[i].gameObject.SetActive(true);
-
                     i++;
                 }
             }
         }
 
-        // Disable các prefab dư thừa
-        for (int j = i; j < pool.Count; j++)
-        {
-            pool[j].gameObject.SetActive(false);
-        }
+        Debug.Log($"[RefreshIngrePanel] Tổng số ingredient hiển thị: {i}");
     }
-    private List<IndrePrefabs> tempitempool = new List<IndrePrefabs>();
+
+
+
+    // Refresh item tạm thời
     public void RefreshTempItem()
     {
+        TempItemHolderControl.ClearAll();
+
+        List<ProcessedItem> tempItems = CookingProcessController.GetTempItem();
+        if (tempItems == null || tempItems.Count == 0) return;
+
         int i = 0;
-        List<ProcessedItem> tempitem = CookingProcessController.GetTempItem();
-        if (tempitem != null) {
-            if (tempitem.Count == 0) return;
-            foreach (ProcessedItem item in tempitem) {
-                if(AssetBundleManager.Instance.GetAssetBundle("vatphamtamthoi", out AssetBundle bundle))
-                {
-                    Sprite ico = bundle.LoadAsset<Sprite>(item.RoleName);
-                    if (i >= tempitempool.Count)
-                    {
-                        GameObject slot = Instantiate(Resources.Load<GameObject>("Prefabs/InventorySlot"));
-                        GameObject newitem = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
-                        newitem.AddComponent<DraggableObject>();
-                        slot.AddComponent<DropableHolder>();
-                        DropableHolder dropable = slot.GetComponent<DropableHolder>();
-                        dropable.IsNotStack(true);
-                        newitem.AddComponent<ObjectInfo>().SetProp(ObjectType.ingre, item.ID, item.Name, item.RoleName);
-                        TempItemHolderControl.AddItem(slot);
-                        var script = newitem.GetComponent<IndrePrefabs>();
-                        tempitempool.Add(script);
-                    }
-
-                    // Update lại icon + data cho prefab trong pool
-                    tempitempool[i].SetIcon(ico);
-                    tempitempool[i].gameObject.SetActive(true);
-
-                    i++;
-                }
-            }
-            for (int j = i; j < tempitem.Count; j++)
+        foreach (var item in tempItems)
+        {
+            if (AssetBundleManager.Instance.GetAssetBundle("vatphamtamthoi", out AssetBundle bundle))
             {
-                tempitempool[j].gameObject.SetActive(false);
+                Sprite ico = bundle.LoadAsset<Sprite>(item.RoleName);
+                GameObject slot = TempItemHolderControl.GetSlotFromPool();
+                if (slot != null)
+                {
+                    var prefab = slot.GetComponentInChildren<IndrePrefabs>();
+                    prefab.SetIcon(ico);
+                    prefab.GetComponent<ObjectInfo>().SetProp(ObjectType.ingre, item.ID, item.Name, item.RoleName);
+                }
+                i++;
             }
         }
     }
-    public void ClearItemInTool()
+
+    public void ReturnItemToPool()
     {
-        CookingToolPanelUIHandler.ClearItem();
+        // gọi hàm return của holder
+        IndreHolderControl.ClearAll();
+        RefreshIngrePanel();
     }
-    public void SetCookingToolText(string toolname,string tooluse)
+
+    public void SetCookingToolText(string toolname, string tooluse)
     {
         CookingToolPanelUIHandler.SetProp(toolname, tooluse);
     }
+
     public void ShowOutputInTool(ProcessedItem item)
     {
-        CookingToolPanelUIHandler.ClearItem();
+        ReturnItemToPool();
         CookingToolPanelUIHandler.SliderToglle(false);
+
         if (item == null) return;
-        if(AssetBundleManager.Instance.GetAssetBundle("vatphamtamthoi",out AssetBundle bundle))
+
+        if (AssetBundleManager.Instance.GetAssetBundle("vatphamtamthoi", out AssetBundle bundle))
         {
             Sprite ico = bundle.LoadAsset<Sprite>(item.RoleName);
             GameObject newitem = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"));
@@ -154,14 +152,15 @@ public class CookingProcessUIManager : MonoBehaviour
             var script = newitem.GetComponent<IndrePrefabs>();
             script.SetIcon(ico);
             CookingToolPanelUIHandler.SetOutput(newitem);
-
         }
+
         SetCookingToolText(UIGamePlayManager.Instance.ActiveTool.Name, "Nhận");
     }
-    public void RunProgress(float time,Action action)
+
+    public void RunProgress(float time, Action action)
     {
         GamePlayController.Instance.onProgress = true;
         CookingToolPanelUIHandler.SliderToglle(true);
-        CookingToolPanelUIHandler.RunProgress(time,action);
+        CookingToolPanelUIHandler.RunProgress(time, action);
     }
 }

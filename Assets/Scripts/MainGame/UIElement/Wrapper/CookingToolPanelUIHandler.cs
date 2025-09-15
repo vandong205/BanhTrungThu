@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
+using System.Collections.Generic;
 
 public class CookingToolPanelUIHandler : MonoBehaviour
 {
@@ -20,20 +21,34 @@ public class CookingToolPanelUIHandler : MonoBehaviour
         ToolUse.text = tooluse;
     }
 
-    public void ClearItem()
+    public void ReturnItemToHolder(List<IndrePrefabs> pool, Transform defaultHolder)
     {
         foreach (Transform child in Content.transform)
         {
             foreach (Transform item in child)
             {
-                Destroy(item.gameObject);
+                var prefab = item.GetComponent<IndrePrefabs>();
+                if (prefab != null)
+                {
+                    // Đưa item về holder gốc
+                    item.SetParent(defaultHolder, false);
+
+                    // Thêm vào pool
+                    pool.Add(prefab);
+
+                    // Disable tạm, Refresh sẽ bật lại khi cần
+                    prefab.gameObject.SetActive(false);
+                }
             }
         }
+
+        // Clear output
         foreach (Transform item in output)
         {
             Destroy(item.gameObject);
         }
     }
+
 
     public int[] GetInput()
     {
