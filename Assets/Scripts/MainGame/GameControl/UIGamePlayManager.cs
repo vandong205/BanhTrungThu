@@ -401,7 +401,7 @@ public class UIGamePlayManager : MonoBehaviour
 
         if (toolRoleName != PreTool)
         {
-            CookingProcessUIManager.ReturnItemToPool();
+            if(CookingProcessUIManager.HasInput()) CookingProcessUIManager.ReturnItemToPool();
         }
 
         PreTool = toolRoleName;
@@ -427,7 +427,7 @@ public class UIGamePlayManager : MonoBehaviour
 
     public void CookingToolProcessOnClose()
     {
-        CookingProcessUIManager.ReturnItemToPool();
+        if(CookingProcessUIManager.HasInput()) CookingProcessUIManager.ReturnItemToPool();
         CookingProcessUIManager.TurnOffPanel(CookingProcessPanel.all);
         OpenAtap = false;
     }

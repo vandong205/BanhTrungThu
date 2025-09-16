@@ -27,4 +27,15 @@ public class ResourceManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
+    public void RemovePlayerIngre(int id)
+    {
+        foreach(PlayerHoldIngredient ingre in player.Ingredients)
+        {
+            if(ingre.ID == id)
+            {
+                player.Ingredients.Remove(ingre);
+                break;
+            }
+        }
+    }
 }

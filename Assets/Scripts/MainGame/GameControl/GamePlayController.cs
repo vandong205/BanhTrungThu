@@ -71,9 +71,9 @@ public class GamePlayController : MonoBehaviour
         // Nếu đã có output thì clear và reset tool để có thể sử dụng lại
         if (GotOutput)
         {
-            cookuimanager.ReturnItemToPool();
             cookuimanager.SetCookingToolText(toolused.Name, toolused.Use);
-
+            cookuimanager.RefreshTempItem();
+            cookuimanager.ClearOutput();
             GotOutput = false;  
             return;
         }
@@ -92,8 +92,7 @@ public class GamePlayController : MonoBehaviour
         cookuimanager.RunProgress(time, () =>
         {
             cookuimanager.ShowOutputInTool(cookcontroller.GetOutputInfo());
-            cookuimanager.RefreshTempItem();
-
+            cookuimanager.OnCookingProcessSucceed();
             onProgress = false;
             GotOutput = true;  // đánh dấu tool đang chứa output
         });

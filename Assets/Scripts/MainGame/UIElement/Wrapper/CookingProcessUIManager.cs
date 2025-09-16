@@ -116,6 +116,10 @@ public class CookingProcessUIManager : MonoBehaviour
                 GameObject slot = TempItemHolderControl.GetSlotFromPool();
                 if (slot != null)
                 {
+                    GameObject newObj = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
+
+                    if (newObj.GetComponent<DraggableObject>() == null) newObj.AddComponent<DraggableObject>();
+                    if (newObj.GetComponent<ObjectInfo>() == null) newObj.AddComponent<ObjectInfo>();
                     var prefab = slot.GetComponentInChildren<IndrePrefabs>();
                     prefab.SetIcon(ico);
                     prefab.GetComponent<ObjectInfo>().SetProp(ObjectType.ingre, item.ID, item.Name, item.RoleName);
@@ -127,7 +131,6 @@ public class CookingProcessUIManager : MonoBehaviour
 
     public void ReturnItemToPool()
     {
-        // gọi hàm return của holder
         IndreHolderControl.ClearAll();
         RefreshIngrePanel();
     }
@@ -139,7 +142,7 @@ public class CookingProcessUIManager : MonoBehaviour
 
     public void ShowOutputInTool(ProcessedItem item)
     {
-        ReturnItemToPool();
+        //ReturnItemToPool();
         CookingToolPanelUIHandler.SliderToglle(false);
 
         if (item == null) return;
@@ -162,5 +165,35 @@ public class CookingProcessUIManager : MonoBehaviour
         GamePlayController.Instance.onProgress = true;
         CookingToolPanelUIHandler.SliderToglle(true);
         CookingToolPanelUIHandler.RunProgress(time, action);
+    }
+    public void OnCookingProcessSucceed()
+    {
+        List<int> NeedToRemove = new List<int>();
+        CookingToolPanelUIHandler.OnCookingProcessSucceed();
+        int[] input = CookingToolPanelUIHandler.GetInput();
+        for (int i = 0; i < input.Length; i++)
+        {
+            foreach (PlayerHoldIngredient ingre in ResourceManager.Instance.player.Ingredients)
+            {
+                if (ingre.ID == input[i])
+                {
+                    ingre.Quantity--;
+                    if(ingre.Quantity <= 0) NeedToRemove.Add(ingre.ID);
+                    break;
+                }
+            }
+        }
+        foreach(int id in NeedToRemove)
+        {
+            ResourceManager.Instance.RemovePlayerIngre(id);
+        }
+    }
+    public void ClearOutput()
+    {
+        CookingToolPanelUIHandler.ClearOutput();
+    }
+    public bool HasInput()
+    {
+        return CookingToolPanelUIHandler.GetInput().Length > 0;
     }
 }

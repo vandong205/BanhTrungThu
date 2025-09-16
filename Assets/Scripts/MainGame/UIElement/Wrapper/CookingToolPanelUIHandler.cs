@@ -49,7 +49,27 @@ public class CookingToolPanelUIHandler : MonoBehaviour
         }
     }
 
-
+    public void OnCookingProcessSucceed()
+    {
+        foreach (Transform child in Content.transform)
+        {
+            foreach (Transform item in child)
+            {
+                var prefab = item.GetComponent<IndrePrefabs>();
+                if (prefab != null)
+                {
+                    Destroy(prefab.gameObject);
+                }
+            }
+        }
+    }
+    public void ClearOutput()
+    {
+        foreach (Transform item in output)
+        {
+            Destroy(item.gameObject);
+        }
+    }
     public int[] GetInput()
     {
         int[] result = new int[3];
