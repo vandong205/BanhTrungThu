@@ -1,32 +1,32 @@
 ﻿{
   "500": {
     "ID": 500,
-    "Name": "Vỏ bánh Bánh Thu Vàng",
+    "Name": "Vỏ Bánh Thu Vàng",
     "RoleName": "vobanh"
   },
   "501": {
     "ID": 501,
-    "Name": "Vỏ bánh Bánh Trăng Non",
+    "Name": "Vỏ Bánh Trăng Non",
     "RoleName": "vobanh"
   },
   "502": {
     "ID": 502,
-    "Name": "Vỏ bánh Bánh Ngọc Sen",
+    "Name": "Vỏ Bánh Ngọc Sen",
     "RoleName": "vobanh"
   },
   "503": {
     "ID": 503,
-    "Name": "Vỏ bánh Bánh Vừng Vàng",
+    "Name": "Vỏ Bánh Vừng Vàng",
     "RoleName": "vobanh"
   },
   "504": {
     "ID": 504,
-    "Name": "Vỏ bánh Bánh Mật Ngọt",
+    "Name": "Vỏ Bánh Mật Ngọt",
     "RoleName": "vobanh"
   },
   "505": {
     "ID": 505,
-    "Name": "Vỏ bánh Bánh Đào Hồng",
+    "Name": "Vỏ Bánh Đào Hồng",
     "RoleName": "vobanh"
   },
   "506": {
@@ -36,32 +36,32 @@
   },
   "507": {
     "ID": 507,
-    "Name": "Vỏ bánh Bánh Kim Sen",
+    "Name": "Vỏ Bánh Kim Sen",
     "RoleName": "vobanh"
   },
   "508": {
     "ID": 508,
-    "Name": "Vỏ bánh Bánh Tím Mơ",
+    "Name": "Vỏ Bánh Tím Mơ",
     "RoleName": "vobanh"
   },
   "509": {
     "ID": 509,
-    "Name": "Vỏ bánh Bánh Sen Ngọt",
+    "Name": "Vỏ Bánh Sen Ngọt",
     "RoleName": "vobanh"
   },
   "510": {
     "ID": 510,
-    "Name": "Vỏ bánh Bánh Lục Ngọc",
+    "Name": "Vỏ Bánh Lục Ngọc",
     "RoleName": "vobanh"
   },
   "511": {
     "ID": 511,
-    "Name": "Vỏ bánh Bánh Dừa Trăng",
+    "Name": "Vỏ Bánh Dừa Trăng",
     "RoleName": "vobanh"
   },
   "512": {
     "ID": 512,
-    "Name": "Vỏ bánh Bánh Rằm Vàng",
+    "Name": "Vỏ Bánh Rằm Vàng",
     "RoleName": "vobanh"
   }
 }

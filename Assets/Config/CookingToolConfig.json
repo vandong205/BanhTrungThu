@@ -11,12 +11,6 @@
     "Use": "Làm vỏ bánh",
     "UseTime": 3.0
   },
-  "todungnhanbanh": {
-    "Name": "Tô đựng nhân bánh",
-    "Rolename": "todungnhanbanh",
-    "Use": "Làm nhân bánh",
-    "UseTime": 3.0
-  },
   "lonuong": {
     "Name": "Lò nướng",
     "Rolename": "lonuong",

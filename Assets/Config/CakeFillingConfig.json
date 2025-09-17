@@ -1,42 +1,42 @@
 ﻿{
   "300": {
     "ID": 300,
-    "Name": "Nhân bánh Bánh Thu Vàng",
+    "Name": "Nhân Bánh Thu Vàng",
     "RoleName": "nhanbanh"
   },
   "301": {
     "ID": 301,
-    "Name": "Nhân bánh Bánh Trăng Non",
+    "Name": "Nhân Bánh Trăng Non",
     "RoleName": "nhanbanh"
   },
   "302": {
     "ID": 302,
-    "Name": "Nhân bánh Bánh Ngọc Sen",
+    "Name": "Nhân Bánh Ngọc Sen",
     "RoleName": "nhanbanh"
   },
   "303": {
     "ID": 303,
-    "Name": "Nhân bánh Bánh Vừng Vàng",
+    "Name": "Nhân Bánh Vừng Vàng",
     "RoleName": "nhanbanh"
   },
   "304": {
     "ID": 304,
-    "Name": "Nhân bánh Bánh Mật Ngọt",
+    "Name": "Nhân Bánh Mật Ngọt",
     "RoleName": "nhanbanh"
   },
   "305": {
     "ID": 305,
-    "Name": "Nhân bánh Bánh Đào Hồng",
+    "Name": "Nhân Bánh Đào Hồng",
     "RoleName": "nhanbanh"
   },
   "306": {
     "ID": 306,
-    "Name": "Nhân bánh Bánh Hương Trà",
+    "Name": "Nhân Hương Trà",
     "RoleName": "nhanbanh"
   },
   "307": {
     "ID": 307,
-    "Name": "Nhân bánh Bánh Kim Sen",
+    "Name": "Nhân Bánh Kim Sen",
     "RoleName": "nhanbanh"
   },
   "308": {
@@ -46,22 +46,22 @@
   },
   "309": {
     "ID": 309,
-    "Name": "Nhân bánh Bánh Sen Ngọt",
+    "Name": "Nhân Bánh Sen Ngọt",
     "RoleName": "nhanbanh"
   },
   "310": {
     "ID": 310,
-    "Name": "Nhân bánh Bánh Lục Ngọc",
+    "Name": "Nhân Bánh Lục Ngọc",
     "RoleName": "nhanbanh"
   },
   "311": {
     "ID": 311,
-    "Name": "Nhân bánh Bánh Dừa Trăng",
+    "Name": "Nhân Bánh Dừa Trăng",
     "RoleName": "nhanbanh"
   },
   "312": {
     "ID": 312,
-    "Name": "Nhân bánh Bánh Rằm Vàng",
+    "Name": "Nhân Bánh Rằm Vàng",
     "RoleName": "nhanbanh"
   }
 }

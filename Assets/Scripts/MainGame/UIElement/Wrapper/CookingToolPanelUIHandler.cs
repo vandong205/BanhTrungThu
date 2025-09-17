@@ -14,42 +14,13 @@ public class CookingToolPanelUIHandler : MonoBehaviour
     [SerializeField] Slider progress;
 
     Coroutine progressRoutine;
-
+    private bool _HasInput = false;
     public void SetProp(string toolname, string tooluse)
     {
         ToolName.text = toolname;
         ToolUse.text = tooluse;
     }
-
-    public void ReturnItemToHolder(List<IndrePrefabs> pool, Transform defaultHolder)
-    {
-        foreach (Transform child in Content.transform)
-        {
-            foreach (Transform item in child)
-            {
-                var prefab = item.GetComponent<IndrePrefabs>();
-                if (prefab != null)
-                {
-                    // Đưa item về holder gốc
-                    item.SetParent(defaultHolder, false);
-
-                    // Thêm vào pool
-                    pool.Add(prefab);
-
-                    // Disable tạm, Refresh sẽ bật lại khi cần
-                    prefab.gameObject.SetActive(false);
-                }
-            }
-        }
-
-        // Clear output
-        foreach (Transform item in output)
-        {
-            Destroy(item.gameObject);
-        }
-    }
-
-    public void OnCookingProcessSucceed()
+    public void ClearUIInput()
     {
         foreach (Transform child in Content.transform)
         {
@@ -62,6 +33,7 @@ public class CookingToolPanelUIHandler : MonoBehaviour
                 }
             }
         }
+        _HasInput = false;
     }
     public void ClearOutput()
     {
@@ -124,5 +96,22 @@ public class CookingToolPanelUIHandler : MonoBehaviour
     public void SliderToglle(bool on)
     {
         progress.gameObject.SetActive(on);
+    }
+    public bool HasInput()
+    {
+        foreach (Transform child in Content.transform)
+        {
+            foreach (Transform item in child)
+            {
+                var prefab = item.GetComponent<IndrePrefabs>();
+                if (prefab != null)
+                {
+                    _HasInput = true;
+                    break;
+                }
+            }
+            break;
+        }
+        return _HasInput;
     }
 }

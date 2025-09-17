@@ -116,9 +116,12 @@ public class UIGamePlayManager : MonoBehaviour
             AddOrderToUI(order);
         }
     }
-    private void LoadStock()
+    public void LoadStock()
     {
-        Debug.Log("Da goi load Stock");
+        foreach (Transform child in StockContent)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
         foreach (PlayerHoldIngredient indre in player.Ingredients)
         {
             string name = "";
@@ -147,14 +150,13 @@ public class UIGamePlayManager : MonoBehaviour
     }
     private void LoadCakeRecipe()
     {
-        Debug.Log("Đã gọi Load CakeRecipe");
+
 
         foreach (int cakeid in player.UnlockedCakes)
         {
             if (ResourceManager.Instance.CakeDict.TryGetValue(cakeid, out Cake cake))
             {
                 if (cake == null) continue;
-                Debug.Log("Load Thanh cong banh: " + cake.Name);
                 // Load prefab recipe
                 var recipePrefab = Resources.Load<GameObject>("Prefabs/RecipePrefab");
                 if (recipePrefab == null)
@@ -213,16 +215,11 @@ public class UIGamePlayManager : MonoBehaviour
                         indreIcons.Length > 2 ? indreIcons[2] : null, indreNames.Length > 2 ? indreNames[2] : ""
                     );
                 }
-                else
-                {
-                    Debug.LogError("Prefab CakeRecipeItem thiếu component RecipeUIController!");
-                }
             }
         }
     }
     public void LoadShop()
     {
-        Debug.Log("Da goi load Shop");
         foreach (PlayerHoldIngredient indre in player.Ingredients)
         {
             string name = "";
@@ -245,7 +242,6 @@ public class UIGamePlayManager : MonoBehaviour
                         }
                     }
                 }
-                else Debug.LogError("Khong tim thay assetBundle Nguyen lieu");
                 Instantiate(shopitem, ShopContent);
             }
         }
@@ -401,7 +397,8 @@ public class UIGamePlayManager : MonoBehaviour
 
         if (toolRoleName != PreTool)
         {
-            if(CookingProcessUIManager.HasInput()) CookingProcessUIManager.ReturnItemToPool();
+            if(CookingProcessUIManager.HasInput()) CookingProcessUIManager.ClearInput();
+            CookingProcessUIManager.RefreshIngrePanel();
         }
 
         PreTool = toolRoleName;
@@ -427,7 +424,6 @@ public class UIGamePlayManager : MonoBehaviour
 
     public void CookingToolProcessOnClose()
     {
-        if(CookingProcessUIManager.HasInput()) CookingProcessUIManager.ReturnItemToPool();
         CookingProcessUIManager.TurnOffPanel(CookingProcessPanel.all);
         OpenAtap = false;
     }

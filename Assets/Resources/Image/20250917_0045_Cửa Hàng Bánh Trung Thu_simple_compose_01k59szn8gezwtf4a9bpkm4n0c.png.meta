@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5fe46559046774f4c8fab990d3654cca
+guid: 80f6c80fb228cf44dae9708dfeffa72d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7222031261460607740
-    second: 20250910_2347_Streamlined Kitchen Scene_remix_01k4t8800xfj1vf2skd862we39_0
+      213: 7621660021554201279
+    second: "20250917_0045_C\u1EEDa H\xE0ng B\xE1nh Trung Thu_simple_compose_01k59szn8gezwtf4a9bpkm4n0c_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 20250910_2347_Streamlined Kitchen Scene_remix_01k4t8800xfj1vf2skd862we39_0
+      name: "20250917_0045_C\u1EEDa H\xE0ng B\xE1nh Trung Thu_simple_compose_01k59szn8gezwtf4a9bpkm4n0c_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40dcfd7e4d036cb90800000000000000
-      internalID: -7222031261460607740
+      spriteID: fb2c887886395c960800000000000000
+      internalID: 7621660021554201279
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      20250910_2347_Streamlined Kitchen Scene_remix_01k4t8800xfj1vf2skd862we39_0: -7222031261460607740
+      "20250917_0045_C\u1EEDa H\xE0ng B\xE1nh Trung Thu_simple_compose_01k59szn8gezwtf4a9bpkm4n0c_0": 7621660021554201279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

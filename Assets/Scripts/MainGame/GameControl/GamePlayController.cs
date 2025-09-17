@@ -37,8 +37,7 @@ public class GamePlayController : MonoBehaviour
     private void OnPlayingTutorial()
     {
         if (!ResourceManager.Instance.player.IsFirstTimeOpenGame) return;
-        Debug.Log("Da play tutor");
-
+        UIGamePlayManager.Instance.OpenAtap = true;
         UIGamePlayManager.Instance.SetActiveCharacterTutor(true);
         UIGamePlayManager.Instance.SetActiveMessageBox(ResourceManager.Instance.introDialogList[0].Text);
         IntroStep++;
@@ -59,6 +58,8 @@ public class GamePlayController : MonoBehaviour
     {
         ResourceManager.Instance.player.IsFirstTimeOpenGame = false;    
         UIGamePlayManager.Instance.SetActiveHighUI(false);
+        UIGamePlayManager.Instance.OpenAtap = false;
+
     }
     //Giai doan dung cong cu nha bep
     public void OnCookingProcessBtnClick()
@@ -72,8 +73,10 @@ public class GamePlayController : MonoBehaviour
         if (GotOutput)
         {
             cookuimanager.SetCookingToolText(toolused.Name, toolused.Use);
-            cookuimanager.RefreshTempItem();
             cookuimanager.ClearOutput();
+            cookuimanager.ClearInput();
+            cookuimanager.RefreshIngrePanel();
+            cookuimanager.RefreshTempItem();
             GotOutput = false;  
             return;
         }
