@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: 8a937812df521b84d8889bffe3e22017
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6841382018749273254
+    second: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_0
+  - first:
+      213: 6398738913004573087
+    second: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_1
+  - first:
+      213: -6501027778873063709
+    second: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_2
+  - first:
+      213: -366070705913843465
+    second: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_3
+  - first:
+      213: -753372451705509959
+    second: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_4
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_0
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 387
+        width: 228
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b64b71d478e01a0800000000000000
+      internalID: -6841382018749273254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 409
+        width: 295
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f915b10b323ecc850800000000000000
+      internalID: 6398738913004573087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_2
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 387
+        width: 274
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17463c69434c2cf4ca2e325f64ea1348
+      internalID: -6501027778873063709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_3
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 409
+        width: 232
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6c9917830b34c4c8d69629bf465147
+      internalID: -366070705913843465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_4
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 462
+        width: 240
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c0abbe62cefbc4f85e8a9be9211fd2
+      internalID: -753372451705509959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 409f1ca78be3d7e499a9978c67794f19
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_0: -6841382018749273254
+      20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_1: 6398738913004573087
+      20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_2: -6501027778873063709
+      20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_3: -366070705913843465
+      20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_4: -753372451705509959
+      20250918_1703_Mid-Autumn Game UI Icons_simple_compose_01k5e4cvtze3e8ndbfn3066ez2_5: -1859472690
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

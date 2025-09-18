@@ -24,7 +24,7 @@ public class GamePlayController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
     private void Start()
-    { 
+    {
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
@@ -82,7 +82,7 @@ public class GamePlayController : MonoBehaviour
         }
 
         // Nếu chưa có output thì bắt đầu chế biến
-        cookcontroller.ProcessOutput();
+        cookcontroller.ProcessOutput(toolused);
         if (!cookcontroller.GetOuputState())
         {
             Debug.Log("Da huy do khong tim thay cong thuc");

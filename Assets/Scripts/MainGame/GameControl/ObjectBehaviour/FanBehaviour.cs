@@ -3,6 +3,7 @@ using UnityEngine;
 public class FanBehaviour : MonoBehaviour, IInteracable
 {
     public HoverEffect hoverEffect;
+    [SerializeField] AudioClip sfx;
     private void Start()
     {
         if(hoverEffect == null)
@@ -24,6 +25,7 @@ public class FanBehaviour : MonoBehaviour, IInteracable
 
     public void OnClick()
     {
+  
         Debug.Log($"{name} -> OnClick");
         UIGamePlayManager.Instance.FanOnClick();
     

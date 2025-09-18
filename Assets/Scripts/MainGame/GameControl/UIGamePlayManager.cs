@@ -69,11 +69,15 @@ public class UIGamePlayManager : MonoBehaviour
         {
             NotifiPanel.SetActive(false);
             notifiOpen = false;
+            OpenAtap = false;
+
         }
         else
         {
             NotifiPanel.SetActive(true);
             notifiOpen = true;
+            OpenAtap = true;
+
 
         }
     }
@@ -399,6 +403,8 @@ public class UIGamePlayManager : MonoBehaviour
         {
             if(CookingProcessUIManager.HasInput()) CookingProcessUIManager.ClearInput();
             CookingProcessUIManager.RefreshIngrePanel();
+            CookingProcessUIManager.RefreshTempItem();
+            CookingProcessUIManager.ClearOutput();
         }
 
         PreTool = toolRoleName;

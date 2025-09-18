@@ -160,8 +160,9 @@ public class CookingProcessUIManager : MonoBehaviour
         CookingToolPanelUIHandler.SliderToglle(false);
 
         if (item == null) return;
-
-        if (AssetBundleManager.Instance.GetAssetBundle("vatphamtamthoi", out AssetBundle bundle))
+        string bundlename = "vatphamtamthoi";
+        if (item.ID >= 100 && item.ID < 200) bundlename = "banh";
+        if (AssetBundleManager.Instance.GetAssetBundle(bundlename, out AssetBundle bundle))
         {
             Sprite ico = bundle.LoadAsset<Sprite>(item.RoleName);
             Debug.Log($"Load Sprite: {item.RoleName}, result: {ico}");

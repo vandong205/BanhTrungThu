@@ -7,15 +7,15 @@ public class CookingProcessController:MonoBehaviour
     private ProcessedItem result = null;
     private List<ProcessedItem> tempitem  =new List<ProcessedItem>();
     bool outputstateok ;
-    private int? GetProcesOutputID()
+    private int? GetProcesOutputID(KitchenItem tool)
     {
-        int[] ouput = cookingToolPanelUIHandler.GetInput();
-        return ResourceManager.Instance.recipeBook.FindOutput(ouput);
+        int[] input = cookingToolPanelUIHandler.GetInput();
+        if (!tool.IsValidInput(input)) return null;
+        return ResourceManager.Instance.recipeBook.FindOutput(input);
     }
-    public void ProcessOutput()
+    public void ProcessOutput(KitchenItem tool)
     {
-        outputstateok = true;
-        int? outputIdNullable = GetProcesOutputID();
+        int? outputIdNullable = GetProcesOutputID(tool);
         if (!outputIdNullable.HasValue)
         {
             outputstateok = false;
@@ -23,7 +23,18 @@ public class CookingProcessController:MonoBehaviour
         }
         int outputId = outputIdNullable.Value;
 
-       if (outputId >= 300 && outputId < 400)
+
+        if (outputId >= 100 && outputId < 200)
+        {
+            if (ResourceManager.Instance.CakeDict.TryGetValue(outputId, out Cake item))
+            {
+                ProcessedItem parsecake = new ProcessedItem();
+                parsecake.ID  = item.ID;
+                parsecake.Name = item.Name;
+                parsecake.RoleName = item.RoleName;
+                result = parsecake;
+            }
+        } else if (outputId >= 300 && outputId < 400)
         {
             if (ResourceManager.Instance.CakeFillingDict.TryGetValue(outputId, out ProcessedItem item))
             {
@@ -47,8 +58,10 @@ public class CookingProcessController:MonoBehaviour
 
         if (result != null)
         {
+            
             Debug.Log($"Đã tìm thấy output: {result.Name}");
-            tempitem.Add(result);
+            if (!(result.ID >= 100 && result.ID < 200)) tempitem.Add(result);
+            outputstateok = true;
         }
         else
         {
