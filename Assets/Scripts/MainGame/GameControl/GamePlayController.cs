@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
-
+using Unity.Cinemachine;
+using Unity.VisualScripting;
 public class GamePlayController : MonoBehaviour
 {
     public Action OnLoadingUIDone;
@@ -9,10 +10,15 @@ public class GamePlayController : MonoBehaviour
     public static GamePlayController Instance;
     [SerializeField] CookingProcessController cookcontroller;
     [SerializeField] CookingProcessUIManager cookuimanager;
+
+    [Header("Cinemachine Cameras")]
+    [SerializeField] private CinemachineCamera _kitchenCam;
+    [SerializeField] private CinemachineCamera _serviceCam;
     public int TotalIntroStep;
     public int IntroStep = 0;
     public bool onProgress;
     public bool GotOutput = false;
+    private bool _isInKitchen;
     private void Awake()
     {
         if (Instance != null)
@@ -25,6 +31,10 @@ public class GamePlayController : MonoBehaviour
     }
     private void Start()
     {
+        _isInKitchen = true;
+        CameraManager.Instance.AddCamera(_kitchenCam);
+        CameraManager.Instance.AddCamera(_serviceCam);
+        CameraManager.Instance.SetActiveCamera(_kitchenCam);
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
@@ -67,7 +77,7 @@ public class GamePlayController : MonoBehaviour
         // Nếu đang chạy process thì bỏ qua
         if (onProgress) return;
 
-        KitchenItem toolused = UIGamePlayManager.Instance.ActiveTool;
+        KitchenItem toolused = KitchenRoomUIManager.Instance.ActiveTool;
 
         // Nếu đã có output thì clear và reset tool để có thể sử dụng lại
         if (GotOutput)
@@ -100,11 +110,16 @@ public class GamePlayController : MonoBehaviour
             GotOutput = true;  // đánh dấu tool đang chứa output
         });
     }
+    public void ChangeRoom()
+    {
+        if (_isInKitchen)
+        {
+            CameraManager.Instance.SetActiveCamera(_serviceCam);
+        }
+        else
+        {
+            CameraManager.Instance.SetActiveCamera(_kitchenCam);
 
-
-
-    //public bool CheckLigitRecipe()
-    //{
-
-    //}
+        }
+    }
 }

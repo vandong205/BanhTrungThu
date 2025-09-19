@@ -24,7 +24,7 @@ public class CakeMoldBehaviour : MonoBehaviour, IInteracable
 
     public void OnClick()
     {
-        UIGamePlayManager.Instance.KhuongoClick();
+        KitchenRoomUIManager.Instance.KhuongoClick();
         Debug.Log($"{name} -> OnClick");
     }
 }

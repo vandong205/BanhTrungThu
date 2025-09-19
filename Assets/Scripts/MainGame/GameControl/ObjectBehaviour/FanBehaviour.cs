@@ -27,7 +27,7 @@ public class FanBehaviour : MonoBehaviour, IInteracable
     {
   
         Debug.Log($"{name} -> OnClick");
-        UIGamePlayManager.Instance.FanOnClick();
+        KitchenRoomUIManager.Instance.FanOnClick();
     
     }
 }

@@ -25,6 +25,6 @@ public class EOvenBehaviour : MonoBehaviour, IInteracable
     public void OnClick()
     {
         Debug.Log($"{name} -> OnClick");
-        UIGamePlayManager.Instance.EOvenClick();
+        KitchenRoomUIManager.Instance.EOvenClick();
     }
 }

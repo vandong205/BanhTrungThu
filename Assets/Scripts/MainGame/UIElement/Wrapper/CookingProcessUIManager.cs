@@ -174,7 +174,7 @@ public class CookingProcessUIManager : MonoBehaviour
             CookingToolPanelUIHandler.SetOutput(newitem);
         }
 
-        SetCookingToolText(UIGamePlayManager.Instance.ActiveTool.Name, "Nhận");
+        SetCookingToolText(KitchenRoomUIManager.Instance.ActiveTool.Name, "Nhận");
     }
 
     public void RunProgress(float time, Action action)
@@ -224,7 +224,7 @@ public class CookingProcessUIManager : MonoBehaviour
         {
             ResourceManager.Instance.RemovePlayerIngre(id);
         }
-        UIGamePlayManager.Instance.LoadStock();
+        KitchenRoomUIManager.Instance.LoadStock();
 }
 
     public void ClearOutput()
