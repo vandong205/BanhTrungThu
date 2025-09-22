@@ -29,7 +29,7 @@ public class ResourceManager : MonoBehaviour
     }
     public void RemovePlayerIngre(int id)
     {
-        foreach(PlayerHoldIngredient ingre in player.Ingredients)
+        foreach(PlayerOwnedObject ingre in player.Ingredients)
         {
             if(ingre.ID == id)
             {

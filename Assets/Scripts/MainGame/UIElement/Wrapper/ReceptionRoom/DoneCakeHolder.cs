@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class TempItemHolder : MonoBehaviour
+public class DoneCakeHolder : MonoBehaviour
 {
     [SerializeField] private GameObject Content;
 
@@ -23,7 +23,7 @@ public class TempItemHolder : MonoBehaviour
             slotPool.Add(slot);
         }
 
-        Debug.Log($"[TempItemHolder] InitPool xong, tổng số slot: {slotPool.Count}");
+        Debug.Log($"[CakrHolder] InitPool xong, tổng số slot: {slotPool.Count}");
     }
 
     public GameObject GetSlotFromPool()

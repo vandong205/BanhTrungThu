@@ -5,7 +5,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] Transform ShopContent;
     public void LoadShop()
     {
-        foreach (PlayerHoldIngredient indre in UIGamePlayManager.Instance.player.Ingredients)
+        foreach (PlayerOwnedObject indre in UIGamePlayManager.Instance.player.Ingredients)
         {
             string name = "";
             var shopitem = Resources.Load<GameObject>("Prefabs/ShopItem");

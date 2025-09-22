@@ -18,7 +18,7 @@ public class GamePlayController : MonoBehaviour
     public int IntroStep = 0;
     public bool onProgress;
     public bool GotOutput = false;
-    private bool _isInKitchen;
+    public bool _isInKitchen;
     private void Awake()
     {
         if (Instance != null)
@@ -31,10 +31,10 @@ public class GamePlayController : MonoBehaviour
     }
     private void Start()
     {
-        _isInKitchen = true;
+        _isInKitchen = false;
         CameraManager.Instance.AddCamera(_kitchenCam);
         CameraManager.Instance.AddCamera(_serviceCam);
-        CameraManager.Instance.SetActiveCamera(_kitchenCam);
+        CameraManager.Instance.SetActiveCamera(_serviceCam);
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
@@ -82,6 +82,26 @@ public class GamePlayController : MonoBehaviour
         // Nếu đã có output thì clear và reset tool để có thể sử dụng lại
         if (GotOutput)
         {
+            if (toolused.Rolename == "lonuong")
+            {
+                int newcakeid = cookcontroller.GetOutputInfo().ID;
+                bool cakexist = false;
+                foreach(PlayerOwnedObject cake in ResourceManager.Instance.player.Cakes)
+                {
+                    if(cake.ID == newcakeid)
+                    {
+                        cake.Quantity++;
+                        cakexist = true;
+                        break;
+                    }
+                }
+                if (!cakexist)
+                {
+                    PlayerOwnedObject newcake = new PlayerOwnedObject(newcakeid,1);
+                    ResourceManager.Instance.player.Cakes.Add(newcake);
+                }
+                ReceptionRoomUIManager.Instance.RefreshCakeStock();
+            }
             cookuimanager.SetCookingToolText(toolused.Name, toolused.Use);
             cookuimanager.ClearOutput();
             cookuimanager.ClearInput();
@@ -114,12 +134,18 @@ public class GamePlayController : MonoBehaviour
     {
         if (_isInKitchen)
         {
+            KitchenRoomUIManager.Instance.SetButtonPanelActive(false);
+            ReceptionRoomUIManager.Instance.SetButtonPanelActive(true); 
             CameraManager.Instance.SetActiveCamera(_serviceCam);
+            _isInKitchen = false;
         }
         else
         {
+            KitchenRoomUIManager.Instance.SetButtonPanelActive(true);
+            ReceptionRoomUIManager.Instance.SetButtonPanelActive(false);
             CameraManager.Instance.SetActiveCamera(_kitchenCam);
-
+            _isInKitchen = true;
         }
+        UIGamePlayManager.Instance.RegisDynamicUIPanel();
     }
 }

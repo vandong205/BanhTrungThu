@@ -9,7 +9,7 @@ public class StockTabManager : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
         }
-        foreach (PlayerHoldIngredient indre in UIGamePlayManager.Instance.player.Ingredients)
+        foreach (PlayerOwnedObject indre in UIGamePlayManager.Instance.player.Ingredients)
         {
             string name = "";
             var stockprefab = Resources.Load<GameObject>("Prefabs/indreInStock");

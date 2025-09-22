@@ -3,91 +3,91 @@
     "ID": 100,
     "Name": "Bánh Thu Vàng",
     "RoleName": "thanhlong-traxanh",
-    "Ingredients": [ 4, 2, 10 ],
+    "Ingredients": [ 5, 3, 11 ],
     "Price": 24000
   },
   "101": {
     "ID": 101,
     "Name": "Bánh Trăng Non",
-    "RoleName": "banhhong",
-    "Ingredients": [ 10 ],
+    "RoleName": "dua-vungden",
+    "Ingredients": [ 12,14,11 ],
     "Price": 3000
   },
   "102": {
     "ID": 102,
     "Name": "Bánh Ngọc Sen",
     "RoleName": "dauxanh-matong",
-    "Ingredients": [ 6, 12, 10 ],
+    "Ingredients": [ 7, 13, 11 ],
     "Price": 30000
   },
   "103": {
     "ID": 103,
     "Name": "Bánh Vừng Vàng",
     "RoleName": "traxanh-vungden",
-    "Ingredients": [ 2, 13, 10 ],
+    "Ingredients": [ 3, 14, 11 ],
     "Price": 17000
   },
   "104": {
     "ID": 104,
     "Name": "Bánh Mật Ngọt",
     "RoleName": "vungden-matong",
-    "Ingredients": [ 6, 13, 10 ],
+    "Ingredients": [ 7, 14, 11 ],
     "Price": 29000
   },
   "105": {
     "ID": 105,
     "Name": "Bánh Đào Hồng",
     "RoleName": "hatsen-daudo",
-    "Ingredients": [ 8, 0, 10 ],
+    "Ingredients": [ 9, 1, 11 ],
     "Price": 33000
   },
   "106": {
     "ID": 106,
     "Name": "Bánh Hương Trà",
     "RoleName": "traxanh-dauxanh",
-    "Ingredients": [ 2, 12, 10 ],
+    "Ingredients": [ 3, 13, 11 ],
     "Price": 18000
   },
   "107": {
     "ID": 107,
     "Name": "Bánh Kim Sen",
     "RoleName": "trungmuoi-hatsen",
-    "Ingredients": [ 1, 8, 10 ],
+    "Ingredients": [ 2, 9, 11 ],
     "Price": 34000
   },
   "108": {
     "ID": 108,
     "Name": "Bánh Tím Mơ",
     "RoleName": "khoaimon-daudo",
-    "Ingredients": [ 3, 0, 10 ],
+    "Ingredients": [ 4, 1, 11 ],
     "Price": 20000
   },
   "109": {
     "ID": 109,
     "Name": "Bánh Sen Ngọt",
     "RoleName": "hatsen-matong",
-    "Ingredients": [ 8, 6, 10 ],
+    "Ingredients": [ 9, 7, 11 ],
     "Price": 43000
   },
   "110": {
     "ID": 110,
     "Name": "Bánh Lục Ngọc",
     "RoleName": "traxanh-dauphong",
-    "Ingredients": [ 2, 7, 10 ],
+    "Ingredients": [ 3, 8, 11 ],
     "Price": 20000
   },
   "111": {
     "ID": 111,
     "Name": "Bánh Dừa Trăng",
     "RoleName": "khoaimon-dua",
-    "Ingredients": [ 3, 11, 10 ],
+    "Ingredients": [ 4, 12, 11 ],
     "Price": 20000
   },
   "112": {
     "ID": 112,
     "Name": "Bánh Rằm Vàng",
     "RoleName": "saurieng-trungmuoi",
-    "Ingredients": [ 5, 1, 10 ],
+    "Ingredients": [ 6, 2, 11 ],
     "Price": 38000
   }
 }

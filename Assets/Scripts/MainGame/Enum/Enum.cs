@@ -11,6 +11,11 @@ public enum CookingProcessPanel
     tempitem,
     all
 }
+public enum ServiceProcessPanel
+{
+    cake,
+    all
+}
 public enum ObjectType
 {
     ingre,

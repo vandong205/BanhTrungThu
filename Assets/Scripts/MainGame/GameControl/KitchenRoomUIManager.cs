@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class KitchenRoomUIManager : MonoBehaviour
@@ -9,7 +8,8 @@ public class KitchenRoomUIManager : MonoBehaviour
     [SerializeField] ShopManager shopmanager;
     [SerializeField] RecipeTabManager recipeTabManager;
     [SerializeField] StockTabManager stockTabManager;
- 
+    [SerializeField] GameObject Buttonpanel;
+
     private KitchenRoomUIManager _instance;
     public static KitchenRoomUIManager Instance;
     public KitchenItem ActiveTool;
@@ -70,7 +70,7 @@ public class KitchenRoomUIManager : MonoBehaviour
     }
     public void LoadingPlayerStat()
     {
-        LoadStock();;
+        LoadStock();
     }
     public void LoadStock()
     {
@@ -153,5 +153,9 @@ public class KitchenRoomUIManager : MonoBehaviour
     {
         CookingProcessUIManager.TurnOffPanel(CookingProcessPanel.all);
         UIGamePlayManager.Instance.OpenAtap = false;
+    }
+    public void SetButtonPanelActive(bool active)
+    {
+        Buttonpanel.SetActive(active);
     }
 }

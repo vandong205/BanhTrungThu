@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class DynamicUIManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] DynamicUIPanelController LeftPanel;
+    [SerializeField] DynamicUIPanelController RightPanel;
+    public void RegisPanel()
     {
-        
-    }
+        if (GamePlayController.Instance._isInKitchen)
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            LeftPanel.gameObject.SetActive(true);
+            RightPanel.SetActiveChildUI(false);
+            RightPanel.gameObject.SetActive(false);
+        }
+        else
+        {
+            LeftPanel.SetActiveChildUI(false);
+            LeftPanel.gameObject.SetActive(false);
+            RightPanel.gameObject.SetActive(true);
+        }
     }
 }

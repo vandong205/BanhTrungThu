@@ -4,17 +4,18 @@ public class DynamicUIPanelController : MonoBehaviour,IPointerEnterHandler,IPoin
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
-        foreach(Transform child in gameObject.transform)
-        {
-            child.gameObject.SetActive(true);
-        }    
+        SetActiveChildUI(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        SetActiveChildUI(false);
+    }
+    public void SetActiveChildUI(bool active)
+    {
         foreach (Transform child in gameObject.transform)
         {
-            child.gameObject.SetActive(false);
+            child.gameObject.SetActive(active);
         }
     }
 }

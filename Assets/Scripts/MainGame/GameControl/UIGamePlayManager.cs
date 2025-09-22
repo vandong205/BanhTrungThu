@@ -7,7 +7,7 @@ public class UIGamePlayManager : MonoBehaviour
     [SerializeField] GameObject MainUI;
     [SerializeField] GameObject HighUIBackground;
     [SerializeField] GameObject HighUI;
-
+    [SerializeField] DynamicUIManager _dynamicUI;
 
 
     private UIGamePlayManager _instance;
@@ -31,12 +31,18 @@ public class UIGamePlayManager : MonoBehaviour
     }
     void Start()
     {
-       
+        
         player = ResourceManager.Instance.player;
         SetPlayerStat(player.Capital,player.TrustPoint,player.Token);
         KitchenRoomUIManager.Instance._LoadKitchen?.Invoke();
-        GamePlayController.Instance.OnLoadingUIDone?.Invoke();
-       
+        ReceptionRoomUIManager.Instance._LoadReceptionRoom?.Invoke();
+        _dynamicUI.RegisPanel();
+
+        GamePlayController.Instance.OnLoadingUIDone?.Invoke();    
+    }
+    public void RegisDynamicUIPanel()
+    {
+        _dynamicUI.RegisPanel();
     }
     public void SetPlayerStat(long money, int trustpoint,int token)
     {

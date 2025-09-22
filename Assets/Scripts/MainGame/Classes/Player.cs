@@ -8,12 +8,14 @@ public class Player
     public long Capital { get; set; }
     public int Token { get; set; }
     public List<int> UnlockedCakes { get; set; } 
-    public List<PlayerHoldIngredient> Ingredients { get; set; }
+    public List<PlayerOwnedObject> Ingredients { get; set; }
+    public List<PlayerOwnedObject> Cakes { get; set; }
     public List<Order> Orders;
+   
     public Player()
     {
         UnlockedCakes = new List<int>();
-        Ingredients = new List<PlayerHoldIngredient>();
+        Ingredients = new List<PlayerOwnedObject>();
         Orders = new List<Order>();
     }
 }
