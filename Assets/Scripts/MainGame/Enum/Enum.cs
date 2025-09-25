@@ -14,6 +14,7 @@ public enum CookingProcessPanel
 public enum ServiceProcessPanel
 {
     cake,
+    paperbag,
     all
 }
 public enum ObjectType

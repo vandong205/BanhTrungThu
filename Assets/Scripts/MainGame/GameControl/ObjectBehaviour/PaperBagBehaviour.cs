@@ -25,5 +25,6 @@ public class PaperBagBehaviour : MonoBehaviour,IInteracable
     public void OnClick()
     {
         Debug.Log($"{name} -> OnClick");
+        ReceptionRoomUIManager.Instance.PaperbagClick();
     }
 }

@@ -3,6 +3,7 @@
 public class ServiceProcessUIManager : MonoBehaviour
 {
     [SerializeField] DoneCakeHolder cakeholder;
+    [SerializeField] PaperBagHolder bagHolder;
     [SerializeField] GameObject CloseBtn;
     private void Start()
     {
@@ -16,6 +17,9 @@ public class ServiceProcessUIManager : MonoBehaviour
             case ServiceProcessPanel.cake:
                 cakeholder.gameObject.SetActive(true);
                 break;
+            case ServiceProcessPanel.paperbag:
+                bagHolder.gameObject.SetActive(true);
+                break ;
         }
         CloseBtn.SetActive(true);
     }
@@ -26,8 +30,13 @@ public class ServiceProcessUIManager : MonoBehaviour
             case ServiceProcessPanel.cake:
                 cakeholder.gameObject.SetActive(false);
                 break;
+            case ServiceProcessPanel.paperbag:
+                bagHolder.gameObject.SetActive(false);
+                break;
             case ServiceProcessPanel.all:
                 cakeholder.gameObject.SetActive(false);
+                bagHolder.gameObject.SetActive(false);
+
                 break;
         }
         CloseBtn.SetActive(false);

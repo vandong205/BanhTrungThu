@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.1.9f1
-CRC: 1982769553
+CRC: 8350168
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f3ca714bfb8546fc98457ee836589fcd
+    Hash: dd0df0fa455e7266dc84628dd4db3e26
   TypeTreeHash:
     serializedVersion: 2
     Hash: bc9f87c7e64ff656997db0f2b2a91703
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: fdf0fe4d793a04a70ecbf1761bbf1b19
+    Hash: 95a7900340767e36f43484b3a8c8e133
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -19,6 +19,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/SourceAsserBundles/Vatdung/vatdung/vatdung.png
-- Assets/SourceAsserBundles/Vatdung/vatdung/reception.png
+- Assets/SourceAsserBundles/Vatdung/vatdung/Reception.png
+- Assets/SourceAsserBundles/Vatdung/vatdung/Kitchentool.png
 Dependencies: []

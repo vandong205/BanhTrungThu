@@ -104,8 +104,15 @@ public class ReceptionRoomUIManager : MonoBehaviour
         UIGamePlayManager.Instance.OpenAtap = false;
     }
     public void StrayClick()
-    {     
-        serviceProcessUI.TurnOnPanel(ServiceProcessPanel.cake);
+    {
+        
         UIGamePlayManager.Instance.OpenAtap = true;
     }
+    public void PaperbagClick()
+    {
+        serviceProcessUI.TurnOnPanel(ServiceProcessPanel.cake); 
+        serviceProcessUI.TurnOnPanel(ServiceProcessPanel.paperbag);
+        UIGamePlayManager.Instance.OpenAtap = true;
+    }
+
 }

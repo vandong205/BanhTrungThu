@@ -4,8 +4,10 @@ using UnityEngine.EventSystems;
 public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     [HideInInspector] public Transform parentAfterDrag;
-
     private CanvasGroup canvasGroup;
+
+    [Header("Options")]
+    public bool fitParent = false; // m?c ð?nh = false
 
     private void Awake()
     {
@@ -32,7 +34,17 @@ public class DraggableObject : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("EndDrag");
+
         canvasGroup.blocksRaycasts = true;
         transform.SetParent(parentAfterDrag);
+
+        // N?u fitParent = true và object có RectTransform
+        if (fitParent && transform is RectTransform rectTransform && parentAfterDrag is RectTransform parentRect)
+        {
+            rectTransform.anchorMin = Vector2.zero;
+            rectTransform.anchorMax = Vector2.one;
+            rectTransform.offsetMin = Vector2.zero;
+            rectTransform.offsetMax = Vector2.zero;
+        }
     }
 }

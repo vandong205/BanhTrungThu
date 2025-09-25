@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 350cf9d7d6f563e4d8a630aa9bc0fc93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6979063994255535525
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_0
+  - first:
+      213: -3700790970477198166
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_1
+  - first:
+      213: 8160937637839113197
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_2
+  - first:
+      213: 880733081510384357
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_3
+  - first:
+      213: -5288018305875745918
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_4
+  - first:
+      213: -1984969192751844258
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_5
+  - first:
+      213: -715217648996181384
+    second: 20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pan
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 478
+        width: 321
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b521ead1642652f90800000000000000
+      internalID: -6979063994255535525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oven
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 200
+        width: 347
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4cbb0583624acc0800000000000000
+      internalID: -3700790970477198166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bow
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 191
+        width: 480
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb04890b89714170800000000000000
+      internalID: 8160937637839113197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crust
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 50
+        width: 345
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0f5b0043283844c897815714f8d526
+      internalID: 1945744189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 21f7249eb0d98b04dbedce26304e0804
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_3: 880733081510384357
+      20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_4: -5288018305875745918
+      20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_5: -1984969192751844258
+      20250925_1659_Cozy Festival Kitchen_remix_01k604x2zcfa88k71wzn7f8nfg_6: -715217648996181384
+      bow: 8160937637839113197
+      crust: 1945744189
+      oven: -3700790970477198166
+      pan: -6979063994255535525
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

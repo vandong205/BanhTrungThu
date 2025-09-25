@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 2f07866a145e74d47b8e6012d40fbd29
+guid: 438d12f5399740043a20f596fef1b5d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3206300619965224936
-    second: reception_0
+      213: -5947106051226990509
+    second: 20250925_1652_Hand-drawn Mooncake Festival_remix_01k604g433epvbycqcnykgyjsz_0
   - first:
-      213: -5942116030736819721
-    second: reception_1
+      213: -7940684182181358204
+    second: 20250925_1652_Hand-drawn Mooncake Festival_remix_01k604g433epvbycqcnykgyjsz_1
   - first:
-      213: 6512615043746601934
-    second: reception_2
+      213: 3855074343422416105
+    second: 20250925_1652_Hand-drawn Mooncake Festival_remix_01k604g433epvbycqcnykgyjsz_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -135,10 +135,10 @@ TextureImporter:
       name: stray
       rect:
         serializedVersion: 2
-        x: 171
-        y: 356
-        width: 455
-        height: 175
+        x: 184
+        y: 369
+        width: 388
+        height: 124
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 818abd7e29ee083d0800000000000000
-      internalID: -3206300619965224936
+      spriteID: 3580a073e82a77da0800000000000000
+      internalID: -5947106051226990509
       vertices: []
       indices: 
       edges: []
@@ -157,20 +157,20 @@ TextureImporter:
       name: paperbag
       rect:
         serializedVersion: 2
-        x: 971
-        y: 400
-        width: 479
-        height: 175
+        x: 962
+        y: 406
+        width: 517
+        height: 169
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f917c5e3fc598da0800000000000000
-      internalID: -5942116030736819721
+      spriteID: f9ef61e87d4c3c641ac9d99c42c8c2ac
+      internalID: 1324904309
       vertices: []
       indices: 
       edges: []
@@ -179,7 +179,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5061d61201a7dde45b69e3413984f11b
+    spriteID: 6d547d6ac6fb8a1428cb00a91d04008f
     internalID: 0
     vertices: []
     indices: 
@@ -189,9 +189,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      paperbag: -5942116030736819721
-      reception_2: 6512615043746601934
-      stray: -3206300619965224936
+      20250925_1652_Hand-drawn Mooncake Festival_remix_01k604g433epvbycqcnykgyjsz_1: -7940684182181358204
+      20250925_1652_Hand-drawn Mooncake Festival_remix_01k604g433epvbycqcnykgyjsz_2: 3855074343422416105
+      paperbag: 1324904309
+      stray: -5947106051226990509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

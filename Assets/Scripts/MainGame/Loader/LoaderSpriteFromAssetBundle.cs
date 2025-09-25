@@ -91,7 +91,7 @@ using UnityEngine.Networking;
                 if (renderer != null)
                 {
                     renderer.sprite = targetSprite;
-                    renderer.drawMode = SpriteDrawMode.Sliced;
+                    renderer.drawMode = SpriteDrawMode.Simple;
 
                     if (_PixelPerfect)
                     {
@@ -167,7 +167,7 @@ using UnityEngine.Networking;
                                 if (renderer != null)
                                 {
                                     renderer.sprite = sprite;
-                                    renderer.drawMode = SpriteDrawMode.Sliced;
+                                    renderer.drawMode = SpriteDrawMode.Simple;
                                 }
                             }
                         }

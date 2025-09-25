@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.1.9f1
+CRC: 1261347568
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0b29284d1c42a61fe449e00dbed3ec9c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bc9f87c7e64ff656997db0f2b2a91703
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1d3d01b52fa6ea76fc740f729be9ffe2
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/SourceAsserBundles/Khachhang/khachhang/arm.png
+Dependencies: []
