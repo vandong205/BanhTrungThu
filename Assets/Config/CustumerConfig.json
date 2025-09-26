@@ -1,0 +1,32 @@
+﻿{
+  "0": {
+    "ID": 0,
+    "Name": "Người ăn xin",
+    "Rolename": "anxin"
+  },
+  "1": {
+    "ID": 1,
+    "Name": "Quỷ cẩu",
+    "Rolename": "cauquy"
+  },
+  "2": {
+    "ID": 2,
+    "Name": "Chim trắng",
+    "Rolename": "chim"
+  },
+  "3": {
+    "ID": 3,
+    "Name": "Ngạ quỷ",
+    "Rolename": "ngaquy"
+  },
+  "4": {
+    "ID": 4,
+    "Name": "Trần tổng",
+    "Rolename": "phuong"
+  },
+  "5": {
+    "ID": 5,
+    "Name": "Ưng quỷ",
+    "Rolename": "ungquy"
+  }
+}

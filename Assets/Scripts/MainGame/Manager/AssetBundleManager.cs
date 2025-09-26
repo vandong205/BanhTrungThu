@@ -76,4 +76,22 @@ public class AssetBundleManager : MonoBehaviour
         CachedAssetBundle.Clear();
         Debug.Log("[AssetBundleManager] Đã unload tất cả AssetBundle");
     }
+    public Dictionary<string, Sprite> CachedSprites = new();
+
+    public Sprite GetSpriteFromBundle(string bundleName, string spriteName)
+    {
+        if (CachedSprites.TryGetValue(spriteName, out var sprite))
+            return sprite;
+
+        if (GetAssetBundle(bundleName, out var bundle))
+        {
+            foreach (var s in bundle.LoadAllAssets<Sprite>())
+            {
+                CachedSprites[s.name] = s;
+                if (s.name == spriteName)
+                    return s;
+            }
+        }
+        return null;
+    }
 }

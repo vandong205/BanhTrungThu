@@ -1,9 +1,9 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class ReceptionRoomUIManager : MonoBehaviour
 {
-    [SerializeField] NotifitabManager notifitabManager;
     [SerializeField] GameObject Buttonpanel;
     [SerializeField] MaketingPanelUIController markettingUI;
     [SerializeField] CakeRackUIManager cakeRackUI;
@@ -12,7 +12,7 @@ public class ReceptionRoomUIManager : MonoBehaviour
     public Action _LoadReceptionRoom;
     private ReceptionRoomUIManager _instance;
     public static ReceptionRoomUIManager Instance;
-    private bool _OrderOpen = false;
+    public GameObject DummyBag;
     private void Awake()
     {
         if (Instance != null)
@@ -71,29 +71,6 @@ public class ReceptionRoomUIManager : MonoBehaviour
         if (cakeRackUI.gameObject.activeSelf) cakeRackUI.CloseTab();
         UIGamePlayManager.Instance.OpenAtap = false;
     }
-    public void OnNotifiPanelToggle()
-    {  
-        if (_OrderOpen)
-        {
-            notifitabManager.CloseTab();
-            UIGamePlayManager.Instance.OpenAtap = false;
-            _OrderOpen = false;
-
-        }
-        else
-        {
-            if (UIGamePlayManager.Instance.OpenAtap) return;
-            notifitabManager.OpenTab();
-            UIGamePlayManager.Instance.OpenAtap = true;
-            _OrderOpen = true;
-
-
-        }
-    }
-    public void LoadOrders()
-    {
-        notifitabManager.LoadOrders();
-    }
     public void SetButtonPanelActive(bool active)
     {
         Buttonpanel.SetActive(active);
@@ -113,6 +90,11 @@ public class ReceptionRoomUIManager : MonoBehaviour
         serviceProcessUI.TurnOnPanel(ServiceProcessPanel.cake); 
         serviceProcessUI.TurnOnPanel(ServiceProcessPanel.paperbag);
         UIGamePlayManager.Instance.OpenAtap = true;
+    }
+    public IEnumerator SetActiveDummyBagDelay(bool active,float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        DummyBag.SetActive(active);
     }
 
 }

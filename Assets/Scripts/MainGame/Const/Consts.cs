@@ -12,8 +12,8 @@ public class Consts
     public static readonly string CakeFillingConfigKey = "CakeFillingConfig.json";
     public static readonly string ShapedCakeConfigKey = "ShapedCakeConfig.json"; 
     public static readonly string CakeCrustConfigKey = "CakeCrustConfig.json"; 
-    public static readonly string RecipeConfigKey = "RecipeConfig.json";
-
+    public static readonly string RecipeConfigKey = "RecipeConfig.json"; 
+    public static readonly string CustumerConfigKey = "CustumerConfig.json";
 
 
     public static readonly string playerSavePath = Path.Combine(Application.persistentDataPath, "PlayerSave.json");

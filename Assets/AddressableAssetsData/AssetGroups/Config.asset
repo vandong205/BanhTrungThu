@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Config
   m_GUID: 24255684085173945a91dbbc312d638c
   m_SerializeEntries:
+  - m_GUID: 0cd6064093c65d1488a0cfd20ca6cbd3
+    m_Address: CustumerConfig.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4788b1df67895a142a68b9497b01e7a5
     m_Address: CakeFillingConfig.json
     m_ReadOnly: 0

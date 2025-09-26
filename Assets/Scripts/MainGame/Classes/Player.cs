@@ -10,12 +10,11 @@ public class Player
     public List<int> UnlockedCakes { get; set; } 
     public List<PlayerOwnedObject> Ingredients { get; set; }
     public List<PlayerOwnedObject> Cakes { get; set; }
-    public List<Order> Orders;
+    public Order CurrentOrder;
    
     public Player()
     {
         UnlockedCakes = new List<int>();
         Ingredients = new List<PlayerOwnedObject>();
-        Orders = new List<Order>();
     }
 }

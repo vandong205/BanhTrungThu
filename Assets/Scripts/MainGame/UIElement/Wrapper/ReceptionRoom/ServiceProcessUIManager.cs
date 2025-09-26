@@ -65,7 +65,7 @@ public class ServiceProcessUIManager : MonoBehaviour
                         // Spawn prefab mới trong slot
                         GameObject newObj = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
 
-                        if (newObj.GetComponent<DraggableObject>() == null) newObj.AddComponent<DraggableObject>();
+                        if (newObj.GetComponent<DraggableUI>() == null) newObj.AddComponent<DraggableUI>();
                         if (newObj.GetComponent<ObjectInfo>() == null) newObj.AddComponent<ObjectInfo>();
 
                         var prefab = newObj.GetComponent<IndrePrefabs>();

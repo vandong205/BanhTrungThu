@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 44d2ca8160856744c8a668015cfcc6c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9112696213624508463
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_0
+  - first:
+      213: 6255498253822224991
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_1
+  - first:
+      213: -2272617192107921327
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_2
+  - first:
+      213: -4665628144241907082
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_3
+  - first:
+      213: -7053443331172841782
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_4
+  - first:
+      213: -101745817378004721
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_5
+  - first:
+      213: 8230685700939482738
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_6
+  - first:
+      213: 8110577057337319211
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_7
+  - first:
+      213: 1208532238604518183
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_8
+  - first:
+      213: -1627137165535085624
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_9
+  - first:
+      213: -1826334022099184460
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_10
+  - first:
+      213: 6812359456806639243
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_11
+  - first:
+      213: -2759110761092437539
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_12
+  - first:
+      213: 4687384704348244892
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_13
+  - first:
+      213: -1293509717284729434
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_14
+  - first:
+      213: -7398534555019533795
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_15
+  - first:
+      213: 4888743234908752902
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_16
+  - first:
+      213: 7036391817260696954
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_17
+  - first:
+      213: -5354363604422994749
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_18
+  - first:
+      213: -5162483768339116315
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_19
+  - first:
+      213: -7591529355597403460
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_20
+  - first:
+      213: -5291124131637257642
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_21
+  - first:
+      213: 960501145737970006
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_22
+  - first:
+      213: -2105308290523698830
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_23
+  - first:
+      213: 3498606036753226342
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_24
+  - first:
+      213: -9194942663748704021
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_25
+  - first:
+      213: -390424457087629377
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_26
+  - first:
+      213: 9046596013070522928
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_27
+  - first:
+      213: 5468515509869849165
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_28
+  - first:
+      213: 7550400466364486441
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_29
+  - first:
+      213: -3193234938754533009
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_30
+  - first:
+      213: 3197310258031857496
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_31
+  - first:
+      213: 155597970569051041
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_32
+  - first:
+      213: 532823556097443049
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_33
+  - first:
+      213: 322280355184325432
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_34
+  - first:
+      213: 2098628264843132523
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_35
+  - first:
+      213: -4355983785678945433
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_36
+  - first:
+      213: -6645077707761659740
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_37
+  - first:
+      213: 4355159850984515844
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_38
+  - first:
+      213: 3688534957693629036
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_39
+  - first:
+      213: 1122271681882049474
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_40
+  - first:
+      213: -6776031675283180364
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_41
+  - first:
+      213: -1304067684264264724
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_42
+  - first:
+      213: -2501334218178656052
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_43
+  - first:
+      213: 7056281280933143878
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_44
+  - first:
+      213: -129756538088027
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_45
+  - first:
+      213: 5883791957037383974
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_46
+  - first:
+      213: -4658329031767027715
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_47
+  - first:
+      213: 1301312799941736047
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_48
+  - first:
+      213: 2288310202522364660
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_49
+  - first:
+      213: -894091884484506721
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_50
+  - first:
+      213: -734022463240634185
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_51
+  - first:
+      213: -2017109241487674319
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_52
+  - first:
+      213: 2943999714533349113
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_53
+  - first:
+      213: 1808097399990760166
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_54
+  - first:
+      213: -355353376423761239
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_55
+  - first:
+      213: -7742063320571419244
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_56
+  - first:
+      213: 5419174402543035096
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_57
+  - first:
+      213: -1616326336922136856
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_58
+  - first:
+      213: -3114639920144272722
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_59
+  - first:
+      213: -8761712890763513459
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_60
+  - first:
+      213: 7322500729922357080
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_61
+  - first:
+      213: 1855354953277282695
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_62
+  - first:
+      213: 2413163588987547467
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_63
+  - first:
+      213: 8435918527991694321
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_64
+  - first:
+      213: -1880826241155496917
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_65
+  - first:
+      213: -2184324339499280718
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_66
+  - first:
+      213: 1401773978695968845
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_67
+  - first:
+      213: 3620826018535182957
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_68
+  - first:
+      213: -4492399044606854513
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_69
+  - first:
+      213: -2555507241588906487
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_70
+  - first:
+      213: 6736840644568411010
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_71
+  - first:
+      213: -4262736708580313340
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_72
+  - first:
+      213: -6670423729324165930
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_73
+  - first:
+      213: 2509820816593730816
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_74
+  - first:
+      213: 9007301823051502117
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_75
+  - first:
+      213: -7765272926597808736
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_76
+  - first:
+      213: 6372104199413226659
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_77
+  - first:
+      213: 4371106784255041923
+    second: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_0
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 60
+        width: 967
+        height: 894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453920ae4739efc46bd89bcd58f10d96
+      internalID: 9112696213624508463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b0de3127232c5234094e8836a19018de
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_0: 9112696213624508463
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_1: 6255498253822224991
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_10: -1826334022099184460
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_11: 6812359456806639243
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_12: -2759110761092437539
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_13: 4687384704348244892
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_14: -1293509717284729434
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_15: -7398534555019533795
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_16: 4888743234908752902
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_17: 7036391817260696954
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_18: -5354363604422994749
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_19: -5162483768339116315
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_2: -2272617192107921327
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_20: -7591529355597403460
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_21: -5291124131637257642
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_22: 960501145737970006
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_23: -2105308290523698830
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_24: 3498606036753226342
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_25: -9194942663748704021
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_26: -390424457087629377
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_27: 9046596013070522928
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_28: 5468515509869849165
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_29: 7550400466364486441
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_3: -4665628144241907082
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_30: -3193234938754533009
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_31: 3197310258031857496
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_32: 155597970569051041
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_33: 532823556097443049
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_34: 322280355184325432
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_35: 2098628264843132523
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_36: -4355983785678945433
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_37: -6645077707761659740
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_38: 4355159850984515844
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_39: 3688534957693629036
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_4: -7053443331172841782
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_40: 1122271681882049474
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_41: -6776031675283180364
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_42: -1304067684264264724
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_43: -2501334218178656052
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_44: 7056281280933143878
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_45: -129756538088027
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_46: 5883791957037383974
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_47: -4658329031767027715
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_48: 1301312799941736047
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_49: 2288310202522364660
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_5: -101745817378004721
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_50: -894091884484506721
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_51: -734022463240634185
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_52: -2017109241487674319
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_53: 2943999714533349113
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_54: 1808097399990760166
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_55: -355353376423761239
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_56: -7742063320571419244
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_57: 5419174402543035096
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_58: -1616326336922136856
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_59: -3114639920144272722
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_6: 8230685700939482738
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_60: -8761712890763513459
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_61: 7322500729922357080
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_62: 1855354953277282695
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_63: 2413163588987547467
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_64: 8435918527991694321
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_65: -1880826241155496917
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_66: -2184324339499280718
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_67: 1401773978695968845
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_68: 3620826018535182957
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_69: -4492399044606854513
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_7: 8110577057337319211
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_70: -2555507241588906487
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_71: 6736840644568411010
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_72: -4262736708580313340
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_73: -6670423729324165930
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_74: 2509820816593730816
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_75: 9007301823051502117
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_76: -7765272926597808736
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_77: 6372104199413226659
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_78: 4371106784255041923
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_8: 1208532238604518183
+      20250926_1701_Rustic Parchment UI Frame_simple_compose_01k62qfs1he48tzkf480ckndkk_9: -1627137165535085624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

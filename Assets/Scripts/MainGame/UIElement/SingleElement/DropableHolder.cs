@@ -12,7 +12,7 @@ public class DropableHolder : MonoBehaviour, IDropHandler
         }
         if (eventData.pointerDrag != null)
         {
-            DraggableObject dragObj = eventData.pointerDrag.GetComponent<DraggableObject>();
+            DraggableUI dragObj = eventData.pointerDrag.GetComponent<DraggableUI>();
             if (dragObj != null)
             {
                 dragObj.parentAfterDrag = transform;

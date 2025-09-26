@@ -19,6 +19,8 @@ public class GamePlayController : MonoBehaviour
     public bool onProgress;
     public bool GotOutput = false;
     public bool _isInKitchen;
+
+    private Player _player;
     private void Awake()
     {
         if (Instance != null)
@@ -38,6 +40,8 @@ public class GamePlayController : MonoBehaviour
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
+        CustumerUI.Instance.SetCustumer(2);
+        _player = ResourceManager.Instance.player;
     }
     public void ExitGame() {
         Debug.Log("Exit");
@@ -137,13 +141,18 @@ public class GamePlayController : MonoBehaviour
             KitchenRoomUIManager.Instance.SetButtonPanelActive(false);
             ReceptionRoomUIManager.Instance.SetButtonPanelActive(true); 
             CameraManager.Instance.SetActiveCamera(_serviceCam);
+            CustumerUI.Instance.GoingIn();
+            AudioManager.Instance.PlaySFX("bellring");
             _isInKitchen = false;
+            StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(true, 0.5f));
         }
         else
         {
+            StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(false,0f));
             KitchenRoomUIManager.Instance.SetButtonPanelActive(true);
             ReceptionRoomUIManager.Instance.SetButtonPanelActive(false);
             CameraManager.Instance.SetActiveCamera(_kitchenCam);
+            CustumerUI.Instance.Goingout();
             _isInKitchen = true;
         }
         UIGamePlayManager.Instance.RegisDynamicUIPanel();

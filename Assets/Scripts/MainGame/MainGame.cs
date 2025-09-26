@@ -10,7 +10,7 @@ public class MainGame : MonoBehaviour
 {
     public static MainGame Instance;
 
-    private int LaunchingGameStep = 10;
+    private int LaunchingGameStep = 11;
     private int CurrentLaunchingStep = 0;
 
     public event Action<float> OnLoadingProcess; 
@@ -74,6 +74,9 @@ public class MainGame : MonoBehaviour
         Debug.Log("Dang tai config công thức");
         yield return Loader.LoadJsonConfigIntoList<Recipe>(Consts.RecipeConfigKey, ResourceManager.Instance.RecipeList);
         ResourceManager.Instance.recipeBook =  new RecipeBook(ResourceManager.Instance.RecipeList);
+        UpdateLaunchingProcess();
+        Debug.Log("Dang tai config khach hang");
+        yield return Loader.LoadJsonConfigIntoDict<int, Custumer>(Consts.CustumerConfigKey, ResourceManager.Instance.CustumerDict);
         UpdateLaunchingProcess();
 
     }

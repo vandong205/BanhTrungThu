@@ -10,5 +10,9 @@
   "vatphamtamthoi": {
     "Name": "vatphamtamthoi",
     "Path": "BuildBundles/VatPhamTamThoi/StandaloneWindows64/vatphamtamthoi.bundle"
+  },
+  "khachhang": {
+    "Name": "khachhang",
+    "Path": "BuildBundles/Khachhang/StandaloneWindows64/khachhang.bundle"
   }
 }

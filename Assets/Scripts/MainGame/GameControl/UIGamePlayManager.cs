@@ -1,4 +1,5 @@
 ﻿
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class UIGamePlayManager : MonoBehaviour
@@ -31,13 +32,12 @@ public class UIGamePlayManager : MonoBehaviour
     }
     void Start()
     {
-        
         player = ResourceManager.Instance.player;
         SetPlayerStat(player.Capital,player.TrustPoint,player.Token);
         KitchenRoomUIManager.Instance._LoadKitchen?.Invoke();
         ReceptionRoomUIManager.Instance._LoadReceptionRoom?.Invoke();
         _dynamicUI.RegisPanel();
-
+        LoadOrder();
         GamePlayController.Instance.OnLoadingUIDone?.Invoke();    
     }
     public void RegisDynamicUIPanel()
@@ -93,6 +93,34 @@ public class UIGamePlayManager : MonoBehaviour
     {
         HighUI.SetActive(active);
     }
+    public void LoadOrder()
+    {
+        if (player != null)
+        {
+            if(ResourceManager.Instance.CakeDict.TryGetValue(player.CurrentOrder.CakeID, out Cake cake))
+            {
+                if (cake != null)
+                {
+                    Sprite icon = AssetBundleManager.Instance.GetSpriteFromBundle("banh", cake.RoleName);
+                    long bonustpamount=0, bonustoken=0, money=0;
+                    foreach (Receive receive in player.CurrentOrder.Receives)
+                    {
+                        Receivetype type = receive.Receivetype;
+                        if (type == Receivetype.Money) money = receive.Amount;
+                        else if (type == Receivetype.TrustPoint) bonustpamount = receive.Amount;
+                        else if (type == Receivetype.Token) bonustoken = receive.Amount;
+                    }
+                    if (icon != null)
+                    {
+                        _dynamicUI.SetBillBox(icon,player.CurrentOrder.Number,money,bonustpamount,bonustoken);
+                    }
+                }
+
+            }
+        }
+
+    }
+
  
 }
 

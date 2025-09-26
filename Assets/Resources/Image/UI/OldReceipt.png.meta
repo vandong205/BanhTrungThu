@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: fce83e05148dc2947b5108f1dbad84f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7666502601169101789
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_0
+  - first:
+      213: 8192269570475830381
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_1
+  - first:
+      213: 5054295452244600248
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_2
+  - first:
+      213: -1357925542478732543
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_3
+  - first:
+      213: 2775547087297792000
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_4
+  - first:
+      213: -3444536877946313321
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_5
+  - first:
+      213: -4333476861649642130
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_6
+  - first:
+      213: -8399798003268407325
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_7
+  - first:
+      213: 3876885074909726383
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_8
+  - first:
+      213: -8306716725735491433
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_9
+  - first:
+      213: 7771931969513251604
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_10
+  - first:
+      213: -3765642142037436065
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_11
+  - first:
+      213: 2313181960422647348
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_12
+  - first:
+      213: 4238617166459936694
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_13
+  - first:
+      213: 2419841972848516565
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_14
+  - first:
+      213: -2461309558586612679
+    second: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 1515
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3ea443f73e46a60800000000000000
+      internalID: 7666502601169101789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 480
+        width: 78
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c247415c9c0b170800000000000000
+      internalID: 8192269570475830381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 829
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b569ec5fe6742640800000000000000
+      internalID: 5054295452244600248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 886
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1032029e9eda72de0800000000000000
+      internalID: -1357925542478732543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 864
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00841c3de59b48620800000000000000
+      internalID: 2775547087297792000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 854
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795e64e95fb8230d0800000000000000
+      internalID: -3444536877946313321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 846
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d9ffa01c56cd3c0800000000000000
+      internalID: -4333476861649642130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 821
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efa626583ced6b80800000000000000
+      internalID: -8399798003268407325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 813
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6020d5f667dc530800000000000000
+      internalID: 3876885074909726383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 806
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7987db8162d98bc80800000000000000
+      internalID: -8306716725735491433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 942
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413e655e2f27bdb60800000000000000
+      internalID: 7771931969513251604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 902
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f591e9c4c60cdbbc0800000000000000
+      internalID: -3765642142037436065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 919
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43665dbbcb21a1020800000000000000
+      internalID: 2313181960422647348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_13
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 62
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf97b11bd792da30800000000000000
+      internalID: 4238617166459936694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd57341471059120800000000000000
+      internalID: 2419841972848516565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934eb2e3ffba7ddd0800000000000000
+      internalID: -2461309558586612679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_0: 7666502601169101789
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_1: 8192269570475830381
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_10: 7771931969513251604
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_11: -3765642142037436065
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_12: 2313181960422647348
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_13: 4238617166459936694
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_14: 2419841972848516565
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_15: -2461309558586612679
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_2: 5054295452244600248
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_3: -1357925542478732543
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_4: 2775547087297792000
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_5: -3444536877946313321
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_6: -4333476861649642130
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_7: -8399798003268407325
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_8: 3876885074909726383
+      20250926_0838_Artistic Old Receipt_simple_compose_01k61tny9tekhb5vpbqc0evs72_9: -8306716725735491433
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

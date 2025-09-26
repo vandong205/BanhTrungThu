@@ -11,6 +11,8 @@ public class ResourceManager : MonoBehaviour
     public Dictionary<int, ProcessedItem> CakeFillingDict = new Dictionary<int, ProcessedItem>();
     public Dictionary<int, ProcessedItem> CakeCrust = new Dictionary<int, ProcessedItem>();
     public Dictionary<int, ProcessedItem> ShapedCake = new Dictionary<int, ProcessedItem>();
+    public Dictionary<int, Custumer> CustumerDict = new Dictionary<int, Custumer>();
+
     public List<Recipe> RecipeList = new List<Recipe>();
     public RecipeBook recipeBook;
     public Player player;
