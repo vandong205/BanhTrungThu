@@ -33,7 +33,7 @@ public class ReceptionRoomUIManager : MonoBehaviour
     }
     public void LoadData()
     {
-        LoadCake();
+        RefreshCakeStock();
         serviceProcessUI.RefreshCakeHolder();
     }
     public void LoadCake()
@@ -81,8 +81,7 @@ public class ReceptionRoomUIManager : MonoBehaviour
         UIGamePlayManager.Instance.OpenAtap = false;
     }
     public void StrayClick()
-    {
-        
+    {  
         UIGamePlayManager.Instance.OpenAtap = true;
     }
     public void PaperbagClick()
@@ -93,6 +92,7 @@ public class ReceptionRoomUIManager : MonoBehaviour
     }
     public IEnumerator SetActiveDummyBagDelay(bool active,float delay)
     {
+
         yield return new WaitForSeconds(delay);
         DummyBag.SetActive(active);
     }

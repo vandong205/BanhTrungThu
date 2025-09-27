@@ -8,20 +8,23 @@ public class ObjectPool:MonoBehaviour
 
     private List<GameObject> slotPool = new List<GameObject>();
 
-    public void InitPool(int count)
+    public void InitPool(int count,bool stackable = false)
     {
         slotPool.Clear();
+        string prefablink = "";
+        if (stackable) prefablink = "Prefabs/VDInventorySlot";
+        else prefablink = "Prefabs/InventorySlot";
+        Debug.Log($"Da goi init pool trong{name} voi link{prefablink}");
+            for (int i = 0; i < count; i++)
+            {
+                GameObject slot = Instantiate(Resources.Load<GameObject>(prefablink), Content.transform);
 
-        for (int i = 0; i < count; i++)
-        {
-            GameObject slot = Instantiate(Resources.Load<GameObject>("Prefabs/InventorySlot"), Content.transform);
+                if (slot.GetComponent<DropableHolder>() == null&&!stackable)
+                    slot.AddComponent<DropableHolder>().IsNotStack(true);
 
-            if (slot.GetComponent<DropableHolder>() == null)
-                slot.AddComponent<DropableHolder>().IsNotStack(true);
-
-            slot.SetActive(false);
-            slotPool.Add(slot);
-        }
+                slot.SetActive(false);
+                slotPool.Add(slot);
+            }
     }
 
     public GameObject GetSlotFromPool()

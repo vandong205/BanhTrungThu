@@ -49,7 +49,6 @@ public class ServiceProcessUIManager : MonoBehaviour
             return;
         }
 
-        cakeholder.ClearAll();
 
         foreach (var cake in ResourceManager.Instance.player.Cakes)
         {
@@ -59,11 +58,10 @@ public class ServiceProcessUIManager : MonoBehaviour
                 if (AssetBundleManager.Instance.GetAssetBundle("banh", out AssetBundle bundle))
                 {
                     Sprite ico = bundle.LoadAsset<Sprite>(item.RoleName);
-                    GameObject slot = cakeholder.GetSlotFromPool();
+                    Transform slot = cakeholder.GetSlotFromPool();
                     if (slot != null)
                     {
-                        // Spawn prefab mới trong slot
-                        GameObject newObj = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot.transform);
+                        GameObject newObj = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot);
 
                         if (newObj.GetComponent<DraggableUI>() == null) newObj.AddComponent<DraggableUI>();
                         if (newObj.GetComponent<ObjectInfo>() == null) newObj.AddComponent<ObjectInfo>();
@@ -71,7 +69,17 @@ public class ServiceProcessUIManager : MonoBehaviour
                         var prefab = newObj.GetComponent<IndrePrefabs>();
                         prefab.SetIcon(ico);
                         prefab.SetTooltip(item.Name);
-                        prefab.GetComponent<ObjectInfo>().SetProp(ObjectType.ingre, item.ID, item.Name, item.RoleName);
+
+                        var objInfo = prefab.GetComponent<ObjectInfo>();
+                        objInfo.SetProp(ObjectType.ingre, item.ID, item.Name, item.RoleName);
+                        cakeholder.slots.Add(objInfo);
+
+                        //// --- Gán số lượng ---
+                        //var holder = slot.GetComponent<VDDroppableHolder>();
+                        //if (holder != null)
+                        //{
+                        //    holder.SetItem(objInfo, cake.Quantity); // cake.Quantity lấy từ PlayerOwnedObject
+                        //}
                     }
                 }
             }

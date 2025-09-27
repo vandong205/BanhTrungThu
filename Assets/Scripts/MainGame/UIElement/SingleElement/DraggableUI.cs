@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
@@ -7,7 +7,7 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     private CanvasGroup canvasGroup;
 
     [Header("Options")]
-    public bool fitParent = false; // m?c ð?nh = false
+    public bool fitParent = false;
 
     private void Awake()
     {
@@ -19,7 +19,6 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("BeginDrag");
-
         parentAfterDrag = transform.parent;
         canvasGroup.blocksRaycasts = false;
         transform.SetParent(transform.root);
@@ -34,11 +33,9 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("EndDrag");
-
         canvasGroup.blocksRaycasts = true;
         transform.SetParent(parentAfterDrag);
 
-        // N?u fitParent = true và object có RectTransform
         if (fitParent && transform is RectTransform rectTransform && parentAfterDrag is RectTransform parentRect)
         {
             rectTransform.anchorMin = Vector2.zero;

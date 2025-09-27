@@ -7,7 +7,7 @@ public class DoneCakeHolder : MonoBehaviour
 
 
     private List<GameObject> slotPool = new List<GameObject>();
-
+    public List<ObjectInfo> slots = new List<ObjectInfo>();
     public void InitPool(int count)
     {
         slotPool.Clear();
@@ -26,14 +26,14 @@ public class DoneCakeHolder : MonoBehaviour
         Debug.Log($"[CakrHolder] InitPool xong, tổng số slot: {slotPool.Count}");
     }
 
-    public GameObject GetSlotFromPool()
+    public Transform GetSlotFromPool()
     {
         foreach (var slot in slotPool)
         {
             if (!slot.activeSelf)
             {
                 slot.SetActive(true);
-                return slot;
+                return slot.transform; 
             }
         }
         Debug.LogWarning("[TempItemHolder] Hết slot trống!");
@@ -51,4 +51,5 @@ public class DoneCakeHolder : MonoBehaviour
             slot.SetActive(false);
         }
     }
+
 }

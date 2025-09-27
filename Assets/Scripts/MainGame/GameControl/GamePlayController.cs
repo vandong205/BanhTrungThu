@@ -19,7 +19,7 @@ public class GamePlayController : MonoBehaviour
     public bool onProgress;
     public bool GotOutput = false;
     public bool _isInKitchen;
-
+    public bool _HasDoneCakeForCustumer = false;
     private Player _player;
     private void Awake()
     {
@@ -144,11 +144,13 @@ public class GamePlayController : MonoBehaviour
             CustumerUI.Instance.GoingIn();
             AudioManager.Instance.PlaySFX("bellring");
             _isInKitchen = false;
-            StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(true, 0.5f));
+            if(_HasDoneCakeForCustumer)
+                StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(true, 0.5f));
         }
         else
         {
-            StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(false,0f));
+            if (_HasDoneCakeForCustumer)
+                StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(false, 0f));
             KitchenRoomUIManager.Instance.SetButtonPanelActive(true);
             ReceptionRoomUIManager.Instance.SetButtonPanelActive(false);
             CameraManager.Instance.SetActiveCamera(_kitchenCam);

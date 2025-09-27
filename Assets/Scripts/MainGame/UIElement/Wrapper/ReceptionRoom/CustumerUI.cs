@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 public class CustumerUI : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class CustumerUI : MonoBehaviour
     }
     public void SetCustumer(int ID)
     {
-        if(ResourceManager.Instance.CustumerDict.TryGetValue(ID,out Custumer custumer))
+        if (ResourceManager.Instance.CustumerDict.TryGetValue(ID, out Custumer custumer))
         {
             SetCustumerName(custumer.Name);
             if (AssetBundleManager.Instance.GetAssetBundle("khachhang", out AssetBundle bundle))
@@ -45,5 +46,6 @@ public class CustumerUI : MonoBehaviour
                     Debug.LogWarning("Khong tim thay sprite " + custumer.Rolename);
             }
         }
+
     }
 }
