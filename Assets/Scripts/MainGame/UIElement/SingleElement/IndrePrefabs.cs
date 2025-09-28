@@ -13,22 +13,24 @@ public class IndrePrefabs : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void SetTooltip(string text)
     {
+        if (image == null) return;
         tooltipText = text;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         RectTransform rectTransform = GetComponent<RectTransform>();
-        if (rectTransform != null)
-        {
-            Debug.Log("Đã gọi PointerEnter của prefabs");
-            if (!string.IsNullOrEmpty(tooltipText))
-                UITooltip.Instance.Show(tooltipText, rectTransform);
-        }
+        //if (rectTransform != null)
+        //{
+        //    Debug.Log("Đã gọi PointerEnter của prefabs");
+        //    if (!string.IsNullOrEmpty(tooltipText))
+        //        UITooltip.Instance.Show(tooltipText, rectTransform);
+        //}
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        UITooltip.Instance.Hide();
+
+        //UITooltip.Instance.Hide();
     }
 }

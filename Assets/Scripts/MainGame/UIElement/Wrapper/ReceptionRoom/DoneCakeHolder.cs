@@ -14,11 +14,7 @@ public class DoneCakeHolder : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            GameObject slot = Instantiate(Resources.Load<GameObject>("Prefabs/InventorySlot"), Content.transform);
-
-            if (slot.GetComponent<DropableHolder>() == null)
-                slot.AddComponent<DropableHolder>().IsNotStack(true);
-
+            GameObject slot = Instantiate(Resources.Load<GameObject>("Prefabs/SimulateStackHolder"), Content.transform);
             slot.SetActive(false);
             slotPool.Add(slot);
         }

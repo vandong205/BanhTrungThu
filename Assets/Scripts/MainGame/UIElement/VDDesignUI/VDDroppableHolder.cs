@@ -1,72 +1,111 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
-using TMPro;
 
-public class VDDroppableHolder : DropableHolder
+public class VDDroppableHolder : MonoBehaviour, IDropHandler
 {
-    [Header("UI Hiển thị số lượng")]
-    [SerializeField] private GameObject quantityParent;
-    [SerializeField] private TextMeshProUGUI quantityText;
+    [SerializeField] private TextMeshProUGUI countTextUI;
+    [SerializeField] private bool NotStack = true;
 
-    private int quantity = 0;
-    private int mainID = -1;
+    private ObjectInfo mainitem = null;
+    private int itemCount = 0;
 
-    public override void OnDrop(PointerEventData eventData)
+    public int ItemCount => itemCount;
+
+    private void Awake()
     {
-        if (eventData.pointerDrag == null) return;
-
-        DraggableUI dragObj = eventData.pointerDrag.GetComponent<DraggableUI>();
-        if (dragObj == null) return;
-
-        ObjectInfo newInfo = dragObj.GetComponent<ObjectInfo>();
-        if (newInfo == null) return;
-
-        if (quantity == 0)
+        ObjectInfo childItem = GetComponentInChildren<ObjectInfo>();
+        if (childItem != null)
         {
-            base.OnDrop(eventData);
-            mainID = newInfo.ID;
-            quantity = 1;
-            UpdateQuantityUI();
+            mainitem = childItem;
+            itemCount = 1;
+        }
+        UpdateCounterUI();
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (eventData == null || eventData.pointerDrag == null) return;
+
+        VDDraggableItem dragData = eventData.pointerDrag.GetComponent<VDDraggableItem>();
+        ObjectInfo iteminfo = eventData.pointerDrag.GetComponent<ObjectInfo>();
+        if (dragData == null || iteminfo == null) return;
+
+        if (mainitem == null)
+        {
+            GameObject go = Instantiate(iteminfo.gameObject, transform);
+            mainitem = go.GetComponent<ObjectInfo>();
+            itemCount = 1;
+            dragData.parentAfterDrag = transform;
+            Destroy(dragData.gameObject);
+        }
+        else if (mainitem.ID == iteminfo.ID)
+        {
+            // stack cùng loại
+            itemCount++;
+            dragData.parentAfterDrag = transform;
+            Destroy(dragData.gameObject);
+        }
+        else if (!NotStack)
+        {
+            // override slot
+            Destroy(mainitem.gameObject);
+            mainitem = Instantiate(iteminfo.gameObject, transform).GetComponent<ObjectInfo>();
+            itemCount = 1;
+            dragData.parentAfterDrag = transform;
+            Destroy(dragData.gameObject);
         }
         else
         {
-            if (newInfo.ID == mainID)
-            {
-                quantity++;
-                UpdateQuantityUI();
-                Destroy(dragObj.gameObject);
-
-                GameObject replacement = Object.Instantiate(dragObj.gameObject, transform);
-                var repCanvas = replacement.GetComponent<CanvasGroup>();
-                if (repCanvas != null) repCanvas.blocksRaycasts = true;
-                var repDraggable = replacement.GetComponent<DraggableUI>();
-                if (repDraggable != null)
-                {
-                    repDraggable.parentAfterDrag = transform;
-                    //repDraggable.originalParent = transform;
-                }
-                if (replacement.transform is RectTransform rt)
-                {
-                    rt.anchoredPosition = Vector2.zero;
-                    rt.localScale = Vector3.one;
-                }
-            }
+            // trả về slot gốc
+            dragData.parentAfterDrag = null;
         }
+
+        UpdateCounterUI();
     }
 
-    private void UpdateQuantityUI()
+    public bool RemoveOneItem()
     {
-        if (quantityParent != null)
-            quantityParent.SetActive(quantity > 1);
-
-        if (quantityText != null)
-            quantityText.text = quantity.ToString();
+        if (itemCount > 0)
+        {
+            itemCount--;
+            if (itemCount <= 0 && mainitem != null)
+            {
+                Destroy(mainitem.gameObject);
+                mainitem = null;
+            }
+            UpdateCounterUI();
+            return true;
+        }
+        return false;
     }
 
-    public void SetItem(ObjectInfo info, int qty)
+    public void AddOneItemBack(ObjectInfo itemPrefab)
     {
-        mainID = info.ID;
-        quantity = qty;
-        UpdateQuantityUI();
+        if (mainitem == null)
+        {
+            mainitem = Instantiate(itemPrefab.gameObject, transform).GetComponent<ObjectInfo>();
+            itemCount = 1;
+        }
+        else if (mainitem.ID == itemPrefab.ID)
+        {
+            itemCount++;
+        }
+        UpdateCounterUI();
+    }
+
+    private void UpdateCounterUI()
+    {
+        if (countTextUI == null) return;
+
+        if (itemCount <= 1)
+        {
+            countTextUI.gameObject.SetActive(false);
+        }
+        else
+        {
+            countTextUI.gameObject.SetActive(true);
+            countTextUI.text = itemCount.ToString();
+        }
     }
 }

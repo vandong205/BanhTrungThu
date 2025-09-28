@@ -1,15 +1,16 @@
-﻿using UnityEngine;
+﻿using NUnit.Framework.Constraints;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class ServiceProcessUIManager : MonoBehaviour
 {
     [SerializeField] DoneCakeHolder cakeholder;
     [SerializeField] PaperBagHolder bagHolder;
     [SerializeField] GameObject CloseBtn;
-    private void Start()
+    private void Awake()
     {
-        cakeholder.InitPool(20);
+        cakeholder.InitPool(15);
     }
-
     public void TurnOnPanel(ServiceProcessPanel panel)
     {
         switch (panel)
@@ -48,41 +49,32 @@ public class ServiceProcessUIManager : MonoBehaviour
         {
             return;
         }
-
-
-        foreach (var cake in ResourceManager.Instance.player.Cakes)
+        foreach(PlayerOwnedObject playerCake in ResourceManager.Instance.player.Cakes)
         {
-            if (ResourceManager.Instance.CakeDict.TryGetValue(cake.ID, out Cake item))
-            {
-
-                if (AssetBundleManager.Instance.GetAssetBundle("banh", out AssetBundle bundle))
+            if(ResourceManager.Instance.CakeDict.TryGetValue(playerCake.ID,out Cake cake)){
+                if (cake != null)
                 {
-                    Sprite ico = bundle.LoadAsset<Sprite>(item.RoleName);
                     Transform slot = cakeholder.GetSlotFromPool();
-                    if (slot != null)
+                    ObjectInfo info = slot.GetComponent<ObjectInfo>();
+                    if(info ==null) info = slot.AddComponent<ObjectInfo>();
+                    info.ID = cake.ID;
+                    info.Name = cake.Name;  
+                    info.RoleName = cake.RoleName;
+                    info.Type = ObjectType.bakedcake;
+                    SimulateStackHolder control = slot.GetComponent<SimulateStackHolder>();
+
+                    if (control != null) {
+                        control.SetItemCount(playerCake.Quantity);
+                        Sprite icon = AssetBundleManager.Instance.GetSpriteFromBundle("banh", info.RoleName);
+                        control.SetIcon(icon);
+                    }
+                    else
                     {
-                        GameObject newObj = Instantiate(Resources.Load<GameObject>("Prefabs/IndrePrefab"), slot);
-
-                        if (newObj.GetComponent<DraggableUI>() == null) newObj.AddComponent<DraggableUI>();
-                        if (newObj.GetComponent<ObjectInfo>() == null) newObj.AddComponent<ObjectInfo>();
-
-                        var prefab = newObj.GetComponent<IndrePrefabs>();
-                        prefab.SetIcon(ico);
-                        prefab.SetTooltip(item.Name);
-
-                        var objInfo = prefab.GetComponent<ObjectInfo>();
-                        objInfo.SetProp(ObjectType.ingre, item.ID, item.Name, item.RoleName);
-                        cakeholder.slots.Add(objInfo);
-
-                        //// --- Gán số lượng ---
-                        //var holder = slot.GetComponent<VDDroppableHolder>();
-                        //if (holder != null)
-                        //{
-                        //    holder.SetItem(objInfo, cake.Quantity); // cake.Quantity lấy từ PlayerOwnedObject
-                        //}
+                        Debug.LogWarning("khong co component SimulateSlot");
                     }
                 }
             }
         }
     }
+    
 }

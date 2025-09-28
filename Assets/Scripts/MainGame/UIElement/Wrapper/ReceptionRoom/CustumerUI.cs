@@ -37,15 +37,13 @@ public class CustumerUI : MonoBehaviour
         if (ResourceManager.Instance.CustumerDict.TryGetValue(ID, out Custumer custumer))
         {
             SetCustumerName(custumer.Name);
-            if (AssetBundleManager.Instance.GetAssetBundle("khachhang", out AssetBundle bundle))
-            {
+
                 Sprite armsprite = AssetBundleManager.Instance.GetSpriteFromBundle("khachhang", custumer.Rolename);
                 if (armsprite != null)
                     Arm.sprite = armsprite;
                 else
                     Debug.LogWarning("Khong tim thay sprite " + custumer.Rolename);
             }
-        }
 
     }
 }

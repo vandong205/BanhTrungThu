@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dauxanhmatong
+      name: dauxanh-matong
       rect:
         serializedVersion: 2
         x: 2
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dauxanhmatong: 5002495807152478823
+      dauxanh-matong: 5002495807152478823
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

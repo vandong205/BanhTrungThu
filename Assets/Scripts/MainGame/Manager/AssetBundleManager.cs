@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AssetBundleManager : MonoBehaviour
@@ -80,18 +81,46 @@ public class AssetBundleManager : MonoBehaviour
 
     public Sprite GetSpriteFromBundle(string bundleName, string spriteName)
     {
-        if (CachedSprites.TryGetValue(spriteName, out var sprite))
-            return sprite;
-
-        if (GetAssetBundle(bundleName, out var bundle))
+        // 1. Check cache trước
+        if (CachedSprites.TryGetValue(spriteName, out var cachedSprite))
         {
-            foreach (var s in bundle.LoadAllAssets<Sprite>())
+            return cachedSprite;
+        }
+
+        // 2. Lấy bundle
+        if (!GetAssetBundle(bundleName, out var bundle) || bundle == null)
+        {
+            Debug.LogError($"[AssetBundleManager] Bundle '{bundleName}' not found.");
+            return null;
+        }
+
+        // 3. Load tất cả Sprite (bỏ qua Texture2D)
+        var sprites = bundle.LoadAllAssets<Sprite>();
+        if (sprites == null || sprites.Length == 0)
+        {
+            Debug.LogError($"[AssetBundleManager] No sprites found in bundle '{bundleName}'.");
+            return null;
+        }
+
+        // 4. Add vào cache
+        foreach (var s in sprites)
+        {
+            if (!CachedSprites.ContainsKey(s.name))
             {
                 CachedSprites[s.name] = s;
-                if (s.name == spriteName)
-                    return s;
+            }
+
+            // Nếu đúng tên cần thì return luôn
+            if (s.name == spriteName)
+            {
+                return s;
             }
         }
+
+        // 5. Nếu không có sprite khớp → log cảnh báo
+        Debug.LogWarning($"[AssetBundleManager] Sprite '{spriteName}' not found in bundle '{bundleName}'. " +
+                         $"Available: {string.Join(", ", sprites.Select(x => x.name))}");
         return null;
     }
+
 }

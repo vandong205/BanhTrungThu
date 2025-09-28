@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: banhhong
+      name: dua-vungden
       rect:
         serializedVersion: 2
         x: 4
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      banhhong: -8134992517224438614
+      dua-vungden: -8134992517224438614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
