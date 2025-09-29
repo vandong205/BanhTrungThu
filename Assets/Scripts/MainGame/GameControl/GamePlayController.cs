@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using Unity.Cinemachine;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 public class GamePlayController : MonoBehaviour
 {
     public Action OnLoadingUIDone;
@@ -10,7 +10,7 @@ public class GamePlayController : MonoBehaviour
     public static GamePlayController Instance;
     [SerializeField] CookingProcessController cookcontroller;
     [SerializeField] CookingProcessUIManager cookuimanager;
-
+    [SerializeField] BinDrop _custumerdropzone;
     [Header("Cinemachine Cameras")]
     [SerializeField] private CinemachineCamera _kitchenCam;
     [SerializeField] private CinemachineCamera _serviceCam;
@@ -39,6 +39,7 @@ public class GamePlayController : MonoBehaviour
         CameraManager.Instance.SetActiveCamera(_serviceCam);
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
+        _custumerdropzone.OnObjectDroped+=OnServiceCakeToCustumer;
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
         CustumerUI.Instance.SetCustumer(2);
         _player = ResourceManager.Instance.player;
@@ -159,4 +160,25 @@ public class GamePlayController : MonoBehaviour
         }
         UIGamePlayManager.Instance.RegisDynamicUIPanel();
     }
+    private void OnServiceCakeToCustumer()
+    {
+        //tru so banh da lam
+        List<PlayerOwnedObject> cakes = ReceptionRoomUIManager.Instance.getWrappedCakes();
+        foreach (PlayerOwnedObject obj in cakes) { 
+
+            foreach(PlayerOwnedObject playercake in ResourceManager.Instance.player.Cakes)
+            {
+                if(obj==playercake)
+                {
+                    playercake.Quantity -= obj.Quantity;
+                    break;
+                }
+            }
+        }
+        ReceptionRoomUIManager.Instance.ClearWrappedCakeList();
+        ReceptionRoomUIManager.Instance.RefreshCakeStock();
+
+        //them tien va phan thuong
+    }
+    
 }

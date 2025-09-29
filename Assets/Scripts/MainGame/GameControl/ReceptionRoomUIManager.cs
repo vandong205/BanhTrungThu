@@ -1,5 +1,7 @@
+
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ReceptionRoomUIManager : MonoBehaviour
@@ -95,6 +97,14 @@ public class ReceptionRoomUIManager : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
         DummyBag.SetActive(active);
+    }
+    public List<PlayerOwnedObject> getWrappedCakes()
+    {
+        return serviceProcessUI.GetWrappedCakesId();
+    }
+    public void ClearWrappedCakeList()
+    {
+        serviceProcessUI.ClearWrappedCakeList();
     }
 
 }

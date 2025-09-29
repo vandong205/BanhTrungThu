@@ -23,5 +23,11 @@ public enum ObjectType
     filling,
     crust,
     shapedcake,
-    bakedcake
+    bakedcake,
+    none
+}
+public enum NotificationType
+{
+    Warning,
+    Normal
 }
