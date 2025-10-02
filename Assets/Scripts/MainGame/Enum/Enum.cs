@@ -29,5 +29,6 @@ public enum ObjectType
 public enum NotificationType
 {
     Warning,
-    Normal
+    Normal,
+    Error
 }

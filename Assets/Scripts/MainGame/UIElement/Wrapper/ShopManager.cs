@@ -33,7 +33,7 @@ public class ShopManager : MonoBehaviour
                     info.SetInfo(result.ID, result.Price);
 
                     // Gọi Init để đăng ký sự kiện click
-                    ui.Init(info, this);
+                    ui.Init(info, this, cartManager);
                 }
             }
         }

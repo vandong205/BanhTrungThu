@@ -11,8 +11,9 @@ public class ShopItemUIController : MonoBehaviour
 
     private ShopItemInfo itemInfo;
     private ShopManager shopManager;
+    private CartManager cartManager;
 
-    public void Init(ShopItemInfo info, ShopManager manager)
+    public void Init(ShopItemInfo info, ShopManager manager,CartManager cart)
     {
         itemInfo = info;
         shopManager = manager;
@@ -22,6 +23,8 @@ public class ShopItemUIController : MonoBehaviour
         buyButton.onClick.AddListener(() =>
         {
             shopManager.AddToCart(itemInfo);
+            cart.SetTotalMoneyUI();
+            
         });
     }
 

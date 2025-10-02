@@ -6,9 +6,9 @@
     "UseTime": 2.0
   },
   "todungvobanh": {
-    "Name": "Tô đựng vỏ bánh",
+    "Name": "Tô trộn",
     "Rolename": "todungvobanh",
-    "Use": "Làm vỏ bánh",
+    "Use": "Trộn bánh",
     "UseTime": 3.0
   },
   "lonuong": {
