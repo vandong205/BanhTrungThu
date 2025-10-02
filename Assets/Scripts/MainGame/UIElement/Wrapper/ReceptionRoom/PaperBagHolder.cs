@@ -5,7 +5,8 @@ public class PaperBagHolder:MonoBehaviour
 {
     [SerializeField] Transform Content;
     public Action _addItemCallback;
-    public List<ObjectInfo> wrappedCake;
+    public Action _onClickWrap;
+    public List<PlayerOwnedObject> wrappedCake = new List<PlayerOwnedObject>();
     public void WrapCakeOnClick()
     {
         if (GamePlayController.Instance._HasDoneCakeForCustumer)
@@ -13,16 +14,22 @@ public class PaperBagHolder:MonoBehaviour
             Notification.Instance.Display("Hãy trả túi bánh cho khách hàng trước !",NotificationType.Warning);
             return;
         }
+        bool valid = false;
         foreach (Transform child in Content)
         {
+
             ObjectInfo childInfo = child.GetComponent<ObjectInfo>();
-            if(childInfo != null)
-            {
-                wrappedCake.Add(childInfo);
-            }
+            SimulateStackHolder slotControl = child.GetComponent<SimulateStackHolder>();
+            PlayerOwnedObject cake = new PlayerOwnedObject(childInfo.ID, slotControl.getCount());
+            if (cake.ID == 0) continue;
+            valid = true;
+            wrappedCake.Add(cake);
         }
+        if (!valid) return;
         ResetHolder();
         GamePlayController.Instance._HasDoneCakeForCustumer = true;
+        _onClickWrap?.Invoke();
+        //_onClickWrap = null;
         StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(true, 0.2f));
     }
     public bool inContent(ObjectInfo info)
@@ -123,4 +130,9 @@ public class PaperBagHolder:MonoBehaviour
             }
         }
     }
+    public void ClearWrappedCake()
+    {
+        wrappedCake.Clear();
+    }
+  
 }

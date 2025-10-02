@@ -1,35 +1,47 @@
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections.Generic;
 public class ShopManager : MonoBehaviour
 {
     [SerializeField] Transform ShopContent;
+    [SerializeField] CartManager cartManager;
     public void LoadShop()
     {
         foreach (PlayerOwnedObject indre in UIGamePlayManager.Instance.player.Ingredients)
         {
-            string name = "";
-            var shopitem = Resources.Load<GameObject>("Prefabs/ShopItem");
+            var shopitemPrefab = Resources.Load<GameObject>("Prefabs/ShopItem");
+            GameObject obj = Instantiate(shopitemPrefab, ShopContent);
+
             if (ResourceManager.Instance.IngredientDict.TryGetValue(indre.ID, out Ingredient result))
             {
                 if (result != null)
                 {
-                    name = result.RoleName;
+                    string name = result.RoleName;
 
-                }
-                if (AssetBundleManager.Instance.GetAssetBundle("nguyenlieu", out AssetBundle bundle))
-                {
-                    if (bundle != null)
+                    Sprite icon = null;
+                    if (AssetBundleManager.Instance.GetAssetBundle("nguyenlieu", out AssetBundle bundle))
                     {
-                        Sprite icon = bundle.LoadAsset<Sprite>(name);
-                        if (icon != null)
+                        if (bundle != null)
                         {
-                            shopitem.GetComponent<ShopItemUIController>().SetProp(icon, result.Name, result.Price.ToString());
+                            icon = bundle.LoadAsset<Sprite>(name);
                         }
                     }
+
+                    var ui = obj.GetComponent<ShopItemUIController>();
+                    ui.SetProp(icon, result.Name, MoneyFormatConvert.FormatCurrency(result.Price, "VND"));
+
+                    var info = obj.GetComponent<ShopItemInfo>();
+                    info.SetInfo(result.ID, result.Price);
+
+                    // Gọi Init để đăng ký sự kiện click
+                    ui.Init(info, this);
                 }
-                Instantiate(shopitem, ShopContent);
             }
         }
+    }
+
+    public void AddToCart(ShopItemInfo item)
+    {
+        cartManager.AddToCart(item);
     }
     public void OpenShop()
     {

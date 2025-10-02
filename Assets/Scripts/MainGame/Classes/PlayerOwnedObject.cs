@@ -1,6 +1,4 @@
-﻿using System;
-
-public class PlayerOwnedObject
+﻿public class PlayerOwnedObject
 {
     public int ID { get; set; }
     public int Quantity { get; set; }

@@ -1,100 +1,143 @@
 {
+  "CurrentOrder": {
+    "CakeID": 111,
+    "Number": 5,
+    "Receives": [
+      {
+        "Receivetype": 0,
+        "Amount": 100000
+      },
+      {
+        "Receivetype": 1,
+        "Amount": 8
+      },
+      {
+        "Receivetype": 2,
+        "Amount": 18
+      }
+    ]
+  },
   "PlayerName": "Văn Đồng",
-  "IsFirstTimeOpenGame": true,
-  "TrustPoint": 75,
+  "IsFirstTimeOpenGame": false,
+  "FormatCurrency": "VND",
+  "TrustPoint": 69,
+  "Capital": 734324,
   "Token": 125,
-  "Capital": 132324,
   "UnlockedCakes": [
-    4,
-    10,
-    7
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111
   ],
   "Ingredients": [
     {
-      "ID": 0,
-      "Quantity": 10
-    },
-    {
       "ID": 1,
-      "Quantity": 5
+      "Quantity": 100
     },
     {
       "ID": 2,
-      "Quantity": 8
+      "Quantity": 100
     },
     {
       "ID": 3,
-      "Quantity": 3
+      "Quantity": 99
     },
     {
       "ID": 4,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 5,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 6,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 7,
-      "Quantity": 3
+      "Quantity": 99
     },
     {
       "ID": 8,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 9,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 10,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 11,
-      "Quantity": 3
+      "Quantity": 98
     },
     {
       "ID": 12,
-      "Quantity": 3
+      "Quantity": 100
     },
     {
       "ID": 13,
-      "Quantity": 3
-    }
-  ],
-  "Orders": [
-    {
-      "CakeID": 0,
-      "Number": 2,
-      "Receives": [
-        {
-          "Receivetype": 0,
-          "Amount": 10000
-        },
-        {
-          "Receivetype": 1,
-          "Amount": 10
-        }
-      ]
+      "Quantity": 99
     },
     {
-      "CakeID": 1,
-      "Number": 10,
-      "Receives": [
-        {
-          "Receivetype": 0,
-          "Amount": 30000
-        },
-        {
-          "Receivetype": 1,
-          "Amount": 10
-        }
-      ]
+      "ID": 14,
+      "Quantity": 99
+    }
+  ],
+  "Cakes": [
+    {
+      "ID": 101,
+      "Quantity": 9
+    },
+    {
+      "ID": 102,
+      "Quantity": 9
+    },
+    {
+      "ID": 105,
+      "Quantity": 5
+    },
+    {
+      "ID": 103,
+      "Quantity": 9
+    },
+    {
+      "ID": 104,
+      "Quantity": 10
+    },
+    {
+      "ID": 106,
+      "Quantity": 9
+    },
+    {
+      "ID": 107,
+      "Quantity": 9
+    },
+    {
+      "ID": 108,
+      "Quantity": 10
+    },
+    {
+      "ID": 109,
+      "Quantity": 10
+    },
+    {
+      "ID": 110,
+      "Quantity": 10
+    },
+    {
+      "ID": 111,
+      "Quantity": 10
     }
   ]
 }

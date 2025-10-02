@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,20 +7,28 @@ public class ShopItemUIController : MonoBehaviour
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI indrename;
     [SerializeField] TextMeshProUGUI price;
-    void Start()
+    [SerializeField] Button buyButton;
+
+    private ShopItemInfo itemInfo;
+    private ShopManager shopManager;
+
+    public void Init(ShopItemInfo info, ShopManager manager)
     {
-        
+        itemInfo = info;
+        shopManager = manager;
+
+      
+        buyButton.onClick.RemoveAllListeners();
+        buyButton.onClick.AddListener(() =>
+        {
+            shopManager.AddToCart(itemInfo);
+        });
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void SetProp(Sprite itemicon,string itemname,string itemprice)
+    public void SetProp(Sprite itemicon, string itemname, string itemprice)
     {
         icon.sprite = itemicon;
+        indrename.text = itemname;
         price.text = itemprice;
-        indrename.text = itemname;  
     }
 }

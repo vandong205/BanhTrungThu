@@ -2,6 +2,7 @@
 using UnityEngine;
 using Unity.Cinemachine;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 public class GamePlayController : MonoBehaviour
 {
     public Action OnLoadingUIDone;
@@ -14,12 +15,14 @@ public class GamePlayController : MonoBehaviour
     [Header("Cinemachine Cameras")]
     [SerializeField] private CinemachineCamera _kitchenCam;
     [SerializeField] private CinemachineCamera _serviceCam;
+
     public int TotalIntroStep;
     public int IntroStep = 0;
     public bool onProgress;
     public bool GotOutput = false;
     public bool _isInKitchen;
     public bool _HasDoneCakeForCustumer = false;
+    public bool _HasOrder = false;
     private Player _player;
     private void Awake()
     {
@@ -39,10 +42,12 @@ public class GamePlayController : MonoBehaviour
         CameraManager.Instance.SetActiveCamera(_serviceCam);
         OnLoadingUIDone += OnPlayingTutorial;
         GotoNextIntroStep += NextIntroStep;
-        _custumerdropzone.OnObjectDroped+=OnServiceCakeToCustumer;
+        _custumerdropzone.OnObjectDroped += OnServiceCakeToCustumer;
+        ReceptionRoomUIManager.Instance.serviceProcessUI.SetClickWrapCallback(OnClickWrapCakes);
         TotalIntroStep =  ResourceManager.Instance.introDialogList.Count;
         CustumerUI.Instance.SetCustumer(2);
         _player = ResourceManager.Instance.player;
+        DelayHelper.CallAfterDelay(RandomOrder, 10.0f);
     }
     public void ExitGame() {
         Debug.Log("Exit");
@@ -120,7 +125,7 @@ public class GamePlayController : MonoBehaviour
         cookcontroller.ProcessOutput(toolused);
         if (!cookcontroller.GetOuputState())
         {
-            Debug.Log("Da huy do khong tim thay cong thuc");
+            Notification.Instance.Display($"", NotificationType.Warning);
             return;
         }
             float time = ResourceManager.Instance.KitchenItemDict[toolused.Rolename].UseTime;
@@ -142,8 +147,11 @@ public class GamePlayController : MonoBehaviour
             KitchenRoomUIManager.Instance.SetButtonPanelActive(false);
             ReceptionRoomUIManager.Instance.SetButtonPanelActive(true); 
             CameraManager.Instance.SetActiveCamera(_serviceCam);
-            CustumerUI.Instance.GoingIn();
-            AudioManager.Instance.PlaySFX("bellring");
+            if (_HasOrder)
+            {
+                CustumerUI.Instance.GoingIn();
+                AudioManager.Instance.PlaySFX("bellring");
+            }
             _isInKitchen = false;
             if(_HasDoneCakeForCustumer)
                 StartCoroutine(ReceptionRoomUIManager.Instance.SetActiveDummyBagDelay(true, 0.5f));
@@ -160,7 +168,7 @@ public class GamePlayController : MonoBehaviour
         }
         UIGamePlayManager.Instance.RegisDynamicUIPanel();
     }
-    private void OnServiceCakeToCustumer()
+    private void OnClickWrapCakes()
     {
         //tru so banh da lam
         List<PlayerOwnedObject> cakes = ReceptionRoomUIManager.Instance.getWrappedCakes();
@@ -175,10 +183,135 @@ public class GamePlayController : MonoBehaviour
                 }
             }
         }
-        ReceptionRoomUIManager.Instance.ClearWrappedCakeList();
+        
         ReceptionRoomUIManager.Instance.RefreshCakeStock();
-
-        //them tien va phan thuong
     }
-    
+    public void OnServiceCakeToCustumer()
+    {
+        ReceptionRoomUIManager.Instance.PlayArmEndAnimation();
+        _HasDoneCakeForCustumer = false;
+        _HasOrder = false;
+
+        Order currentOrder = _player.CurrentOrder;
+        List<PlayerOwnedObject> cakes = ReceptionRoomUIManager.Instance.getWrappedCakes();
+
+        float mistakepercent = 0f;
+        bool ValidCake = false;
+        // kiểm tra đúng loại bánh
+        foreach (PlayerOwnedObject obj in cakes)
+        {
+            if (obj.ID == currentOrder.CakeID)
+            {
+                ValidCake = true;   
+                if (obj.Quantity < currentOrder.Number)
+                {
+                    int mistake = currentOrder.Number - obj.Quantity;
+                    mistakepercent = (float)mistake / currentOrder.Number;
+                }
+                break;
+            }
+        }
+        if (!ValidCake) mistakepercent = 1;
+        bool hasAdd = false;
+        bool hasSubtract = false;
+
+        foreach (Receive receive in currentOrder.Receives)
+        {
+            switch (receive.Receivetype) {
+                case Receivetype.TrustPoint:
+                    long trustpointreward = 0;
+                    if (mistakepercent == 1)
+                    {
+                        trustpointreward = -receive.Amount;
+                        Notification.Instance.Display("Bạn sẽ bị trừ 100% điểm tín nhiệm nhận được nếu sai hoàn toàn đơn hàng!",NotificationType.Warning);
+                    }
+                    else
+                    {
+                        if (mistakepercent == 0)
+                        {
+                            trustpointreward = receive.Amount;
+                            Notification.Instance.Display($"Bạn nhận được {trustpointreward} điểm tín nhiệm", NotificationType.Normal);
+                        }
+                        else
+                        {
+                            trustpointreward = -(long)(receive.Amount * mistakepercent);
+                            Notification.Instance.Display($"Bạn bị trừ {trustpointreward} % điểm tín nhiệm !", NotificationType.Warning);
+                        }
+                    }
+                    ResourceManager.Instance.AddPlayerStat(0, trustpointreward, 0);
+                    break;               
+                case Receivetype.Money:
+                    long penalty = (long)(receive.Amount * mistakepercent);
+                    long reward = receive.Amount - penalty;
+                    if (mistakepercent == 1) ResourceManager.Instance.AddPlayerStat(-penalty, 0, 0);
+                    else ResourceManager.Instance.AddPlayerStat(reward,0,0);
+                    if (reward > 0)
+                    {
+                        GeneralUIMangager.Instance.SetAddMoney(reward);
+                        hasAdd = true;
+                    }
+                    if (penalty > 0)
+                    {
+                        GeneralUIMangager.Instance.SetSubtractMoney(penalty);
+                        hasSubtract = true;
+                    }
+                    break;
+                case Receivetype.Token:
+                    long tokenreward = 0;
+                    if (mistakepercent > 0)
+                    {
+                        tokenreward = 0;
+                        Notification.Instance.Display("Bạn không được cộng Token nếu làm sai", NotificationType.Warning);
+                    }
+                    if (mistakepercent == 0)
+                    {
+                        tokenreward = receive.Amount;
+                        Notification.Instance.Display($"Bạn nhận được {tokenreward} Token", NotificationType.Normal);
+
+                    }
+                    ResourceManager.Instance.AddPlayerStat(0, 0, tokenreward);  
+                    break;
+            }
+        }
+
+        if (hasAdd && hasSubtract)
+        {
+            StartCoroutine(GeneralUIMangager.Instance.DisplayAddAndSubtractMoney());
+        }
+        else if (hasAdd)
+        {
+            GeneralUIMangager.Instance.DisplayAddMoney();
+        }
+        else if (hasSubtract)
+        {
+            GeneralUIMangager.Instance.DisplaySubtractMoney();
+        }
+        ReceptionRoomUIManager.Instance.ClearWrappedCakes();
+        DelayHelper.CallAfterDelay(UIGamePlayManager.Instance.LoadPlayerStat, 3.0f);
+
+        float nextOrderTime = UnityEngine.Random.Range(10.0f, 20.0f);
+        DelayHelper.CallAfterDelay(RandomOrder, nextOrderTime);
+    }
+
+    public void RandomOrder()
+    {
+        if (_HasOrder) return;
+        _player.CurrentOrder = OrderSpawner.SpawnRandomOrder();
+        _HasOrder = true;
+        NewOrderNotification();
+    }
+    public void NewOrderNotification()
+    {
+        if (!_HasOrder) return;
+        List<int> custumer = new List<int>(ResourceManager.Instance.CustumerDict.Keys);
+        int custumerId = custumer[UnityEngine.Random.Range(0, custumer.Count)];
+        UIGamePlayManager.Instance.LoadOrder();
+        CustumerUI.Instance.SetCustumer(custumerId);
+        if(!_isInKitchen)
+        {
+            CustumerUI.Instance.Goingout();  
+            CustumerUI.Instance.GoingIn();
+        }
+        AudioManager.Instance.PlaySFX("bellring");
+    }
 }

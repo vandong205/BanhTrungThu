@@ -1,5 +1,6 @@
 ﻿using System;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,12 +8,15 @@ public class SimulateStackHolder : MonoBehaviour
 {
     [SerializeField] private Image icon;
     [SerializeField] private TextMeshProUGUI count;
-
+    [SerializeField] bool HideCount = false;
     public Action<ObjectInfo> _removeCallback;
     public Action<ObjectInfo> _addCallback;
 
     private int itemCount = 0;
-
+    private void Awake()
+    {
+        if(HideCount) count.gameObject.SetActive(false);    
+    }
     public void AddOneItem()
     {
         ObjectInfo info = GetComponent<ObjectInfo>();
@@ -41,7 +45,11 @@ public class SimulateStackHolder : MonoBehaviour
             itemCount--;
             _removeCallback?.Invoke(info);
         }
-        UpdateCountUI();
+        if (itemCount == 0)
+        {
+            info.ID = 0;
+        }
+            UpdateCountUI();
     }
 
     public void SetIcon(Sprite sprite)
@@ -57,6 +65,7 @@ public class SimulateStackHolder : MonoBehaviour
 
     private void UpdateCountUI()
     {
+        if (HideCount) return;
         if (!icon.gameObject.activeSelf || !count.gameObject.activeSelf)
         {
             icon.gameObject.SetActive(true);
@@ -74,5 +83,9 @@ public class SimulateStackHolder : MonoBehaviour
     public int getCount()
     {
         return itemCount;
+    }
+    public void SetHideCount(bool hide)
+    {
+        HideCount = hide;
     }
 }

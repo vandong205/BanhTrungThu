@@ -18,7 +18,7 @@ public class Billbox : MonoBehaviour
         _price.text = MoneyFormatConvert.FormatCurrency(price,"VND");
         _bonustrustpoint.text = "x" + bunustp;
         _bunustoken.text = "x"+bonustoken;
-        _totalprice.text = MoneyFormatConvert.FormatCurrency((quantity * price), "VND");
+        _totalprice.text = MoneyFormatConvert.FormatCurrency(price*quantity, "VND");
     }
     public void DisplayBillbox(bool active)
     {

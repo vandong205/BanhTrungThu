@@ -34,14 +34,24 @@ public class DraggableUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         Debug.Log("EndDrag");
         canvasGroup.blocksRaycasts = true;
-        transform.SetParent(parentAfterDrag);
-
-        if (fitParent && transform is RectTransform rectTransform && parentAfterDrag is RectTransform parentRect)
+        // Bin DropZone
+        if (eventData.pointerEnter != null && eventData.pointerEnter.GetComponentInParent<BinDrop>() != null)
         {
-            rectTransform.anchorMin = Vector2.zero;
-            rectTransform.anchorMax = Vector2.one;
-            rectTransform.offsetMin = Vector2.zero;
-            rectTransform.offsetMax = Vector2.zero;
+            transform.SetParent(parentAfterDrag);
+            gameObject.SetActive(false);
+        }
+        else
+        { 
+            transform.SetParent(parentAfterDrag);
+
+            if (fitParent && transform is RectTransform rectTransform && parentAfterDrag is RectTransform parentRect)
+            {
+                rectTransform.anchorMin = Vector2.zero;
+                rectTransform.anchorMax = Vector2.one;
+                rectTransform.offsetMin = Vector2.zero;
+                rectTransform.offsetMax = Vector2.zero;
+            }
         }
     }
+
 }

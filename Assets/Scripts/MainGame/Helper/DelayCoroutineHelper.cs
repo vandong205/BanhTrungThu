@@ -38,7 +38,7 @@ public class DelayHelper : MonoBehaviour
         Instance.StartCoroutine(DisableCoroutine(target, seconds));
     }
 
-    private static IEnumerator DisableCoroutine(GameObject target, float seconds)
+    public static IEnumerator DisableCoroutine(GameObject target, float seconds)
     {
         yield return new WaitForSeconds(seconds);
         if (target != null)

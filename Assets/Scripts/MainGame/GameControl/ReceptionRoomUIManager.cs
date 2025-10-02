@@ -10,11 +10,13 @@ public class ReceptionRoomUIManager : MonoBehaviour
     [SerializeField] MaketingPanelUIController markettingUI;
     [SerializeField] CakeRackUIManager cakeRackUI;
     [SerializeField] ShopInfoUiManager shopInfoUI;
-    [SerializeField] ServiceProcessUIManager serviceProcessUI;
+    [SerializeField] public ServiceProcessUIManager serviceProcessUI;
     public Action _LoadReceptionRoom;
     private ReceptionRoomUIManager _instance;
     public static ReceptionRoomUIManager Instance;
     public GameObject DummyBag;
+
+    [SerializeField] Animator DummyBagAnimator;
     private void Awake()
     {
         if (Instance != null)
@@ -92,19 +94,23 @@ public class ReceptionRoomUIManager : MonoBehaviour
         serviceProcessUI.TurnOnPanel(ServiceProcessPanel.paperbag);
         UIGamePlayManager.Instance.OpenAtap = true;
     }
-    public IEnumerator SetActiveDummyBagDelay(bool active,float delay)
+    public IEnumerator SetActiveDummyBagDelay(bool active, float delay)
     {
-
         yield return new WaitForSeconds(delay);
         DummyBag.SetActive(active);
+ 
     }
     public List<PlayerOwnedObject> getWrappedCakes()
     {
         return serviceProcessUI.GetWrappedCakesId();
     }
-    public void ClearWrappedCakeList()
+    public void PlayArmEndAnimation()
     {
-        serviceProcessUI.ClearWrappedCakeList();
+        DummyBagAnimator.Play("armend");
+    }
+    public void ClearWrappedCakes()
+    {
+        serviceProcessUI.ClearWrappedCake();
     }
 
 }

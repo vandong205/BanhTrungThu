@@ -1,6 +1,6 @@
-﻿using NUnit.Framework.Constraints;
+﻿
 using System.Collections.Generic;
-using UnityEditor;
+using System;
 using UnityEngine;
 
 public class ServiceProcessUIManager : MonoBehaviour
@@ -136,22 +136,16 @@ public class ServiceProcessUIManager : MonoBehaviour
         }
     }
     public List<PlayerOwnedObject> GetWrappedCakesId()
-    {
-
-        List<PlayerOwnedObject> list = new List<PlayerOwnedObject>();
-        foreach(Transform item in bagHolder.getContent())
-        {
-            ObjectInfo childInfo = item.GetComponent<ObjectInfo>();
-            SimulateStackHolder slotControl = item.GetComponent<SimulateStackHolder>();
-            PlayerOwnedObject cake = new PlayerOwnedObject(childInfo.ID, slotControl.getCount());
-            list.Add(cake);
-        }
-        return list;
+    { 
+        return bagHolder.wrappedCake;
         
     }
-    public void ClearWrappedCakeList()
+    public void SetClickWrapCallback(Action action)
     {
-        bagHolder.wrappedCake.Clear();
-  
+        bagHolder._onClickWrap += action;
+    }
+    public void ClearWrappedCake()
+    {
+        bagHolder.ClearWrappedCake();
     }
 }

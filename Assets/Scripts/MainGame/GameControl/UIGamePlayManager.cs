@@ -33,18 +33,22 @@ public class UIGamePlayManager : MonoBehaviour
     void Start()
     {
         player = ResourceManager.Instance.player;
-        SetPlayerStat(player.Capital,player.TrustPoint,player.Token);
         KitchenRoomUIManager.Instance._LoadKitchen?.Invoke();
         ReceptionRoomUIManager.Instance._LoadReceptionRoom?.Invoke();
         _dynamicUI.RegisPanel();
         LoadOrder();
+        LoadPlayerStat();
         GamePlayController.Instance.OnLoadingUIDone?.Invoke();    
     }
     public void RegisDynamicUIPanel()
     {
         _dynamicUI.RegisPanel();
     }
-    public void SetPlayerStat(long money, int trustpoint,int token)
+    public void LoadPlayerStat()
+    {
+        SetPlayerStat(player.Capital, player.TrustPoint, player.Token);
+    }
+    private void SetPlayerStat(long money, long trustpoint,long token)
     {
         PlayerStatUIController statcontrol = StatPanel.GetComponent<PlayerStatUIController>();  
         statcontrol.SetMoney(money);
@@ -102,17 +106,16 @@ public class UIGamePlayManager : MonoBehaviour
                 if (cake != null)
                 {
                     Sprite icon = AssetBundleManager.Instance.GetSpriteFromBundle("banh", cake.RoleName);
-                    long bonustpamount=0, bonustoken=0, money=0;
+                    long bonustpamount=0, bonustoken=0;
                     foreach (Receive receive in player.CurrentOrder.Receives)
                     {
                         Receivetype type = receive.Receivetype;
-                        if (type == Receivetype.Money) money = receive.Amount;
-                        else if (type == Receivetype.TrustPoint) bonustpamount = receive.Amount;
+                        if (type == Receivetype.TrustPoint) bonustpamount = receive.Amount;
                         else if (type == Receivetype.Token) bonustoken = receive.Amount;
                     }
                     if (icon != null)
                     {
-                        _dynamicUI.SetBillBox(icon,player.CurrentOrder.Number,money,bonustpamount,bonustoken);
+                        _dynamicUI.SetBillBox(icon,player.CurrentOrder.Number,cake.Price,bonustpamount,bonustoken);
                     }
                 }
 

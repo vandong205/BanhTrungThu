@@ -10,7 +10,7 @@ public class BinDrop : MonoBehaviour, IDropHandler
         var dropped = eventData.pointerDrag;
         if (dropped != null)
         {
-            dropped.SetActive(false);
+
             OnObjectDroped?.Invoke();
         }
     }

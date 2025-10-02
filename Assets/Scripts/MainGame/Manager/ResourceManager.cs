@@ -40,4 +40,24 @@ public class ResourceManager : MonoBehaviour
             }
         }
     }
+    public void AddPlayerStat(long money, long trustpoint, long token)
+    {
+        if ((player.Capital + money) >= 0)
+        {
+            player.Capital += money;
+        }
+        else player.Capital = 0;
+        if ((player.TrustPoint + trustpoint) >= 0)
+        {
+            if((player.TrustPoint + trustpoint)>100) player.TrustPoint = 100;
+            else
+                player.TrustPoint += trustpoint;
+        }
+        else player.TrustPoint = 0;
+        if ((player.Token + token) >= 0)
+        {
+            player.Token += token;
+        }
+        else player.Token = 0;
+    }
 }

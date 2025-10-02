@@ -11,11 +11,11 @@ public class PlayerStatUIController : MonoBehaviour
         string result = MoneyFormatConvert.FormatCurrency(money,ResourceManager.Instance.player.FormatCurrency);
         Money.text = result;
     }
-    public void SetTrustPoint(int trustpoint)
+    public void SetTrustPoint(long trustpoint)
     {
         TrustPoint.text = trustpoint.ToString();
     }
-    public void SetToken(int token)
+    public void SetToken(long token)
     {
         Token.text = token.ToString();
     }

@@ -10,7 +10,11 @@ public class CookingProcessController:MonoBehaviour
     private int? GetProcesOutputID(KitchenItem tool)
     {
         int[] input = cookingToolPanelUIHandler.GetInput();
-        if (!tool.IsValidInput(input)) return null;
+        if (!tool.IsValidInput(input))
+        {
+            Notification.Instance.Display("Bạn đang dùng sai công cụ!", NotificationType.Warning);
+            return null;
+        }
         return ResourceManager.Instance.recipeBook.FindOutput(input);
     }
     public void ProcessOutput(KitchenItem tool)
@@ -18,6 +22,7 @@ public class CookingProcessController:MonoBehaviour
         int? outputIdNullable = GetProcesOutputID(tool);
         if (!outputIdNullable.HasValue)
         {
+            Notification.Instance.Display("Công thức không đúng hoặc chưa được mở khóa !", NotificationType.Warning);
             outputstateok = false;
             return;
         }
@@ -65,7 +70,6 @@ public class CookingProcessController:MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"Không tìm thấy output cho ID {outputId}");
             outputstateok = false;
 
         }
