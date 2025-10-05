@@ -26,7 +26,6 @@ public class GeneralUIMangager : MonoBehaviour
         UIGamePlayManager.Instance.OpenAtap = true;
 
     }
-
     public void OnClosePanel()
     {
         if (settingui.gameObject.activeSelf) settingui.CloseTab();

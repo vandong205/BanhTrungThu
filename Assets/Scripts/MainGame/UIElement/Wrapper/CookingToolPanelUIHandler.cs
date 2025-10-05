@@ -74,7 +74,10 @@ public class CookingToolPanelUIHandler : MonoBehaviour
         }
         progressRoutine = StartCoroutine(ProgressCoroutine(duration, onComplete));
     }
-
+    public void UpdateSlider(float value)
+    {
+        progress.value = value;
+    }
     private IEnumerator ProgressCoroutine(float duration, Action onComplete)
     {
         progress.value = 0f;

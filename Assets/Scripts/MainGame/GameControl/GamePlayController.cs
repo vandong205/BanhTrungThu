@@ -79,8 +79,7 @@ public class GamePlayController : MonoBehaviour
         ResourceManager.Instance.player.IsFirstTimeOpenGame = false;    
         UIGamePlayManager.Instance.SetActiveHighUI(false);
         UIGamePlayManager.Instance.OpenAtap = false;
-        DelayHelper.CallAfterDelay(()=>Notification.Instance.Display("Hãy chuyển sang phòng bếp bên phải để bắt đầu làm bánh!", NotificationType.Normal), 2.0f);
-        Notification.Instance.Display("Hãy bắt đầu với nấu nhân bánh bằng chảo !",NotificationType.Normal);
+        Notification.Instance.Display("Hãy chuyển sang phòng bếp bên phải để bắt đầu làm bánh!", NotificationType.Normal);
     }
     //Giai doan dung cong cu nha bep
     public void OnCookingProcessBtnClick()
@@ -111,7 +110,7 @@ public class GamePlayController : MonoBehaviour
                     PlayerOwnedObject newcake = new PlayerOwnedObject(newcakeid,1);
                     ResourceManager.Instance.player.Cakes.Add(newcake);
                 }
-                ReceptionRoomUIManager.Instance.RefreshCakeStock();
+                ReceptionRoomUIManager.Instance.LoadData();
             }
             cookuimanager.SetCookingToolText(toolused.Name, toolused.Use);
             cookuimanager.ClearOutput();

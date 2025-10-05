@@ -6,7 +6,7 @@ public class DynamicUIManager : MonoBehaviour
     [SerializeField] DynamicUIPanelController LeftPanel;
     [SerializeField] DynamicUIPanelController RightPanel;
     public Billbox billbox;
-  
+    public NewCakeUnlock newcakeeffect;
     public void RegisPanel()
     {
         if (GamePlayController.Instance._isInKitchen)
@@ -25,6 +25,7 @@ public class DynamicUIManager : MonoBehaviour
     }
     public void DisplayBillBox()
     {
+        if (UIGamePlayManager.Instance.OpenAtap) return;
         billbox.DisplayBillbox(true);
         UIGamePlayManager.Instance.OpenAtap = true;
     }
@@ -35,5 +36,14 @@ public class DynamicUIManager : MonoBehaviour
     }
     public void SetBillBox(Sprite icon, int quantity, long price, long bunustp, long bonustoken){
         billbox.SetBillBox(icon, quantity, price, bunustp, bonustoken);
+    }
+    public void SetNewCakeSprite(Sprite icon)
+    {
+        newcakeeffect.SetCakeSprite(icon);
+    }
+    public void PlayNewCakeEffect()
+    {
+        newcakeeffect.gameObject.SetActive(true);
+        DelayHelper.DisableAfterDelay(newcakeeffect.gameObject, 3.0f);
     }
 }

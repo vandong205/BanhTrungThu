@@ -52,50 +52,51 @@ public class ServiceProcessUIManager : MonoBehaviour
     public void RefreshCakeHolder()
     {
         if (cakeholder == null) return;
+
+        // Xóa toàn bộ slot đang dùng (reset về pool)
         cakeholder.ClearAll();
+
         foreach (PlayerOwnedObject playerCake in ResourceManager.Instance.player.Cakes)
         {
-            if (ResourceManager.Instance.CakeDict.TryGetValue(playerCake.ID, out Cake cake))
+            if (playerCake == null || playerCake.Quantity <= 0)
+                continue;
+
+            if (ResourceManager.Instance.CakeDict.TryGetValue(playerCake.ID, out Cake cake) && cake != null)
             {
-                if (cake != null)
+                Transform slotTransform = cakeholder.GetSlotFromPool();
+                if (slotTransform == null) continue;
+
+                GameObject slotObj = slotTransform.gameObject;
+                slotObj.name = cake.RoleName;
+
+                ObjectInfo info = slotObj.GetComponent<ObjectInfo>();
+                info.ID = cake.ID;
+                info.Name = cake.Name;
+                info.RoleName = cake.RoleName;
+                info.Type = ObjectType.bakedcake;
+
+                SimulateStackHolder control = slotObj.GetComponent<SimulateStackHolder>();
+                if (control != null)
                 {
-                    // 👇 Instantiate prefab slot thay vì GetSlotFromPool + AddComponent
-                    GameObject slotObj = Instantiate(cakeSlotPrefab, cakeholder.getContent());
-                    slotObj.name = cake.RoleName;
+                    control.SetItemCount(playerCake.Quantity);
 
-                    ObjectInfo info = slotObj.GetComponent<ObjectInfo>();
-                    info.ID = cake.ID;
-                    info.Name = cake.Name;
-                    info.RoleName = cake.RoleName;
-                    info.Type = ObjectType.bakedcake;
+                    Sprite icon = AssetBundleManager.Instance.GetSpriteFromBundle("banh", info.RoleName);
+                    control.SetIcon(icon);
 
-                    SimulateStackHolder control = slotObj.GetComponent<SimulateStackHolder>();
-                    if (control != null)
+                    control._removeCallback = null;
+                    control._removeCallback += (objInfo) =>
                     {
-                        control.SetItemCount(playerCake.Quantity);
-
-                        Sprite icon = AssetBundleManager.Instance.GetSpriteFromBundle("banh", info.RoleName);
-                        control.SetIcon(icon); // sẽ không null nếu prefab đã drag Image đúng
-
-                        // clear callback cũ
-                        control._removeCallback = null;
-
-                        // Khi remove ở cakeholder → add vào bag
-                        control._removeCallback += (objInfo) =>
-                        {
-                            bagHolder.AddOneItem(objInfo);
-                            
-                        };
-                        
-                    }
-                    else
-                    {
-                        Debug.LogError("Prefab slot thiếu SimulateStackHolder!");
-                    }
+                        bagHolder.AddOneItem(objInfo);
+                    };
+                }
+                else
+                {
+                    Debug.LogError("Prefab slot thiếu SimulateStackHolder!");
                 }
             }
         }
     }
+
     public void AddCallBackToBagHolder()
     {
         if (bagHolder == null) return;

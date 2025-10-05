@@ -78,7 +78,6 @@ public class MainGame : MonoBehaviour
         Debug.Log("Dang tai config khach hang");
         yield return Loader.LoadJsonConfigIntoDict<int, Custumer>(Consts.CustumerConfigKey, ResourceManager.Instance.CustumerDict);
         UpdateLaunchingProcess();
-
     }
     IEnumerator LoadData()
     {

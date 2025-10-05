@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -179,9 +180,28 @@ public class CookingProcessUIManager : MonoBehaviour
 
     public void RunProgress(float time, Action action)
     {
-        GamePlayController.Instance.onProgress = true;
+        StartCoroutine(RunProgressRoutine(time, action));
+    }
+
+    private IEnumerator RunProgressRoutine(float duration, Action onComplete)
+    {
+        float t = 0f;
         CookingToolPanelUIHandler.SliderToglle(true);
-        CookingToolPanelUIHandler.RunProgress(time, action);
+
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+
+            if (CookingToolPanelUIHandler != null && CookingToolPanelUIHandler.isActiveAndEnabled)
+                CookingToolPanelUIHandler.UpdateSlider(t / duration);
+
+            yield return null;
+        }
+
+        if (CookingToolPanelUIHandler != null)
+            CookingToolPanelUIHandler.UpdateSlider(1f);
+
+        onComplete?.Invoke();
     }
     public void OnCookingProcessSucceed()
     {

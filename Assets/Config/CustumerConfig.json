@@ -1,32 +1,47 @@
 ﻿{
   "0": {
     "ID": 0,
-    "Name": "Người ăn xin",
-    "Rolename": "anxin"
+    "Name": "Tổng tài (Thôi)",
+    "Rolename": "tongtai"
   },
   "1": {
     "ID": 1,
-    "Name": "Quỷ cẩu",
-    "Rolename": "cauquy"
+    "Name": "Cụ Lam (nghỉ hưu)",
+    "Rolename": "bacu"
   },
   "2": {
     "ID": 2,
-    "Name": "Chim trắng",
-    "Rolename": "chim"
+    "Name": "Anh Phú Invisible (Grab)",
+    "Rolename": "grab"
   },
   "3": {
     "ID": 3,
-    "Name": "Ngạ quỷ",
-    "Rolename": "ngaquy"
+    "Name": "Bé Na (7 tuổi)",
+    "Rolename": "embe"
   },
   "4": {
     "ID": 4,
-    "Name": "Trần tổng",
-    "Rolename": "phuong"
+    "Name": "Chị Lan (sinh viên)",
+    "Rolename": "embe2"
   },
-  "5": {
+  "6": {
+    "ID": 6,
+    "Name": "Cô Ngân (tiểu thương)",
+    "Rolename": "baco"
+  },
+  "8": {
     "ID": 5,
-    "Name": "Ưng quỷ",
-    "Rolename": "ungquy"
+    "Name": "Thầy V.Anh (giáo viên)",
+    "Rolename": "giaovien"
+  },
+  "9": {
+    "ID": 5,
+    "Name": "Anh Nam (sinh viên)",
+    "Rolename": "sinhvien"
+  },
+  "10": {
+    "ID": 5,
+    "Name": "Bác Hùng (nông dân)",
+    "Rolename": "nongdan"
   }
 }

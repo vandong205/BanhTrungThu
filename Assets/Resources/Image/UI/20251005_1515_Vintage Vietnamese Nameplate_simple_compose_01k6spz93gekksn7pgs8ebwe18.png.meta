@@ -1,0 +1,545 @@
+fileFormatVersion: 2
+guid: f12f312cb9292f844bb4fd97e3c211a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6907353964915902723
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_0
+  - first:
+      213: 7923988754203830370
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_1
+  - first:
+      213: 9142276230352092713
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_2
+  - first:
+      213: 3167162140617687062
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_3
+  - first:
+      213: 3919735195787887265
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_4
+  - first:
+      213: -6833466306165439723
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_5
+  - first:
+      213: 4302760589447500709
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_6
+  - first:
+      213: -4759332838619484799
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_7
+  - first:
+      213: 957233684765915088
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_8
+  - first:
+      213: 6927391631610788248
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_9
+  - first:
+      213: 5565378638167044871
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_10
+  - first:
+      213: -5083631391137827737
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_11
+  - first:
+      213: -774850509836859264
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_12
+  - first:
+      213: 8695916266564401815
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_13
+  - first:
+      213: 7108938747461149956
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_14
+  - first:
+      213: 3977039229775448486
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_15
+  - first:
+      213: -2385264834620599212
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_16
+  - first:
+      213: 8602370289685707673
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_17
+  - first:
+      213: 204991272171607399
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_18
+  - first:
+      213: 2841195129466459802
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_19
+  - first:
+      213: -9189510227146715345
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_20
+  - first:
+      213: -3537573644468760950
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_21
+  - first:
+      213: 736640983247023058
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_22
+  - first:
+      213: -8322248202881579664
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_23
+  - first:
+      213: -473823744413100374
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_24
+  - first:
+      213: -2787558705150608580
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_25
+  - first:
+      213: -4354227354898733594
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_26
+  - first:
+      213: 2253649789942479531
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_27
+  - first:
+      213: 8069423842469826129
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_28
+  - first:
+      213: 4874095985684677493
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_29
+  - first:
+      213: -7579193502451486190
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_30
+  - first:
+      213: -6749230324440232451
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_31
+  - first:
+      213: 4478332455843330303
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_32
+  - first:
+      213: 1473843421018523423
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_33
+  - first:
+      213: 7019543971619121341
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_34
+  - first:
+      213: -5095056796859117126
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_35
+  - first:
+      213: -3341591894395299193
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_36
+  - first:
+      213: 5141250370213785535
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_37
+  - first:
+      213: -6577938427787459705
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_38
+  - first:
+      213: -7703708750273470777
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_39
+  - first:
+      213: 370442256558838503
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_40
+  - first:
+      213: -7330056215709771
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_41
+  - first:
+      213: 948125880414645243
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_42
+  - first:
+      213: 129087940662421856
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_43
+  - first:
+      213: 8263056253931540612
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_44
+  - first:
+      213: -556676278772626330
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_45
+  - first:
+      213: -3568557956530078247
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_46
+  - first:
+      213: 2968732507480420487
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_47
+  - first:
+      213: -8149998113619565429
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_48
+  - first:
+      213: -1710928818966789174
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_49
+  - first:
+      213: -8850682373404041558
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_50
+  - first:
+      213: 8364729491146312644
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_51
+  - first:
+      213: -925224586711230729
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_52
+  - first:
+      213: -4702317974465458691
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_53
+  - first:
+      213: 6317359155433178728
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_54
+  - first:
+      213: 4573486896343712525
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_55
+  - first:
+      213: 3223455413936722503
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_56
+  - first:
+      213: 8217269920578860739
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_57
+  - first:
+      213: 1860908409315232540
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_58
+  - first:
+      213: -177131806000103639
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_59
+  - first:
+      213: 3196670910024131878
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_60
+  - first:
+      213: 1522130776324354781
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_61
+  - first:
+      213: -1149609806808895862
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_62
+  - first:
+      213: 5849109761830451545
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_63
+  - first:
+      213: -8036838242748449414
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_64
+  - first:
+      213: 301662737906597849
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_65
+  - first:
+      213: -7276818174787195982
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_66
+  - first:
+      213: -2187597255696984317
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_67
+  - first:
+      213: 1821019480928750712
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_68
+  - first:
+      213: 3019401503670534917
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_69
+  - first:
+      213: 9102075548398148572
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_70
+  - first:
+      213: 2480122300879268631
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_71
+  - first:
+      213: 958178798876669243
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_72
+  - first:
+      213: 290283496209865640
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_73
+  - first:
+      213: -638712186120892245
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_74
+  - first:
+      213: 1557907249440556826
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_75
+  - first:
+      213: 934085423274250848
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_76
+  - first:
+      213: -891088075619894252
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_77
+  - first:
+      213: 5150844000101332965
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_78
+  - first:
+      213: 3168161622871237036
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_79
+  - first:
+      213: -8394158679247316191
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_80
+  - first:
+      213: 3914757242709262780
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_81
+  - first:
+      213: 1671442981880094069
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_82
+  - first:
+      213: 2812556031612809555
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_83
+  - first:
+      213: -8331848106391112963
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_84
+  - first:
+      213: 4651496269466189660
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_85
+  - first:
+      213: -3259693493427986439
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_86
+  - first:
+      213: 8809516946886350821
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_87
+  - first:
+      213: -8873693687258849124
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_88
+  - first:
+      213: -3883775034445397626
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_89
+  - first:
+      213: -7068619682236729927
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_90
+  - first:
+      213: -6806101092093868071
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_91
+  - first:
+      213: 6453715925477974396
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_92
+  - first:
+      213: 3658117913878808326
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_93
+  - first:
+      213: -7451149392068659130
+    second: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_94
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 78
+        width: 1277
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df63d476a262420a0800000000000000
+      internalID: -6907353964915902723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d8d56efd625ec654b8db4b57c022be0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_0: -6907353964915902723
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_1: 7923988754203830370
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_10: 5565378638167044871
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_11: -5083631391137827737
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_12: -774850509836859264
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_13: 8695916266564401815
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_14: 7108938747461149956
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_15: 3977039229775448486
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_16: -2385264834620599212
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_17: 8602370289685707673
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_18: 204991272171607399
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_19: 2841195129466459802
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_2: 9142276230352092713
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_20: -9189510227146715345
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_21: -3537573644468760950
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_22: 736640983247023058
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_23: -8322248202881579664
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_24: -473823744413100374
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_25: -2787558705150608580
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_26: -4354227354898733594
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_27: 2253649789942479531
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_28: 8069423842469826129
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_29: 4874095985684677493
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_3: 3167162140617687062
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_30: -7579193502451486190
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_31: -6749230324440232451
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_32: 4478332455843330303
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_33: 1473843421018523423
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_34: 7019543971619121341
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_35: -5095056796859117126
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_36: -3341591894395299193
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_37: 5141250370213785535
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_38: -6577938427787459705
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_39: -7703708750273470777
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_4: 3919735195787887265
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_40: 370442256558838503
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_41: -7330056215709771
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_42: 948125880414645243
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_43: 129087940662421856
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_44: 8263056253931540612
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_45: -556676278772626330
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_46: -3568557956530078247
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_47: 2968732507480420487
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_48: -8149998113619565429
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_49: -1710928818966789174
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_5: -6833466306165439723
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_50: -8850682373404041558
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_51: 8364729491146312644
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_52: -925224586711230729
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_53: -4702317974465458691
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_54: 6317359155433178728
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_55: 4573486896343712525
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_56: 3223455413936722503
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_57: 8217269920578860739
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_58: 1860908409315232540
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_59: -177131806000103639
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_6: 4302760589447500709
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_60: 3196670910024131878
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_61: 1522130776324354781
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_62: -1149609806808895862
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_63: 5849109761830451545
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_64: -8036838242748449414
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_65: 301662737906597849
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_66: -7276818174787195982
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_67: -2187597255696984317
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_68: 1821019480928750712
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_69: 3019401503670534917
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_7: -4759332838619484799
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_70: 9102075548398148572
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_71: 2480122300879268631
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_72: 958178798876669243
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_73: 290283496209865640
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_74: -638712186120892245
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_75: 1557907249440556826
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_76: 934085423274250848
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_77: -891088075619894252
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_78: 5150844000101332965
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_79: 3168161622871237036
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_8: 957233684765915088
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_80: -8394158679247316191
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_81: 3914757242709262780
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_82: 1671442981880094069
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_83: 2812556031612809555
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_84: -8331848106391112963
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_85: 4651496269466189660
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_86: -3259693493427986439
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_87: 8809516946886350821
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_88: -8873693687258849124
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_89: -3883775034445397626
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_9: 6927391631610788248
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_90: -7068619682236729927
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_91: -6806101092093868071
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_92: 6453715925477974396
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_93: 3658117913878808326
+      20251005_1515_Vintage Vietnamese Nameplate_simple_compose_01k6spz93gekksn7pgs8ebwe18_94: -7451149392068659130
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

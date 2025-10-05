@@ -17,7 +17,9 @@ public class CakeRackUIManager : MonoBehaviour
         Debug.Log("da goi load cake rax");
         foreach (PlayerOwnedObject cake in ResourceManager.Instance.player.Cakes)
         {
+            if(cake.Quantity<=0) continue;
             string name = "";
+            
             var stockprefab = Resources.Load<GameObject>("Prefabs/indreInStock");
             if (ResourceManager.Instance.CakeDict.TryGetValue(cake.ID, out Cake result))
             {

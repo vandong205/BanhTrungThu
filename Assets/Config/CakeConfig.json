@@ -4,90 +4,90 @@
     "Name": "Bánh Thu Vàng",
     "RoleName": "thanhlong-traxanh",
     "Ingredients": [ 5, 3, 11 ],
-    "Price": 24000
+    "Price": 28000
   },
   "101": {
     "ID": 101,
     "Name": "Bánh Trăng Non",
     "RoleName": "dua-vungden",
-    "Ingredients": [ 12,14,11 ],
-    "Price": 3000
+    "Ingredients": [ 12, 14, 11 ],
+    "Price": 18000
   },
   "102": {
     "ID": 102,
     "Name": "Bánh Ngọc Sen",
     "RoleName": "dauxanh-matong",
     "Ingredients": [ 7, 13, 11 ],
-    "Price": 30000
+    "Price": 34000
   },
   "103": {
     "ID": 103,
     "Name": "Bánh Vừng Vàng",
     "RoleName": "traxanh-vungden",
     "Ingredients": [ 3, 14, 11 ],
-    "Price": 17000
+    "Price": 20000
   },
   "104": {
     "ID": 104,
     "Name": "Bánh Mật Ngọt",
     "RoleName": "vungden-matong",
     "Ingredients": [ 7, 14, 11 ],
-    "Price": 29000
+    "Price": 33000
   },
   "105": {
     "ID": 105,
     "Name": "Bánh Đào Hồng",
     "RoleName": "hatsen-daudo",
     "Ingredients": [ 9, 1, 11 ],
-    "Price": 33000
+    "Price": 38000
   },
   "106": {
     "ID": 106,
     "Name": "Bánh Hương Trà",
     "RoleName": "traxanh-dauxanh",
     "Ingredients": [ 3, 13, 11 ],
-    "Price": 18000
+    "Price": 23000
   },
   "107": {
     "ID": 107,
     "Name": "Bánh Kim Sen",
     "RoleName": "trungmuoi-hatsen",
     "Ingredients": [ 2, 9, 11 ],
-    "Price": 34000
+    "Price": 42000
   },
   "108": {
     "ID": 108,
     "Name": "Bánh Tím Mơ",
     "RoleName": "khoaimon-daudo",
     "Ingredients": [ 4, 1, 11 ],
-    "Price": 20000
+    "Price": 24000
   },
   "109": {
     "ID": 109,
     "Name": "Bánh Sen Ngọt",
     "RoleName": "hatsen-matong",
     "Ingredients": [ 9, 7, 11 ],
-    "Price": 43000
+    "Price": 50000
   },
   "110": {
     "ID": 110,
     "Name": "Bánh Lục Ngọc",
     "RoleName": "traxanh-dauphong",
     "Ingredients": [ 3, 8, 11 ],
-    "Price": 20000
+    "Price": 23000
   },
   "111": {
     "ID": 111,
     "Name": "Bánh Dừa Trăng",
     "RoleName": "khoaimon-dua",
     "Ingredients": [ 4, 12, 11 ],
-    "Price": 20000
+    "Price": 24000
   },
   "112": {
     "ID": 112,
     "Name": "Bánh Rằm Vàng",
     "RoleName": "saurieng-trungmuoi",
     "Ingredients": [ 6, 2, 11 ],
-    "Price": 38000
+    "Price": 52000
   }
 }

@@ -123,6 +123,14 @@ public class UIGamePlayManager : MonoBehaviour
         }
 
     }
+    public void SetNewCakeIcon(Sprite icon)
+    {
+        _dynamicUI.SetNewCakeSprite(icon);
+    }
+    public void PlayNewCakeEffect()
+    {
+        _dynamicUI.PlayNewCakeEffect();
+    }
 
  
 }
